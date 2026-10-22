@@ -790,7 +790,7 @@ if (mobile) {
   // reserva para quando o navegador atrasa a interseção: mede na rolagem
   let raf = 0;
   const check = () => { raf = 0; const vh = innerHeight; slides.forEach(s => { const r = s.getBoundingClientRect(); if (r.height && r.top < vh * .85 && r.bottom > vh * .15) enter(s); }); };
-  addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(check); }, { passive: true });
+  addEventListener('scroll', () => { if (!raf) raf = setTimeout(check, 60); }, { passive: true });
   setTimeout(check, 300);
   $('#apxOpen').addEventListener('click', () => { html.classList.add('show-apx'); apxS[0].scrollIntoView({ behavior: 'smooth' }); });
   // QA: ?solo=s6 mostra só uma tela
