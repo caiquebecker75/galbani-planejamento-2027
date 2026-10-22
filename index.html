@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Galbani 2027 · Da geladeira à mesa · 75LAB</title>
 <meta name="description" content="Planejamento estratégico de trade Galbani 2027: distribuição, mix, espaço, giro e governança de execução no varejo alimentar brasileiro. Apresentação 75LAB.">
-<meta name="theme-color" content="#041A3D">
+<meta name="theme-color" content="#F5EFE3">
 <meta name="robots" content="noindex">
 <meta property="og:title" content="Galbani 2027 · Planejamento estratégico de trade">
 <meta property="og:description" content="Ser encontrada antes de ser escolhida. Uma apresentação 75LAB.">
@@ -14,67 +14,49 @@
 <link rel="icon" href="assets/img/brand/galbani-logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Lobster&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@400;500;600;700;800&family=Lobster&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/img/cenas/gondola-fria-iogurtes.jpg">
 <link rel="stylesheet" href="assets/css/deck.css">
 </head>
-<body data-theme="dark">
-
-<div class="bg" aria-hidden="true"></div>
-<canvas id="particles" aria-hidden="true"></canvas>
+<body data-theme="paper">
 
 <div class="viewport">
 <div class="stage" id="stage">
 
-  <!-- fio condutor -->
-  <svg class="thread" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-    <defs>
-      <linearGradient id="threadGrad" x1="0" x2="1" y1="0" y2="0">
-        <stop offset="0" stop-color="#7CC0F5" stop-opacity="0"/>
-        <stop offset=".25" stop-color="#7CC0F5" stop-opacity=".55"/>
-        <stop offset=".7" stop-color="#7CC0F5" stop-opacity=".35"/>
-        <stop offset="1" stop-color="#F49811" stop-opacity="0"/>
-      </linearGradient>
-    </defs>
-    <g class="tg" id="threadG">
-      <path id="thP" d="M-260 640 C 120 470 380 790 760 600 S 1320 360 1860 520"/>
-      <path class="t2" d="M-260 676 C 120 506 380 826 760 636 S 1320 396 1860 556"/>
-      <circle r="4"><animateMotion dur="16s" repeatCount="indefinite"><mpath href="#thP"/></animateMotion></circle>
-    </g>
-  </svg>
-
-  <!-- moldura -->
-  <div class="chrome">
-    <div class="brandbar">
+  <!-- cabeçalho fixo -->
+  <header class="mast">
+    <div class="brand">
       <img class="gal" src="assets/img/brand/galbani-oval.svg" alt="Galbani">
-      <span class="div" aria-hidden="true"></span>
+      <span class="x" aria-hidden="true">×</span>
       <img class="b75" src="assets/img/brand/75lab-black.png" alt="75LAB">
     </div>
-    <div class="topr">
+    <p class="issue">Planejamento estratégico de trade · 2027</p>
+    <div class="mr">
       <span class="chap" id="chap"></span>
-      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir capítulos (tecla M)"><span class="bars"><i></i><i></i><i></i></span><span class="lbl-t">Capítulos</span></button>
-    </div>
-    <div class="prog">
-      <button class="back-btn" id="backBtn" type="button">← Voltar à apresentação</button>
-      <div class="segs" id="segs" aria-label="Capítulos"></div>
       <span class="count" id="count" aria-live="polite"></span>
-      <button class="nav-btn" id="prevBtn" type="button" aria-label="Tela anterior"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 3 5 8l5 5"/></svg></button>
-      <button class="nav-btn" id="nextBtn" type="button" aria-label="Próxima tela"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 3 5 5-5 5"/></svg></button>
+      <button class="back-btn" id="backBtn" type="button">← Voltar à apresentação</button>
+      <div class="arrows">
+        <button class="nav-btn" id="prevBtn" type="button" aria-label="Tela anterior"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 3 5 8l5 5"/></svg></button>
+        <button class="nav-btn" id="nextBtn" type="button" aria-label="Próxima tela"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 3 5 5-5 5"/></svg></button>
+      </div>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir índice (tecla M)"><span class="bars"><i></i><i></i></span><span class="lbl-t">Índice</span></button>
     </div>
-  </div>
-
-  <div class="curtain" id="curtain" aria-hidden="true"></div>
-  <div class="sweep" id="sweep" aria-hidden="true"></div>
+    <div class="pbar"><i id="pfill"></i><span class="ticks" id="ticks"></span></div>
+  </header>
+  <div class="glow" aria-hidden="true"></div>
 
   <main id="deck">
 
 <!-- =====================================================================
      00 · CAPA
      ===================================================================== -->
-<section class="slide" id="s0" data-theme="dark" data-ch="0" data-title="Capa" data-thread="0,170,0,1,.9">
+<section class="slide" id="s0" data-theme="paper" data-ch="0" data-title="Capa">
   <div class="intro" id="intro" aria-hidden="true">
     <div class="ibg">
-      <img data-w="2" src="assets/img/cenas/pasta-burro-parmigiano.jpg" alt="">
+      <img data-w="0" src="assets/img/produtos/parmegiano.jpg" alt="">
+      <img data-w="1" src="assets/img/cenas/pasta-burro-parmigiano.jpg" alt="">
+      <img data-w="2" src="assets/img/produtos/fatiados.jpg" alt="">
+      <img data-w="3" src="assets/img/produtos/requeijao.jpg" alt="">
       <img data-w="4" src="assets/img/cenas/gondola-fria-iogurtes.jpg" alt="">
       <img data-w="5" src="assets/img/cenas/corredor-refrigerados.jpg" alt="">
     </div>
@@ -91,7 +73,8 @@
     <div class="ibar"><i></i></div>
   </div>
 
-  <div class="photo"><img src="assets/img/cenas/gondola-fria-iogurtes.jpg" alt="Gôndola refrigerada de supermercado brasileiro"></div>
+  <figure class="arch cover-arch" data-a="rise"><img src="assets/img/cenas/gondola-fria-iogurtes.jpg" alt="Gôndola refrigerada de supermercado brasileiro"></figure>
+  <div class="seal" data-a="pop" style="--d:1.3s"><img src="assets/img/brand/galbani-logo.svg" alt="Selo Galbani: Dal 1882, Nº1 in Italia"></div>
   <div class="sl">
     <p class="kick" data-a="fade"><span class="tri"></span>Planejamento estratégico de trade · 2027</p>
     <h1 aria-label="Ser encontrada antes de ser escolhida.">
@@ -105,7 +88,7 @@
     <div><small>Apresentação</small>Vanessa Morelli · 75LAB</div>
     <div><small>Data</small>22 de outubro de 2026</div>
     <span class="sp"></span>
-    <span class="hint"><kbd>→</kbd> avançar · <kbd>M</kbd> capítulos</span>
+    <span class="hint"><kbd>→</kbd> avançar · <kbd>M</kbd> índice</span>
   </div>
   <div class="notes"><p>Abrir com a tensão: na Itália a marca é sinônimo de confiança; aqui, ainda precisa ser encontrada na geladeira. Toda a apresentação responde a isso.</p></div>
 </section>
@@ -113,7 +96,7 @@
 <!-- =====================================================================
      01 · AGENDA
      ===================================================================== -->
-<section class="slide" id="s1" data-theme="light" data-ch="0" data-title="O que vamos discutir hoje" data-thread="-120,-60,-6,1.05,.6">
+<section class="slide" id="s1" data-theme="paper" data-ch="0" data-title="O que vamos discutir hoje">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>Agenda</b> O que vamos discutir hoje</p>
     <h2 class="tk">Seis capítulos, do diagnóstico à <em>regra de escala</em>.</h2>
@@ -142,7 +125,7 @@
 <!-- =====================================================================
      02 · PROBLEMA APARENTE × REAL
      ===================================================================== -->
-<section class="slide" id="s2" data-theme="dark" data-ch="1" data-title="O desafio real começa antes do giro" data-thread="200,120,8,1.1,.5">
+<section class="slide" id="s2" data-theme="paper" data-ch="1" data-title="O desafio real começa antes do giro">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>I · Leitura do desafio</b> Problema aparente × problema real</p>
     <h2 class="tk">O briefing pede giro. O desafio real começa antes: <em>presença</em>.</h2>
@@ -182,7 +165,7 @@
 <!-- =====================================================================
      03 · DECUPAGEM
      ===================================================================== -->
-<section class="slide" id="s3" data-theme="light" data-ch="1" data-title="Decupagem do briefing" data-thread="-80,-160,-10,1,.45">
+<section class="slide" id="s3" data-theme="paper" data-ch="1" data-title="Decupagem do briefing">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>I · Leitura do desafio</b> Decupagem do briefing</p>
     <h2 class="tk">Seis fatos do briefing apontam para um problema de <em>cobertura, arquitetura e execução</em>.</h2>
@@ -209,7 +192,7 @@
 <!-- =====================================================================
      04 · SABEMOS × PRECISAMOS DESCOBRIR
      ===================================================================== -->
-<section class="slide" id="s4" data-theme="dark" data-ch="1" data-title="O que sabemos e o que falta descobrir" data-thread="160,60,4,1.15,.45">
+<section class="slide" id="s4" data-theme="sand" data-ch="1" data-title="O que sabemos e o que falta descobrir">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>I · Leitura do desafio</b> Sabemos × precisamos descobrir</p>
     <h2 class="tk">Quatro respostas críticas definem onde investir; o <em>kick-off</em> precisa trazê-las.</h2>
@@ -254,7 +237,7 @@
 <!-- =====================================================================
      05 · MARCA
      ===================================================================== -->
-<section class="slide" id="s5" data-theme="light" data-ch="2" data-title="A credencial italiana" data-thread="-200,-120,-4,1.05,.45">
+<section class="slide" id="s5" data-theme="paper" data-ch="2" data-title="A credencial italiana">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>II · Contexto</b> Marca</p>
     <h2 class="tk">A credencial italiana é forte; o desafio é transformá-la em <em>benefício de uso</em> no dia a dia.</h2>
@@ -291,7 +274,7 @@
 <!-- =====================================================================
      06 · PORTFÓLIO-BASE × OCASIÕES
      ===================================================================== -->
-<section class="slide" id="s6" data-theme="light" data-ch="2" data-title="Quatro portas de entrada" data-thread="140,-200,6,1,.4">
+<section class="slide" id="s6" data-theme="paper" data-ch="2" data-title="Quatro portas de entrada">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>II · Contexto</b> Portfólio-base</p>
     <h2 class="tk">Quatro SKUs de entrada cobrem cinco ocasiões da mesa, se aparecerem como <em>soluções</em>, e não como lista.</h2>
@@ -325,7 +308,7 @@
 <!-- =====================================================================
      07 · MERCADO E SHOPPER EM NÚMEROS
      ===================================================================== -->
-<section class="slide" id="s7" data-theme="dark" data-ch="2" data-title="Mercado: categoria cresce, carrinho encolhe" data-thread="-60,140,-8,1.2,.5">
+<section class="slide" id="s7" data-theme="blue" data-ch="2" data-title="Mercado: categoria cresce, carrinho encolhe">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>II · Contexto</b> Mercado</p>
     <h2 class="tk">A categoria cresce e se consolida, mas o carrinho encolhe: <em>cada item precisa justificar seu lugar</em>.</h2>
@@ -358,7 +341,7 @@
 <!-- =====================================================================
      08 · CONCORRÊNCIA
      ===================================================================== -->
-<section class="slide" id="s8" data-theme="light" data-ch="2" data-title="Concorrência e espaço livre" data-thread="220,-80,10,1,.4">
+<section class="slide" id="s8" data-theme="paper" data-ch="2" data-title="Concorrência e espaço livre">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>II · Contexto</b> Concorrência</p>
     <h2 class="tk">A gôndola tem donos de hábito, de preço e de prestígio; o espaço livre é a <em>italianidade prática</em> do dia a dia.</h2>
@@ -374,8 +357,8 @@
           <div class="pl" style="left:34%;top:63%" data-a="pop" data-i="3"><i style="--sz:30px"></i><b>Vigor e Faixa Azul</b><small>familiaridade</small></div>
           <div class="pl" style="left:56%;top:40%" data-a="pop" data-i="4"><i style="--sz:34px"></i><b>Tirolez</b><small>tradição e culinária</small></div>
           <div class="pl" style="left:80%;top:72%" data-a="pop" data-i="5"><i style="--sz:28px"></i><b>Polenghi</b><small>especialidades</small></div>
-          <div class="pl gal" style="left:73%;top:36%;opacity:.6" data-a="pop" data-i="6"><i style="--sz:16px;animation:none;box-shadow:none;background:transparent;border:2px dashed var(--rosso)"></i><b style="font-size:13px">Risco de percepção</b><small>origem distante</small></div>
-          <div class="pl gal" style="left:30%;top:27%;--d:1.9s" data-a="pop"><i style="--sz:28px"></i><b>Galbani 2027</b><small>alvo</small></div>
+          <div class="pl gal" style="left:76%;top:33%;opacity:.6" data-a="pop" data-i="6"><i style="--sz:16px;animation:none;box-shadow:none;background:transparent;border:2px dashed var(--rosso)"></i><b style="font-size:13px">Risco de percepção</b><small>origem distante</small></div>
+          <div class="pl gal" style="left:30%;top:21%;--d:1.9s" data-a="pop"><i style="--sz:28px"></i><b>Galbani 2027</b><small>alvo</small></div>
         </div>
         <ul class="cmp-l">
           <li data-a="right" data-i="1"><b>Tirolez</b><span>Amplo portfólio, tradição, culinária e inovações funcionais; em consolidação.</span><span class="o">Ocupar italianidade aplicável e solução de refeição.</span></li>
@@ -394,7 +377,7 @@
 <!-- =====================================================================
      09 · JORNADA DO SHOPPER
      ===================================================================== -->
-<section class="slide" id="s9" data-theme="dark" data-ch="2" data-title="Jornada do shopper" data-thread="-180,180,-4,1.1,.45">
+<section class="slide" id="s9" data-theme="paper" data-ch="2" data-title="Jornada do shopper">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>II · Contexto</b> Shopper</p>
     <h2 class="tk">O shopper decide no modo rápido: marca nova só entra se <em>reduzir o esforço</em> de escolha.</h2>
@@ -424,7 +407,7 @@
 <!-- =====================================================================
      10 · TENSÕES
      ===================================================================== -->
-<section class="slide" id="s10" data-theme="light" data-ch="2" data-title="Três tensões estratégicas" data-thread="60,-140,2,1,.4">
+<section class="slide" id="s10" data-theme="sand" data-ch="2" data-title="Três tensões estratégicas">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>II · Contexto</b> Tensões estratégicas</p>
     <h2 class="tk">Três tensões definem o jogo; a central é ser <em>ajuda prática</em>, e não mais uma explicação.</h2>
@@ -450,7 +433,7 @@
 <!-- =====================================================================
      11 · TENDÊNCIAS
      ===================================================================== -->
-<section class="slide" id="s11" data-theme="dark" data-ch="2" data-title="Tendências aplicáveis" data-thread="-100,60,-12,1.15,.5">
+<section class="slide" id="s11" data-theme="paper" data-ch="2" data-title="Tendências aplicáveis">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>II · Contexto</b> Tendências</p>
     <h2 class="tk">As tendências que importam aqui deixam o PDV <em>legível e mensurável</em>, não mais tecnológico.</h2>
@@ -471,7 +454,7 @@
 <!-- =====================================================================
      12 · INSIGHTS
      ===================================================================== -->
-<section class="slide" id="s12" data-theme="light" data-ch="3" data-title="Seis insights" data-thread="180,100,6,1.05,.45">
+<section class="slide" id="s12" data-theme="red" data-ch="3" data-title="Seis insights">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>III · Estratégia</b> Insights</p>
     <h2 class="tk">Disponibilidade é comunicação: sem presença na loja, <em>nenhuma campanha gera escolha</em>.</h2>
@@ -499,7 +482,7 @@
 <!-- =====================================================================
      13 · PERGUNTA ESTRATÉGICA
      ===================================================================== -->
-<section class="slide" id="s13" data-theme="dark" data-ch="3" data-title="Pergunta estratégica" data-thread="0,0,0,1.3,.7">
+<section class="slide" id="s13" data-theme="paper" data-ch="3" data-title="Pergunta estratégica">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>III · Estratégia</b> Pergunta estratégica</p>
     <div class="hmw" style="margin-top:34px">
@@ -527,7 +510,7 @@
 <!-- =====================================================================
      14 · DE → PARA
      ===================================================================== -->
-<section class="slide" id="s14" data-theme="light" data-ch="3" data-title="De SKUs dispersos a um bloco" data-thread="-160,-60,-6,1,.4">
+<section class="slide" id="s14" data-theme="paper" data-ch="3" data-title="De SKUs dispersos a um bloco">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>III · Estratégia</b> Estratégia central</p>
     <h2 class="tk">De SKUs dispersos a um <em>bloco Galbani</em> reconhecível, abastecido e relevante.</h2>
@@ -558,7 +541,7 @@
 <!-- =====================================================================
      15 · PILARES
      ===================================================================== -->
-<section class="slide" id="s15" data-theme="dark" data-ch="3" data-title="Cinco pilares" data-thread="140,160,8,1.1,.45">
+<section class="slide" id="s15" data-theme="sand" data-ch="3" data-title="Cinco pilares">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>III · Estratégia</b> Pilares</p>
     <h2 class="tk">Cinco movimentos, nesta ordem: <em>entrar, agrupar, ativar, provar e aprender</em>.</h2>
@@ -582,7 +565,7 @@
 <!-- =====================================================================
      16 · TERRITÓRIOS
      ===================================================================== -->
-<section class="slide" id="s16" data-theme="light" data-ch="4" data-title="Três territórios" data-thread="-220,-100,-8,1,.4">
+<section class="slide" id="s16" data-theme="paper" data-ch="4" data-title="Três territórios">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>IV · Solução</b> Territórios conceituais</p>
     <h2 class="tk">Três territórios avaliados; só um transforma o posicionamento em <em>operação de loja</em>.</h2>
@@ -617,17 +600,17 @@
 <!-- =====================================================================
      17 · REVEAL
      ===================================================================== -->
-<section class="slide" id="s17" data-theme="dark" data-ch="4" data-title="Da geladeira à mesa" data-iris="1" data-thread="0,-60,0,1.4,.8">
-  <div class="split" aria-hidden="true">
-    <div class="side cold"><img src="assets/img/cenas/gondola-fria-iogurtes.jpg" alt=""></div>
-    <div class="side warm"><img src="assets/img/cenas/macarronada-frango.jpg" alt=""></div>
+<section class="slide" id="s17" data-theme="ink" data-ch="4" data-title="Da geladeira à mesa" data-iris="1">
+  <div class="arches" aria-hidden="true">
+    <figure class="arch a1" data-cap="Onde se escolhe"><img src="assets/img/cenas/gondola-fria-iogurtes.jpg" alt=""></figure>
+    <figure class="arch a2" data-cap="Onde se serve"><img src="assets/img/cenas/macarronada-frango.jpg" alt=""></figure>
   </div>
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>IV · Solução</b> A plataforma</p>
     <h2 class="big" aria-label="Da geladeira à mesa"><span class="a">Da geladeira</span> <span class="b">à mesa</span></h2>
     <p class="tag" data-a="up" style="--d:2.1s"><b>Do seu jeito, à sua mesa</b> vira princípio operacional: a marca aparece onde se escolhe, orienta como usar e continua presente quando se serve.</p>
     <div class="beats">
-      <svg viewBox="0 0 1000 4" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="beatGrad" gradientUnits="userSpaceOnUse" x1="160" x2="840" y1="0" y2="0"><stop offset="0" stop-color="#7CC0F5"/><stop offset="1" stop-color="#FFC27A"/></linearGradient></defs><path class="draw" pathLength="1" style="--d:2.6s" d="M160 2 H840"/></svg>
+      <svg viewBox="0 0 1000 4" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="beatGrad" gradientUnits="userSpaceOnUse" x1="160" x2="840" y1="0" y2="0"><stop offset="0" stop-color="#F5EFE3"/><stop offset="1" stop-color="#F2B880"/></linearGradient></defs><path class="draw" pathLength="1" style="--d:2.6s" d="M160 2 H840"/></svg>
       <div class="beat" data-a="up" data-i="0" style="--d:2.5s"><span class="bub"><i class="ic" data-ic="fridge"></i></span><b>Onde se escolhe</b><small>bloco no frio, fácil de achar</small></div>
       <div class="beat" data-a="up" data-i="1" style="--d:2.5s"><span class="bub"><i class="ic" data-ic="book"></i></span><b>Como usar</b><small>ocasião, receita curta e QR</small></div>
       <div class="beat" data-a="up" data-i="2" style="--d:2.5s"><span class="bub"><i class="ic" data-ic="plate"></i></span><b>Quando se serve</b><small>a marca à mesa, pronta para a recompra</small></div>
@@ -639,7 +622,7 @@
 <!-- =====================================================================
      18 · BLOCO EM VISTA EXPLODIDA
      ===================================================================== -->
-<section class="slide" id="s18" data-theme="light" data-ch="4" data-title="O bloco Da geladeira à mesa" data-thread="200,-160,6,1,.35">
+<section class="slide" id="s18" data-theme="paper" data-ch="4" data-title="O bloco Da geladeira à mesa">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>IV · Solução</b> Como funciona</p>
     <h2 class="tk">Um bloco que se lê em segundos: <em>marca, ocasião, produto e preço</em>.</h2>
@@ -672,7 +655,7 @@
 <!-- =====================================================================
      19 · ATIVOS DO CATÁLOGO
      ===================================================================== -->
-<section class="slide" id="s19" data-theme="dark" data-ch="4" data-title="Ativos e papéis" data-thread="-120,120,-4,1.1,.45">
+<section class="slide" id="s19" data-theme="paper" data-ch="4" data-title="Ativos e papéis">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>IV · Solução</b> Ecossistema de ativos</p>
     <h2 class="tk">A moldura de freezer cobre com o <em>menor custo por posição</em>; ponta e ilha ficam com as lojas âncora.</h2>
@@ -701,7 +684,7 @@
 <!-- =====================================================================
      20 · CLUSTERS
      ===================================================================== -->
-<section class="slide" id="s20" data-theme="light" data-ch="4" data-title="Clusters de loja" data-thread="160,-40,4,1,.4">
+<section class="slide" id="s20" data-theme="sand" data-ch="4" data-title="Clusters de loja">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>IV · Solução</b> Clusters</p>
     <h2 class="tk">Três clusters, três intensidades: investir na proporção do <em>potencial e da capacidade de operar</em>.</h2>
@@ -729,7 +712,7 @@
 <!-- =====================================================================
      21 · VERBA
      ===================================================================== -->
-<section class="slide" id="s21" data-theme="dark" data-ch="4" data-title="Governança da verba" data-thread="-60,-120,-6,1.15,.45">
+<section class="slide" id="s21" data-theme="ink" data-ch="4" data-title="Governança da verba">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>IV · Solução</b> Governança de investimento</p>
     <h2 class="tk">A divisão recebida soma 110%: corrigir antes de contratar evita <em>R$ 100 mil sem cobertura</em>.</h2>
@@ -750,7 +733,7 @@
           </div>
         </div>
         <div class="rowb" data-a="fade" style="--d:.8s">
-          <span class="k"><b style="color:var(--lime)">Proposta 75LAB</b><small>30 + 30 + 25 + 15 = 100%</small></span>
+          <span class="k"><b style="color:var(--peach)">Proposta 75LAB</b><small>30 + 30 + 25 + 15 = 100%</small></span>
           <div class="track fix" style="width:calc(100% / 1.1)">
             <div class="segs2">
               <span class="sg" style="--p:33;--i:5"><b>R$ 300 mil</b><small>Distribuição e mix · 30%</small></span>
@@ -764,10 +747,10 @@
         <div class="rowb" data-a="up" style="--d:1.6s">
           <span></span>
           <div class="objs bud-desc" style="grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;width:calc(100% / 1.1)">
-            <div style="border-top-color:var(--sky);color:var(--mut)">Incentivos, abertura, materiais de entrada, mix e suporte comercial.</div>
-            <div style="border-top-color:#A9D3F7;color:var(--mut)">Blocos de marca, ponto extra, comunicação, instalação e materiais por cluster.</div>
-            <div style="border-top-color:#FFC27A;color:var(--mut)">Degustação seletiva, ativações e mecânicas permitidas pelo varejo.</div>
-            <div style="border-top-color:var(--lime);color:var(--mut)">Cadastro, evidências, treinamento, manutenção, contingência e leitura do piloto.</div>
+            <div style="border-top-color:#9CC0EE">Incentivos, abertura, materiais de entrada, mix e suporte comercial.</div>
+            <div style="border-top-color:#CFE0F5">Blocos de marca, ponto extra, comunicação, instalação e materiais por cluster.</div>
+            <div style="border-top-color:#F2C98C">Degustação seletiva, ativações e mecânicas permitidas pelo varejo.</div>
+            <div style="border-top-color:#9ED9B1">Cadastro, evidências, treinamento, manutenção, contingência e leitura do piloto.</div>
           </div>
         </div>
       </div>
@@ -785,7 +768,7 @@
 <!-- =====================================================================
      22 · OPERAÇÃO
      ===================================================================== -->
-<section class="slide" id="s22" data-theme="light" data-ch="5" data-title="Quatro portões de operação" data-thread="-200,80,-2,1,.4">
+<section class="slide" id="s22" data-theme="paper" data-ch="5" data-title="Quatro portões de operação">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>V · Execução e dados</b> Design, produção e operação</p>
     <h2 class="tk">Nenhum ativo entra na loja sem passar por <em>quatro portões</em>.</h2>
@@ -809,7 +792,7 @@
 <!-- =====================================================================
      23 · CODICE
      ===================================================================== -->
-<section class="slide" id="s23" data-theme="dark" data-ch="5" data-title="Codice: governança do ativo" data-thread="120,-140,6,1.1,.45">
+<section class="slide" id="s23" data-theme="sand" data-ch="5" data-title="Codice: governança do ativo">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>V · Execução e dados</b> Codice</p>
     <h2 class="tk">Codice entra como <em>governança do ativo e da execução</em>, e não como tecnologia pela tecnologia.</h2>
@@ -843,7 +826,7 @@
 <!-- =====================================================================
      24 · PLANO DE RASTREAMENTO 75LAB
      ===================================================================== -->
-<section class="slide" id="s24" data-theme="light" data-ch="5" data-title="Plano de Rastreamento 75LAB" data-thread="-140,-180,-6,1,.4">
+<section class="slide" id="s24" data-theme="paper" data-ch="5" data-title="Plano de Rastreamento 75LAB">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>V · Execução e dados</b> Plano de Rastreamento 75LAB</p>
     <h2 class="tk">Dois ritmos de rastreio: uma <em>fotografia</em> da implantação e um <em>filme</em> da permanência.</h2>
@@ -865,10 +848,10 @@
           <p class="out"><b>Entrega:</b> relatório de implantação por loja e cluster, com evidências.</p>
         </div>
         <div class="mode ot" data-a="right">
-          <div class="hd"><span class="lbl">Modalidade 02</span><i class="ic" data-ic="cycle" style="--s:34px;color:var(--lime)"></i></div>
+          <div class="hd"><span class="lbl">Modalidade 02</span><i class="ic" data-ic="cycle" style="--s:34px;color:var(--peach)"></i></div>
           <h3>On Timing</h3>
           <p class="what"><b>Acompanhamento recorrente</b> do ativo durante toda a permanência no PDV.</p>
-          <div class="vis"><svg viewBox="0 0 600 80" preserveAspectRatio="none" aria-hidden="true"><line class="base" x1="0" y1="40" x2="600" y2="40"/><polyline class="pl draw" pathLength="1" style="--d:.8s;stroke:#C0EE4E" points="0,48 60,40 120,30 180,44 240,26 300,36 360,22 420,34 480,20 540,28 600,18"/><circle class="p" cx="120" cy="30" r="5"/><circle class="p" cx="240" cy="26" r="5"/><circle class="p" cx="360" cy="22" r="5"/><circle class="p" cx="480" cy="20" r="5"/><circle class="flash" cx="600" cy="18" r="8" style="fill:#C0EE4E"/></svg></div>
+          <div class="vis"><svg viewBox="0 0 600 80" preserveAspectRatio="none" aria-hidden="true"><line class="base" x1="0" y1="40" x2="600" y2="40"/><polyline class="pl draw" pathLength="1" style="--d:.8s;stroke:#F2B880" points="0,48 60,40 120,30 180,44 240,26 300,36 360,22 420,34 480,20 540,28 600,18"/><circle class="p" cx="120" cy="30" r="5"/><circle class="p" cx="240" cy="26" r="5"/><circle class="p" cx="360" cy="22" r="5"/><circle class="p" cx="480" cy="20" r="5"/><circle class="flash" cx="600" cy="18" r="8" style="fill:#F2B880"/></svg></div>
           <ul class="items">
             <li><i class="ic" data-ic="calendar"></i>Visitas e checklists</li>
             <li><i class="ic" data-ic="alert"></i>Disponibilidade e ruptura</li>
@@ -889,7 +872,7 @@
 <!-- =====================================================================
      25 · DO SINAL À DECISÃO
      ===================================================================== -->
-<section class="slide" id="s25" data-theme="dark" data-ch="5" data-title="Do ativo à decisão" data-thread="0,180,0,1.2,.5">
+<section class="slide" id="s25" data-theme="blue" data-ch="5" data-title="Do ativo à decisão">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>V · Execução e dados</b> Fluxo de rastreamento</p>
     <h2 class="tk">Do ativo à decisão: todo registro precisa terminar em <em>manter, corrigir ou replicar</em>.</h2>
@@ -918,7 +901,7 @@
 <!-- =====================================================================
      26 · KPIs
      ===================================================================== -->
-<section class="slide" id="s26" data-theme="light" data-ch="5" data-title="Indicadores em quatro camadas" data-thread="180,-60,4,1,.4">
+<section class="slide" id="s26" data-theme="paper" data-ch="5" data-title="Indicadores em quatro camadas">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>V · Execução e dados</b> KPIs</p>
     <h2 class="tk">Medimos em quatro camadas, e só chamamos de resultado o que tiver <em>baseline</em>.</h2>
@@ -941,7 +924,7 @@
 <!-- =====================================================================
      27 · PRÉ-MORTEM
      ===================================================================== -->
-<section class="slide" id="s27" data-theme="dark" data-ch="5" data-title="Pré-mortem" data-thread="-160,100,-8,1.1,.45">
+<section class="slide" id="s27" data-theme="ink" data-ch="5" data-title="Pré-mortem">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>V · Execução e dados</b> Pré-mortem</p>
     <h2 class="tk">Seis maneiras de o piloto falhar, e a <em>trava</em> de cada uma.</h2>
@@ -962,7 +945,7 @@
 <!-- =====================================================================
      28 · BENEFÍCIOS CONECTADOS
      ===================================================================== -->
-<section class="slide" id="s28" data-theme="light" data-ch="5" data-title="Benefícios conectados" data-thread="0,-200,0,1,.35">
+<section class="slide" id="s28" data-theme="paper" data-ch="5" data-title="Benefícios conectados">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>V · Execução e dados</b> Benefícios</p>
     <h2 class="tk">Um mesmo sistema gera valor para <em>seis públicos</em> ao mesmo tempo.</h2>
@@ -985,7 +968,7 @@
 <!-- =====================================================================
      29 · ENTREGÁVEIS E PRIORIZAÇÃO
      ===================================================================== -->
-<section class="slide" id="s29" data-theme="dark" data-ch="6" data-title="Entregáveis e priorização" data-thread="160,80,6,1.1,.45">
+<section class="slide" id="s29" data-theme="sand" data-ch="6" data-title="Entregáveis e priorização">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>VI · Próximos passos</b> Entregáveis e priorização</p>
     <h2 class="tk">Primeiro o essencial: tecnologia avançada só entra <em>depois de provar</em> retorno e operação.</h2>
@@ -1013,7 +996,7 @@
 <!-- =====================================================================
      30 · CRONOGRAMA
      ===================================================================== -->
-<section class="slide" id="s30" data-theme="light" data-ch="6" data-title="Cronograma" data-thread="-120,-120,-4,1,.4">
+<section class="slide" id="s30" data-theme="paper" data-ch="6" data-title="Cronograma">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>VI · Próximos passos</b> Cronograma</p>
     <h2 class="tk">Doze semanas da descoberta à <em>regra de escala</em>.</h2>
@@ -1051,7 +1034,7 @@
 <!-- =====================================================================
      31 · PRÓXIMO PASSO
      ===================================================================== -->
-<section class="slide" id="s31" data-theme="dark" data-ch="6" data-title="Workshop de 90 minutos" data-thread="120,140,8,1.2,.5">
+<section class="slide" id="s31" data-theme="red" data-ch="6" data-title="Workshop de 90 minutos">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>VI · Próximos passos</b> Próximo passo objetivo</p>
     <h2 class="tk">Próximo passo: um workshop de <em>90 minutos</em> para fechar seis decisões.</h2>
@@ -1060,23 +1043,23 @@
         <div class="ring" data-a="scale">
           <svg viewBox="0 0 440 440" aria-hidden="true">
             <circle class="bgc" cx="220" cy="220" r="190"/>
-            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:0;stroke:#7CC0F5" transform="rotate(1 220 220)"/>
-            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:1;stroke:#A9D3F7" transform="rotate(61 220 220)"/>
-            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:2;stroke:#FFC27A" transform="rotate(121 220 220)"/>
-            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:3;stroke:#C0EE4E" transform="rotate(181 220 220)"/>
-            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:4;stroke:#FF7D93" transform="rotate(241 220 220)"/>
-            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:5;stroke:#FFFFFF" transform="rotate(301 220 220)"/>
+            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:0;stroke:#FFF7EC" transform="rotate(1 220 220)"/>
+            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:1;stroke:rgba(255,247,236,.55)" transform="rotate(61 220 220)"/>
+            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:2;stroke:#FFF7EC" transform="rotate(121 220 220)"/>
+            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:3;stroke:rgba(255,247,236,.55)" transform="rotate(181 220 220)"/>
+            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:4;stroke:#FFF7EC" transform="rotate(241 220 220)"/>
+            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:5;stroke:rgba(255,247,236,.55)" transform="rotate(301 220 220)"/>
           </svg>
           <div class="ctr"><span><span class="num" data-count="90">0</span><small>minutos · 6 decisões</small></span></div>
         </div>
         <div>
           <ol class="dec6">
-            <li data-a="up" data-i="1"><span class="n" style="--c:#7CC0F5">1</span><b>Redes e lojas prioritárias</b></li>
-            <li data-a="up" data-i="2"><span class="n" style="--c:#A9D3F7">2</span><b>Baseline de distribuição e giro</b></li>
-            <li data-a="up" data-i="3"><span class="n" style="--c:#FFC27A">3</span><b>Orçamento corrigido</b></li>
-            <li data-a="up" data-i="4"><span class="n" style="--c:#C0EE4E">4</span><b>Definição funcional do Codice</b></li>
-            <li data-a="up" data-i="5"><span class="n" style="--c:#FF7D93">5</span><b>Custo total dos ativos</b></li>
-            <li data-a="up" data-i="6"><span class="n" style="--c:#FFFFFF">6</span><b>Critério de seleção do piloto</b></li>
+            <li data-a="up" data-i="1"><span class="n" style="--c:#FFF7EC">1</span><b>Redes e lojas prioritárias</b></li>
+            <li data-a="up" data-i="2"><span class="n" style="--c:rgba(255,247,236,.55)">2</span><b>Baseline de distribuição e giro</b></li>
+            <li data-a="up" data-i="3"><span class="n" style="--c:#FFF7EC">3</span><b>Orçamento corrigido</b></li>
+            <li data-a="up" data-i="4"><span class="n" style="--c:rgba(255,247,236,.55)">4</span><b>Definição funcional do Codice</b></li>
+            <li data-a="up" data-i="5"><span class="n" style="--c:#FFF7EC">5</span><b>Custo total dos ativos</b></li>
+            <li data-a="up" data-i="6"><span class="n" style="--c:rgba(255,247,236,.55)">6</span><b>Critério de seleção do piloto</b></li>
           </ol>
           <div class="who" data-a="up" style="--d:1.3s">
             <span class="lbl">Na sala</span>
@@ -1092,7 +1075,7 @@
 <!-- =====================================================================
      32 · ENCERRAMENTO
      ===================================================================== -->
-<section class="slide" id="s32" data-theme="dark" data-ch="6" data-title="Encerramento" data-thread="0,0,0,1.5,.6">
+<section class="slide" id="s32" data-theme="photo" data-ch="6" data-title="Encerramento">
   <div class="bgimg" aria-hidden="true"><img src="assets/img/cenas/pasta-alla-norma.jpg" alt=""></div>
   <div class="sl">
     <p class="eyebrow" data-a="fade" style="justify-content:center"><span class="tri"></span><b>Encerramento</b></p>
@@ -1106,7 +1089,7 @@
 <!-- =====================================================================
      33 · INSTITUCIONAL
      ===================================================================== -->
-<section class="slide" id="s33" data-theme="dark" data-ch="6" data-title="Contatos" data-thread="-80,-60,-6,1.1,.45">
+<section class="slide" id="s33" data-theme="paper" data-ch="6" data-title="Contatos">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>Contatos</b> 75LAB · Aceleradora de Trade Marketing</p>
     <h2 class="tk fin">Vamos colocar Galbani <em>na mesa do brasileiro</em>.</h2>
@@ -1147,7 +1130,7 @@
 <!-- =====================================================================
      APÊNDICE · FONTES
      ===================================================================== -->
-<section class="slide apx" id="a1" data-theme="light" data-ch="7" data-title="Fontes consultadas" data-thread="0,-100,0,1,.3">
+<section class="slide apx" id="a1" data-theme="paper" data-ch="7" data-title="Fontes consultadas">
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>Apoio</b> Fontes e nota metodológica</p>
     <h2 class="tk" style="font-size:40px">Todo número tem fonte; toda leitura qualitativa está marcada como da 75LAB.</h2>
@@ -1180,7 +1163,7 @@
   <div class="mc" id="menuA"></div>
   <div class="mc" id="menuB"></div>
   <div class="mc" id="menuC">
-    <p class="keys"><kbd>→</kbd> <kbd>espaço</kbd> avançar · <kbd>←</kbd> voltar · clique nas laterais<br><kbd>M</kbd> capítulos · <kbd>N</kbd> notas · <kbd>F</kbd> tela cheia · <kbd>Esc</kbd> fechar</p>
+    <p class="keys"><kbd>→</kbd> <kbd>espaço</kbd> avançar · <kbd>←</kbd> voltar · clique nas laterais<br><kbd>M</kbd> índice · <kbd>N</kbd> notas · <kbd>F</kbd> tela cheia · <kbd>Esc</kbd> fechar</p>
   </div>
 </div>
 

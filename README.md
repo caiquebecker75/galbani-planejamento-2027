@@ -27,7 +27,7 @@ Contexto → tensão → oportunidade → insight → estratégia → solução 
 | 13 · Pergunta estratégica | “Como podemos…” e o ciclo encontrada → recomprada → aprendizado. |
 | 14 · De → para | Animação: SKUs dispersos viram bloco (botões De/Para). |
 | 15 · Pilares | Entrar, agrupar, ativar, provar e aprender. |
-| 16 · Territórios | Três territórios; o recomendado se abre em íris na tela seguinte. |
+| 16 · Territórios | Três territórios em arco; o recomendado se abre e vira a tela seguinte. |
 | 17 · Reveal | **Da geladeira à mesa**. |
 | 18 · Bloco | Vista explodida em CSS 3D (arrastar para girar, controle para abrir camadas). |
 | 19 · Ativos | Custo por posição de produto no catálogo DPA e papel por cluster. |
@@ -49,7 +49,7 @@ Contexto → tensão → oportunidade → insight → estratégia → solução 
 
 ## Navegação
 
-`→` `↓` `PageDown` `espaço` avançam e `←` `↑` `PageUp` voltam. Clicar na lateral direita (10% da largura) avança e na esquerda volta. Também funcionam roda do mouse, deslizar no tablet, as setas e a barra de progresso por capítulo. `Home`/`End`, `M` capítulos, `N` notas da apresentadora, `F` tela cheia, `Esc` fecha. Deep link: `#s17`, `#a1`. Toda imagem amplia em lightbox (`Esc`, clique fora ou `×` fecham; setas navegam na galeria).
+`→` `↓` `PageDown` `espaço` avançam e `←` `↑` `PageUp` voltam. Clicar na lateral direita (10% da largura) avança e na esquerda volta. Também funcionam roda do mouse, deslizar no tablet, as setas do cabeçalho e os marcos de capítulo na régua de progresso. `Home`/`End`, `M` índice, `N` notas da apresentadora, `F` tela cheia, `Esc` fecha. Deep link: `#s17`, `#a1`. Toda imagem amplia em lightbox (`Esc`, clique fora ou `×` fecham; setas navegam na galeria).
 
 O trailer de abertura roda uma vez por sessão do navegador; qualquer tecla ou clique pula. Até 820 px de largura (e em tablet em retrato) a apresentação vira rolagem vertical. Com `prefers-reduced-motion`, as animações viram transições curtas.
 
@@ -57,7 +57,7 @@ QA: `?desktop` força o modo apresentação, `&ar=2.2` simula outra proporção,
 
 ## Arquitetura
 
-HTML, CSS e JavaScript puros, sem build e sem dependências (fontes do Google Fonts). O palco tem 900 de altura e acompanha a proporção da janela (1600 a 2100 de largura), sem faixas vazias. Um fio condutor em SVG atravessa as telas e muda de posição a cada uma; as transições alternam deslizamento com máscara, cortina entre telas claras e escuras e uma abertura em íris no reveal.
+HTML, CSS e JavaScript puros, sem build e sem dependências (fontes do Google Fonts). O palco tem 900 de altura e acompanha a proporção da janela (1600 a 2100 de largura), sem faixas vazias. As transições imitam papel: entre páginas claras a nova folha desliza por cima da anterior; páginas de outra cor (vermelho, azul, tinta) sobem como uma lâmina; o território recomendado se abre em arco até virar a tela do reveal.
 
 ```
 index.html              telas, notas da apresentadora, menu e lightbox
@@ -72,7 +72,7 @@ assets/img/og.jpg       imagem de compartilhamento
 serve.ps1               servidor local (powershell -File serve.ps1 -Port 8791)
 ```
 
-Identidade: azul Galbani `#094DA4`, vermelho `#CD1232` e verde `#009649` do selo, Space Grotesk e Lobster (as fontes do site galbani.com.br). Telas escuras representam o frio da gôndola e as claras, em creme, a mesa. A camada 75LAB de execução e dados usa o lima `#C0EE4E`.
+Direção de arte editorial, como uma revista de gastronomia: papel creme `#F5EFE3`, tinta `#1D1A16`, títulos em Fraunces (serifa, com itálico para a ideia-chave), texto em Manrope e o script Lobster só no selo e nos códigos de marca. As cores vêm do selo Galbani: vermelho `#CD1232` como acento, azul `#094DA4` e verde `#009649`, mais um pêssego `#F2B880` para a luz quente da mesa. O arco, forma da janela e do forno, aparece nas fotos, no selo, nos cards de território e nos portões. Cabeçalho fixo com logos, folio e régua de progresso; o índice abre como sumário de revista.
 
 ## Fontes
 
