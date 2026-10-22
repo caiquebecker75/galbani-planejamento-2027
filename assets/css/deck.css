@@ -1259,3 +1259,76 @@ html.m .inst dl{grid-template-columns:minmax(0,1fr);gap:2px}
 html.m .inst dd{margin-bottom:10px}
 html.m .inst .lg{border-radius:120px 120px 4px 4px}
 html.m .sl{left:auto!important;right:auto!important;top:auto!important;bottom:auto!important}
+
+/* =========================================================================
+   10 · POR QUE A 75LAB (página tinta)
+   ========================================================================= */
+.why{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.25fr);gap:56px;align-items:center}
+.why .creds{display:grid;gap:20px}
+.why .logo75,.slide.is-in .why .logo75{height:44px;width:auto;filter:invert(1)}
+.why .claim2{font-family:var(--f-serif);font-size:25px;line-height:1.32}
+.why .claim2 em{font-style:italic;color:var(--peach)}
+.why .cr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;padding-top:18px;border-top:1px solid var(--line)}
+.why .cr .num{display:block;font-size:58px;color:var(--fg)}
+.why .cr .num .pre{color:var(--peach);font-size:.6em}
+.why .cr small{display:block;margin-top:8px;font-size:14.5px;line-height:1.35;color:var(--mut)}
+.why .gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:150px;gap:10px}
+.why .cs{position:relative;border-radius:3px;overflow:hidden;background:#fff}
+.why .cs .zoom{position:absolute;inset:0;border-radius:0}
+.why .cs .zoom img{transform:scale(1.24);transform-origin:50% 64%}
+.why .cs .zoom:hover img{transform:scale(1.3)}
+.why .cs .cap{position:absolute;left:8px;bottom:8px;z-index:2;font-weight:800;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;background:var(--ink);color:#F5EFE3;padding:4px 8px;border-radius:2px;pointer-events:none}
+.why .cs.lac .cap{background:var(--peach);color:var(--ink)}
+.m75{display:grid;gap:12px;padding-top:18px;border-top:1px solid var(--line)}
+.m75 ol{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:22px}
+.m75 li .n{font-family:var(--f-serif);font-style:italic;font-size:22px;color:var(--peach)}
+.m75 li b{display:block;margin-top:2px;font-family:var(--f-serif);font-weight:500;font-size:19px;line-height:1.2}
+.m75 li p{margin-top:5px;font-size:14px;line-height:1.4;color:var(--mut)}
+
+/* =========================================================================
+   12 · INVESTIMENTO
+   ========================================================================= */
+.inv{display:grid;grid-template-columns:360px minmax(0,1fr);gap:64px;align-items:start}
+.inv .tot{display:grid;gap:14px;padding-top:6px}
+.inv .tot .num{font-size:112px;line-height:1;color:var(--fg);white-space:nowrap}
+.inv .tot .num .pre{font-size:.42em;letter-spacing:-.01em;margin-right:10px;vertical-align:.12em}
+.inv .tot .num small{font-size:.42em;letter-spacing:-.01em;margin-left:10px;color:var(--rosso);font-style:italic}
+.inv .bar4{display:flex;gap:3px;height:12px}
+.inv .bar4 i{display:block;height:100%;width:var(--w)}
+.inv .nt{font-size:15.5px;line-height:1.5;color:var(--mut)}
+.inv .nt b{color:var(--fg)}
+.inv .tbl{display:grid;border-top:2px solid var(--fg)}
+.inv .ih,.inv .ir{display:grid;grid-template-columns:12px 230px 130px minmax(0,1fr);gap:20px;align-items:center}
+.inv .ih{padding:10px 0;font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line)}
+.inv .ir{padding:15px 0;border-bottom:1px solid var(--line)}
+.inv .ir>i{width:12px;height:12px;border-radius:50%}
+.inv .ir .k b{display:block;font-family:var(--f-serif);font-weight:500;font-size:21px;line-height:1.2}
+.inv .ir .k small{display:block;margin-top:2px;font-size:13px;color:var(--mut)}
+.inv .ir .v{font-family:var(--f-serif);font-size:28px;letter-spacing:-.02em;white-space:nowrap}
+.inv .ir p{font-size:15px;line-height:1.45;color:var(--mut)}
+.inv .ir p b{color:var(--fg)}
+.inv-foot{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:40px;padding:18px 22px;background:var(--cardbg);border:1px solid var(--cardline);border-radius:4px}
+.inv-foot .lbl{display:block;margin-bottom:6px}
+.inv-foot .cond p{font-size:14.5px;line-height:1.5;color:var(--mut)}
+.inv-foot .ctc{padding-left:30px;border-left:1px solid var(--line)}
+.inv-foot .ctc p{font-size:16px;line-height:1.5}
+.inv-foot .ctc p b{font-family:var(--f-serif);font-weight:500;font-size:19px}
+.inv-foot .ctc a{text-decoration:none;border-bottom:1px solid var(--line)}
+.inv-foot .ctc a:hover{border-bottom-color:var(--rosso)}
+.inv-foot .ctc small{display:block;margin-top:4px;font-size:12px;color:var(--mut)}
+
+/* celular: telas comerciais */
+html.m .why,html.m .inv,html.m .inv-foot{grid-template-columns:minmax(0,1fr);gap:24px}
+html.m .why .gal{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:120px}
+html.m .why .cr{grid-template-columns:minmax(0,1fr);gap:12px}
+html.m .why .cr>div{display:flex;align-items:baseline;gap:14px}
+html.m .why .cr .num{font-size:44px;flex:none}
+html.m .why .cr small{margin-top:0}
+html.m .why .claim2{font-size:20px}
+html.m .m75 ol{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+html.m .inv .tot .num{font-size:80px}
+html.m .inv .ih{display:none}
+html.m .inv .ir{grid-template-columns:12px minmax(0,1fr) auto;gap:6px 12px}
+html.m .inv .ir p{grid-column:2 / -1}
+html.m .inv .ir .v{font-size:22px}
+html.m .inv-foot .ctc{padding-left:0;border-left:0;padding-top:16px;border-top:1px solid var(--line)}

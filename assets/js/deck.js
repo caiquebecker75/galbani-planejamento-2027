@@ -91,7 +91,7 @@ function paintIcons(root = document) {
 /* ---------------------------------------------------------------------
    Preparação do conteúdo
    --------------------------------------------------------------------- */
-const CHAPTERS = ['Abertura', 'I · Leitura do desafio', 'II · Contexto', 'III · Estratégia', 'IV · Solução', 'V · Execução e dados', 'VI · Próximos passos', 'Apoio'];
+const CHAPTERS = ['Abertura', 'I · O desafio', 'II · A solução', 'III · A 75LAB', 'IV · Plano e investimento', 'Apoio'];
 const slides = $$('.slide');
 const mainS = slides.filter(s => !s.classList.contains('apx'));
 const apxS = slides.filter(s => s.classList.contains('apx'));
@@ -404,7 +404,7 @@ function chrome(s) {
     $('#prevBtn').disabled = i === 0; $('#nextBtn').disabled = i === apxS.length - 1;
   } else {
     const i = mainS.indexOf(s), c = chOf(s);
-    cnt.innerHTML = `<b>${pad(i)}</b><span>/${pad(mainS.length - 1)}</span>`;
+    cnt.innerHTML = `<b>${pad(i + 1)}</b><span>/${pad(mainS.length)}</span>`;
     pfill.style.transform = `scaleX(${i / (mainS.length - 1)})`;
     [...ticks.children].forEach(b => { b.classList.toggle('done', +b.dataset.ch <= c); b.classList.toggle('cur', +b.dataset.ch === c); });
     $('#prevBtn').disabled = i === 0; $('#nextBtn').disabled = i === mainS.length - 1;
@@ -444,12 +444,10 @@ function show(next, dir) {
   next.style.zIndex = 5;
   setTheme(next.dataset.theme); activate(next);
 
-  // arco: o território recomendado se abre na plataforma
-  if (next.dataset.iris && prev.id === 's16' && dir > 0) {
-    const card = $('#recCard'), sr = stage.getBoundingClientRect(), cr = card.getBoundingClientRect(), k = getScale();
-    const W = stage.offsetWidth, H = stage.offsetHeight;
-    const t = (cr.top - sr.top) / k, l = (cr.left - sr.left) / k, r = W - (cr.right - sr.left) / k, b = H - (cr.bottom - sr.top) / k, rad = cr.width / k / 2;
-    const a = next.animate([{ clipPath: `inset(${t}px ${r}px ${b}px ${l}px round ${rad}px ${rad}px 4px 4px)` }, { clipPath: 'inset(0px 0px 0px 0px round 0px 0px 0px 0px)' }], { duration: 1500, easing: 'cubic-bezier(.7,0,.2,1)' });
+  // arco: a plataforma nasce de um arco no centro da página
+  if (next.dataset.iris && dir > 0) {
+    const W = stage.offsetWidth, H = stage.offsetHeight, w = 300, side = (W - w) / 2;
+    const a = next.animate([{ clipPath: `inset(${H * .45}px ${side}px 0px ${side}px round ${w / 2}px ${w / 2}px 0px 0px)` }, { clipPath: 'inset(0px 0px 0px 0px round 0px 0px 0px 0px)' }], { duration: 1500, easing: 'cubic-bezier(.7,0,.2,1)' });
     prev.animate([{ opacity: 1 }, { opacity: .35 }], { duration: 1500, fill: 'forwards' });
     after(a, 1750, settle);
     return;
@@ -618,7 +616,7 @@ let menuFocus = null;
       const li = document.createElement('li'), b = document.createElement('button');
       const isApx = s.classList.contains('apx');
       b.type = 'button'; b.dataset.id = s.id;
-      b.innerHTML = `<span class="t">${s.dataset.title}</span><span class="ld" aria-hidden="true"></span><span class="n">${isApx ? 'A' + (apxS.indexOf(s) + 1) : pad(mainS.indexOf(s))}</span>`;
+      b.innerHTML = `<span class="t">${s.dataset.title}</span><span class="ld" aria-hidden="true"></span><span class="n">${isApx ? 'A' + (apxS.indexOf(s) + 1) : pad(mainS.indexOf(s) + 1)}</span>`;
       b.addEventListener('click', () => { closeMenu(); go(s); });
       li.appendChild(b); ol.appendChild(li);
     });
