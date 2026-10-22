@@ -569,7 +569,7 @@ body[data-theme="light"] .nav-btn:hover{background:rgba(9,77,164,.06)}
    ========================================================================= */
 #s13 .sl{justify-content:center}
 .hmw{display:grid;grid-template-columns:minmax(0,1.25fr) 460px;gap:70px;align-items:center}
-.hmw .q{font-size:46px;line-height:1.16;font-weight:600;letter-spacing:-.03em}
+.hmw .q{font-size:46px;line-height:1.16;font-weight:600;letter-spacing:-.03em;margin-top:0}
 .hmw .q em{font-style:normal;color:var(--sky)}
 .hmw .q .hl{color:var(--lime)}
 .hmw .op{margin-top:26px;font-size:19px;line-height:1.5;color:var(--mut);max-width:62ch;padding-left:20px;border-left:3px solid var(--rosso)}
@@ -1248,7 +1248,7 @@ html.m #s17 .split .warm{display:none}
 html.m #s17 .big{font-size:64px}
 html.m #s17 .tag{font-size:18px}
 html.m .beats{grid-template-columns:minmax(0,1fr);gap:22px}
-html.m .beats svg{display:none}
+html.m .beats>svg{display:none}
 html.m .ex{height:440px}
 html.m .ex .scn{transform:scale(.62)}
 html.m .ex .lay .lt{display:none}
@@ -1309,3 +1309,32 @@ html.m .trail .pg{display:none}
 html.m .cm .c span[style]{display:none}
 html.m .cm .h b{font-size:14px}
 html.m .cm .h .l{font-size:10px}
+/* celular: verba, mapa de concorrência */
+html.m .bud-desc{grid-template-columns:minmax(0,1fr)!important;width:auto!important;gap:12px!important}
+html.m .bud .rowb{gap:14px}
+html.m .bud .rowb>span:empty{display:none}
+html.m .track.recv .frame::after{font-size:10px;top:-20px}
+html.m .track .sg.over b{font-size:0}
+html.m .track.fix{height:auto;width:auto!important}
+html.m .track.fix .segs2{position:relative;flex-direction:column;gap:6px}
+html.m .track.fix .sg{width:auto;height:52px;transform:none}
+html.m .track.fix .sg small{display:block;font-size:12px}
+html.m .track.fix .frame{display:none}
+html.m .over-tag{bottom:-24px;font-size:10.5px}
+html.m .map{aspect-ratio:auto;height:440px}
+html.m .map .zone span{display:none}
+html.m .map .pl.gal[style*="opacity"]{display:none}
+html.m .map .al.l,html.m .map .al.r{top:calc(50% + 6px)}
+html.m .eyebrow{flex-wrap:wrap;row-gap:6px}
+html.m .trail li button{display:grid;grid-template-columns:30px 58px minmax(0,1fr);grid-template-rows:auto auto;column-gap:14px;row-gap:2px;align-items:center}
+html.m .trail .rn,html.m .trail .bub{grid-row:1 / 3}
+html.m .trail li button b{grid-column:3;align-self:end}
+html.m .trail li button p{grid-column:3;align-self:start;font-size:15px}
+html.m .cm{grid-template-columns:104px repeat(3,minmax(0,1fr))}
+html.m .cm>div{min-width:0;overflow-wrap:anywhere;hyphens:auto}
+html.m .cm .h b{font-size:12.5px;letter-spacing:-.01em}
+html.m .cm .h .l{font-size:9px;letter-spacing:.06em}
+html.m .cm .fn{font-size:12px;line-height:1.3}
+html.m .cm .k{font-size:12.5px}
+html.m .cm .x{font-size:9px}
+.loop .v b{background:rgba(4,26,61,.92);padding:2px 8px;border-radius:8px}
