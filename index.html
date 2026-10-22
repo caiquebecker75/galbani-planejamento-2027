@@ -1,0 +1,1201 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Galbani 2027 · Da geladeira à mesa · 75LAB</title>
+<meta name="description" content="Planejamento estratégico de trade Galbani 2027: distribuição, mix, espaço, giro e governança de execução no varejo alimentar brasileiro. Apresentação 75LAB.">
+<meta name="theme-color" content="#041A3D">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Galbani 2027 · Planejamento estratégico de trade">
+<meta property="og:description" content="Ser encontrada antes de ser escolhida. Uma apresentação 75LAB.">
+<meta property="og:image" content="https://projetos.75lab.com.br/galbani-planejamento-2027/assets/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/brand/galbani-logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Lobster&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/cenas/gondola-fria-iogurtes.jpg">
+<link rel="stylesheet" href="assets/css/deck.css">
+</head>
+<body data-theme="dark">
+
+<div class="bg" aria-hidden="true"></div>
+<canvas id="particles" aria-hidden="true"></canvas>
+
+<div class="viewport">
+<div class="stage" id="stage">
+
+  <!-- fio condutor -->
+  <svg class="thread" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="threadGrad" x1="0" x2="1" y1="0" y2="0">
+        <stop offset="0" stop-color="#7CC0F5" stop-opacity="0"/>
+        <stop offset=".25" stop-color="#7CC0F5" stop-opacity=".55"/>
+        <stop offset=".7" stop-color="#7CC0F5" stop-opacity=".35"/>
+        <stop offset="1" stop-color="#F49811" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <g class="tg" id="threadG">
+      <path id="thP" d="M-260 640 C 120 470 380 790 760 600 S 1320 360 1860 520"/>
+      <path class="t2" d="M-260 676 C 120 506 380 826 760 636 S 1320 396 1860 556"/>
+      <circle r="4"><animateMotion dur="16s" repeatCount="indefinite"><mpath href="#thP"/></animateMotion></circle>
+    </g>
+  </svg>
+
+  <!-- moldura -->
+  <div class="chrome">
+    <div class="brandbar">
+      <img class="gal" src="assets/img/brand/galbani-oval.svg" alt="Galbani">
+      <span class="div" aria-hidden="true"></span>
+      <img class="b75" src="assets/img/brand/75lab-black.png" alt="75LAB">
+    </div>
+    <div class="topr">
+      <span class="chap" id="chap"></span>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir capítulos (tecla M)"><span class="bars"><i></i><i></i><i></i></span><span class="lbl-t">Capítulos</span></button>
+    </div>
+    <div class="prog">
+      <button class="back-btn" id="backBtn" type="button">← Voltar à apresentação</button>
+      <div class="segs" id="segs" aria-label="Capítulos"></div>
+      <span class="count" id="count" aria-live="polite"></span>
+      <button class="nav-btn" id="prevBtn" type="button" aria-label="Tela anterior"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 3 5 8l5 5"/></svg></button>
+      <button class="nav-btn" id="nextBtn" type="button" aria-label="Próxima tela"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 3 5 5-5 5"/></svg></button>
+    </div>
+  </div>
+
+  <div class="curtain" id="curtain" aria-hidden="true"></div>
+  <div class="sweep" id="sweep" aria-hidden="true"></div>
+
+  <main id="deck">
+
+<!-- =====================================================================
+     00 · CAPA
+     ===================================================================== -->
+<section class="slide" id="s0" data-theme="dark" data-ch="0" data-title="Capa" data-thread="0,170,0,1,.9">
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="ibg">
+      <img data-w="2" src="assets/img/cenas/pasta-burro-parmigiano.jpg" alt="">
+      <img data-w="4" src="assets/img/cenas/gondola-fria-iogurtes.jpg" alt="">
+      <img data-w="5" src="assets/img/cenas/corredor-refrigerados.jpg" alt="">
+    </div>
+    <div class="iw">
+      <div class="word"><i>1882</i></div>
+      <div class="word">Lombardia, Itália.</div>
+      <div class="word">Nº1 na Itália.</div>
+      <div class="word">2024. <i>Brasil.</i></div>
+      <div class="word">Uma geladeira lotada.</div>
+      <div class="word">Segundos para escolher.</div>
+      <div class="line">Na Itália, Galbani quer dizer <span class="script">confiança</span>.<br>No Brasil, primeiro precisa ser <span class="r">encontrada</span>.</div>
+    </div>
+    <button class="skip" type="button">Pular abertura</button>
+    <div class="ibar"><i></i></div>
+  </div>
+
+  <div class="photo"><img src="assets/img/cenas/gondola-fria-iogurtes.jpg" alt="Gôndola refrigerada de supermercado brasileiro"></div>
+  <div class="sl">
+    <p class="kick" data-a="fade"><span class="tri"></span>Planejamento estratégico de trade · 2027</p>
+    <h1 aria-label="Ser encontrada antes de ser escolhida.">
+      <span class="mask l1" aria-hidden="true">Ser encontrada</span>
+      <span class="mask l2" aria-hidden="true" data-a="blur" style="--d:.9s">antes de ser escolhida.</span>
+    </h1>
+    <p class="sub" data-a="up" style="--d:1.2s">Distribuição, mix, espaço, giro e governança de execução para Galbani no varejo alimentar brasileiro.</p>
+  </div>
+  <div class="meta" data-a="fade" style="--d:1.5s">
+    <div><small>Cliente</small>Galbani · Lactalis DPA Brasil</div>
+    <div><small>Apresentação</small>Vanessa Morelli · 75LAB</div>
+    <div><small>Data</small>22 de outubro de 2026</div>
+    <span class="sp"></span>
+    <span class="hint"><kbd>→</kbd> avançar · <kbd>M</kbd> capítulos</span>
+  </div>
+  <div class="notes"><p>Abrir com a tensão: na Itália a marca é sinônimo de confiança; aqui, ainda precisa ser encontrada na geladeira. Toda a apresentação responde a isso.</p></div>
+</section>
+
+<!-- =====================================================================
+     01 · AGENDA
+     ===================================================================== -->
+<section class="slide" id="s1" data-theme="light" data-ch="0" data-title="O que vamos discutir hoje" data-thread="-120,-60,-6,1.05,.6">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>Agenda</b> O que vamos discutir hoje</p>
+    <h2 class="tk">Seis capítulos, do diagnóstico à <em>regra de escala</em>.</h2>
+    <div class="body">
+      <div class="trail">
+        <svg class="rail" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
+          <path class="ghost" d="M10 30 C 200 0 300 60 500 30 S 800 0 990 30"/>
+          <path class="draw" pathLength="1" style="--d:.4s" d="M10 30 C 200 0 300 60 500 30 S 800 0 990 30"/>
+        </svg>
+        <div class="ends" aria-hidden="true"><i class="ic" data-ic="fridge"></i><i class="ic" data-ic="plate"></i></div>
+        <ol>
+          <li data-a="up" data-i="0"><button type="button" data-goto="s2"><span class="rn">I</span><span class="bub"><i class="ic" data-ic="search"></i></span><b>Leitura do desafio</b><p>O que o briefing pede e o que vem antes.</p><span class="pg">telas 02–04</span></button></li>
+          <li data-a="up" data-i="1"><button type="button" data-goto="s5"><span class="rn">II</span><span class="bub"><i class="ic" data-ic="map"></i></span><b>Contexto</b><p>Marca, mercado, concorrência, shopper e tendências.</p><span class="pg">telas 05–11</span></button></li>
+          <li data-a="up" data-i="2"><button type="button" data-goto="s12"><span class="rn">III</span><span class="bub"><i class="ic" data-ic="bulb"></i></span><b>Estratégia</b><p>Insights, pergunta estratégica e pilares.</p><span class="pg">telas 12–15</span></button></li>
+          <li data-a="up" data-i="3"><button type="button" data-goto="s16"><span class="rn">IV</span><span class="bub"><i class="ic" data-ic="spark"></i></span><b>Solução</b><p>Plataforma, bloco de marca, ativos, clusters e verba.</p><span class="pg">telas 16–21</span></button></li>
+          <li data-a="up" data-i="4"><button type="button" data-goto="s22"><span class="rn">V</span><span class="bub"><i class="ic" data-ic="dash"></i></span><b>Execução e dados</b><p>Operação, Codice, rastreamento, KPIs e riscos.</p><span class="pg">telas 22–28</span></button></li>
+          <li data-a="up" data-i="5"><button type="button" data-goto="s29"><span class="rn">VI</span><span class="bub"><i class="ic" data-ic="calendar"></i></span><b>Próximos passos</b><p>Entregáveis, cronograma e workshop.</p><span class="pg">telas 29–33</span></button></li>
+        </ol>
+      </div>
+      <p class="q" data-a="fade" style="--d:1.1s"><span class="tri"></span><span>A pergunta que atravessa tudo: <b>como fazer Galbani ser encontrada, entendida, experimentada e recomprada?</b></span></p>
+    </div>
+  </div>
+  <div class="notes"><p>Cada capítulo é clicável. A trilha vai da geladeira até a mesa: é o caminho que a marca precisa percorrer na loja.</p></div>
+</section>
+
+<!-- =====================================================================
+     02 · PROBLEMA APARENTE × REAL
+     ===================================================================== -->
+<section class="slide" id="s2" data-theme="dark" data-ch="1" data-title="O desafio real começa antes do giro" data-thread="200,120,8,1.1,.5">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>I · Leitura do desafio</b> Problema aparente × problema real</p>
+    <h2 class="tk">O briefing pede giro. O desafio real começa antes: <em>presença</em>.</h2>
+    <div class="body">
+      <div class="ice">
+        <div>
+          <div class="lvl" data-a="up">
+            <span class="lbl">O que o briefing pede</span>
+            <div class="ask">
+              <span><i class="ic" data-ic="store"></i>Distribuição</span>
+              <span><i class="ic" data-ic="grid"></i>Mix</span>
+              <span><i class="ic" data-ic="layers"></i>Espaço</span>
+              <span><i class="ic" data-ic="cycle"></i>Giro</span>
+            </div>
+          </div>
+          <div class="water grow" style="--d:.7s"></div>
+          <div class="deep">
+            <div data-a="left" data-i="3"><i class="ic" data-ic="pin"></i><span><b>Cobertura</b><p>Estar nas lojas de maior potencial, com abastecimento combinado.</p></span></div>
+            <div data-a="left" data-i="4"><i class="ic" data-ic="grid"></i><span><b>Arquitetura de categoria</b><p>Ser localizada em segundos, em bloco, e não em SKUs dispersos.</p></span></div>
+            <div data-a="left" data-i="5"><i class="ic" data-ic="check"></i><span><b>Qualidade de execução</b><p>Abastecida, precificada e no padrão, loja a loja.</p></span></div>
+          </div>
+        </div>
+        <div class="chain" data-a="right" style="--d:.5s">
+          <span class="lbl">Uma marca nova percorre quatro etapas</span>
+          <div class="st now"><span class="n">1</span><b>Encontrada<small>presente e visível na loja</small></b><span class="tag">gargalo de hoje</span></div>
+          <div class="st"><span class="n">2</span><b>Entendida<small>o que é e para que serve</small></b></div>
+          <div class="st"><span class="n">3</span><b>Experimentada<small>primeira compra ou degustação</small></b></div>
+          <div class="st"><span class="n">4</span><b>Recomprada<small>é aqui que nasce o giro</small></b><span class="tag g">resultado</span></div>
+        </div>
+      </div>
+      <p class="src" data-a="fade" style="--d:1.2s">Briefing Galbani 2027; leitura 75LAB.</p>
+    </div>
+  </div>
+  <div class="notes"><p>Não existe giro onde a marca não está. Antes de pressionar sellout, precisamos de presença qualificada e mensurável nas lojas de maior potencial.</p></div>
+</section>
+
+<!-- =====================================================================
+     03 · DECUPAGEM
+     ===================================================================== -->
+<section class="slide" id="s3" data-theme="light" data-ch="1" data-title="Decupagem do briefing" data-thread="-80,-160,-10,1,.45">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>I · Leitura do desafio</b> Decupagem do briefing</p>
+    <h2 class="tk">Seis fatos do briefing apontam para um problema de <em>cobertura, arquitetura e execução</em>.</h2>
+    <div class="body" style="gap:22px">
+      <div class="dec">
+        <div class="hd"><span>Dimensão</span><span>Fato do briefing</span><span></span><span>Leitura 75LAB</span></div>
+        <div class="row" data-a="up" data-i="0"><span class="k"><i class="ic" data-ic="calendar"></i>Contexto</span><p class="f">Cerca de dois anos no Brasil; distribuição, volume e giro ainda baixos.</p><svg class="ar" viewBox="0 0 80 16"><path class="draw" pathLength="1" style="--i:0;--d:.5s" d="M2 8h72m-6-5 6 5-6 5"/></svg><p class="r">Vencer disponibilidade e descoberta antes de pressionar sellout.</p></div>
+        <div class="row" data-a="up" data-i="1"><span class="k"><i class="ic" data-ic="flag"></i>Marca</span><p class="f">Marca italiana da Lactalis DPA, com novo posicionamento: <i>Do seu jeito, à sua mesa</i>.</p><svg class="ar" viewBox="0 0 80 16"><path class="draw" pathLength="1" style="--i:1;--d:.5s" d="M2 8h72m-6-5 6 5-6 5"/></svg><p class="r">A italianidade precisa de tradução prática brasileira, não de decoração.</p></div>
+        <div class="row" data-a="up" data-i="2"><span class="k"><i class="ic" data-ic="cheese"></i>Portfólio-base</span><p class="f">Mussarela, requeijão, creme de ricota e parmesão ralado.</p><svg class="ar" viewBox="0 0 80 16"><path class="draw" pathLength="1" style="--i:2;--d:.5s" d="M2 8h72m-6-5 6 5-6 5"/></svg><p class="r">Quatro portas de entrada que cobrem lanche, café, receitas, massas e finalização.</p></div>
+        <div class="row" data-a="up" data-i="3"><span class="k"><i class="ic" data-ic="target"></i>Desafio</span><p class="f">Expandir PDVs, aumentar SKUs por loja, formar bloco de marca e conquistar pontos extras.</p><svg class="ar" viewBox="0 0 80 16"><path class="draw" pathLength="1" style="--i:3;--d:.5s" d="M2 8h72m-6-5 6 5-6 5"/></svg><p class="r">Problema de cobertura, arquitetura de categoria e qualidade de execução.</p></div>
+        <div class="row flag" data-a="up" data-i="4"><span class="k"><i class="ic" data-ic="alert"></i>Orçamento</span><p class="f">R$ 1 milhão, dividido em 30% + 25% + 30% + 25%.</p><svg class="ar" viewBox="0 0 80 16"><path class="draw" pathLength="1" style="--i:4;--d:.5s" d="M2 8h72m-6-5 6 5-6 5"/></svg><p class="r">A soma é 110%: risco de supercontratar R$ 100 mil.</p></div>
+        <div class="row" data-a="up" data-i="5"><span class="k"><i class="ic" data-ic="store"></i>Canal</span><p class="f">Varejo alimentar; ativos refrigerados pedem energia, manutenção e autorização; frete à parte.</p><svg class="ar" viewBox="0 0 80 16"><path class="draw" pathLength="1" style="--i:5;--d:.5s" d="M2 8h72m-6-5 6 5-6 5"/></svg><p class="r">Clusterizar por potencial, infraestrutura, espaço e capacidade de reposição.</p></div>
+      </div>
+      <div class="objs" data-a="up" style="--d:1.1s">
+        <div><b>Objetivo de negócio</b>Receita sustentável via disponibilidade e presença por loja.</div>
+        <div><b>Objetivo de trade</b>Mais lojas ativas, SKUs ativos, share de exposição e qualidade de execução.</div>
+        <div><b>Objetivo de comunicação</b>Galbani fácil de localizar e associada a uma solução culinária do dia a dia.</div>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>Ler da esquerda para a direita: o fato que recebemos e o que ele significa. Destacar o orçamento: a soma dá 110%.</p></div>
+</section>
+
+<!-- =====================================================================
+     04 · SABEMOS × PRECISAMOS DESCOBRIR
+     ===================================================================== -->
+<section class="slide" id="s4" data-theme="dark" data-ch="1" data-title="O que sabemos e o que falta descobrir" data-thread="160,60,4,1.15,.45">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>I · Leitura do desafio</b> Sabemos × precisamos descobrir</p>
+    <h2 class="tk">Quatro respostas críticas definem onde investir; o <em>kick-off</em> precisa trazê-las.</h2>
+    <div class="body" style="gap:22px">
+      <div class="kd">
+        <span class="h k"><i class="ic" data-ic="check"></i>Sabemos</span><span class="h"></span><span class="h u"><i class="ic" data-ic="search"></i>Precisamos descobrir</span><span class="h" style="justify-content:flex-end">Impacto</span>
+
+        <p class="a" data-a="fade" data-i="1">Há quatro SKUs de entrada e ativos DPA para freezer, geladeira, ponta, ilha e degustação.</p>
+        <div class="br"><svg viewBox="0 0 120 20" preserveAspectRatio="none"><path class="draw" pathLength="1" style="--i:1" d="M4 10 H116"/><circle cx="116" cy="10" r="3"/></svg></div>
+        <p class="b" data-a="fade" data-i="2">Baseline por rede: distribuição numérica e ponderada, SKUs por loja, giro e ruptura.</p>
+        <div class="im" data-a="pop" data-i="3"><span class="pill crit">Crítica</span></div>
+
+        <p class="a" data-a="fade" data-i="2">O catálogo traz formatos com e sem energia, prazos de 10 a 30 dias e valores sem frete.</p>
+        <div class="br"><svg viewBox="0 0 120 20" preserveAspectRatio="none"><path class="draw" pathLength="1" style="--i:2" d="M4 10 H116"/><circle cx="116" cy="10" r="3"/></svg></div>
+        <p class="b" data-a="fade" data-i="3">Quem compra ou cede o equipamento, custo total, energia, SLA de reparo, seguro, armazenagem e logística reversa.</p>
+        <div class="im" data-a="pop" data-i="4"><span class="pill crit">Crítica</span></div>
+
+        <p class="a" data-a="fade" data-i="3">O briefing recomenda concentrar recursos em um grupo prioritário de lojas.</p>
+        <div class="br"><svg viewBox="0 0 120 20" preserveAspectRatio="none"><path class="draw" pathLength="1" style="--i:3" d="M4 10 H116"/><circle cx="116" cy="10" r="3"/></svg></div>
+        <p class="b" data-a="fade" data-i="4">Lista de redes, perfil de loja, contrapartidas, pontos permitidos e planograma.</p>
+        <div class="im" data-a="pop" data-i="5"><span class="pill crit">Crítica</span></div>
+
+        <p class="a" data-a="fade" data-i="4">O briefing pede rastreio e controle da geladeira via Codice.</p>
+        <div class="br"><svg viewBox="0 0 120 20" preserveAspectRatio="none"><path class="draw" pathLength="1" style="--i:4" d="M4 10 H116"/><circle cx="116" cy="10" r="3"/></svg></div>
+        <p class="b" data-a="fade" data-i="5">Escopo real: inventário, checklist, fotos, chamados, temperatura, geolocalização, integrações e LGPD.</p>
+        <div class="im" data-a="pop" data-i="6"><span class="pill crit">Crítica</span></div>
+
+        <p class="a" data-a="fade" data-i="5">A marca quer presença na rotina e versatilidade.</p>
+        <div class="br"><svg viewBox="0 0 120 20" preserveAspectRatio="none"><path class="draw" pathLength="1" style="--i:5" d="M4 10 H116"/><circle cx="116" cy="10" r="3"/></svg></div>
+        <p class="b" data-a="fade" data-i="6">Segmentos prioritários, percepção de preço, barreira à marca nova e ocasiões prioritárias.</p>
+        <div class="im" data-a="pop" data-i="7"><span class="pill imp">Importante</span></div>
+      </div>
+      <div class="hyp" data-a="up" style="--d:1.2s">
+        <span class="lbl">Hipóteses a validar</span>
+        <p>O piloto começa em redes com <b>categoria refrigerada estruturada</b>; o portfólio-base tem <b>abastecimento assegurado</b>; o Codice pode <b>centralizar inventário e evidência</b> de execução.</p>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>As quatro críticas definem investimento, viabilidade, seleção de lojas e escopo de tecnologia. Sem elas, qualquer proposta comercial vira estimativa.</p></div>
+</section>
+
+<!-- =====================================================================
+     05 · MARCA
+     ===================================================================== -->
+<section class="slide" id="s5" data-theme="light" data-ch="2" data-title="A credencial italiana" data-thread="-200,-120,-4,1.05,.45">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>II · Contexto</b> Marca</p>
+    <h2 class="tk">A credencial italiana é forte; o desafio é transformá-la em <em>benefício de uso</em> no dia a dia.</h2>
+    <div class="body">
+      <div class="brand">
+        <div style="display:grid;gap:34px">
+          <ol class="tl">
+            <li data-a="up" data-i="1"><span class="y">1882</span><p><b>Egidio e Davide Galbani</b> começam a produzir queijos na Lombardia.</p></li>
+            <li data-a="up" data-i="2"><span class="y">1956</span><p>Nasce o slogan <b>“Galbani quer dizer confiança”</b>.</p></li>
+            <li data-a="up" data-i="3"><span class="y">2006</span><p>Entra para o <b>Grupo Lactalis</b>; hoje está em mais de 140 países.</p></li>
+            <li data-a="up" data-i="4"><span class="y">2024</span><p>Chega ao Brasil pela <b>DPA</b>, com 14 SKUs; estreia na TV com Paola Carosella como embaixadora.</p></li>
+            <li class="now" data-a="up" data-i="5"><span class="y">Agora</span><p>Novo posicionamento: <b>Do seu jeito, à sua mesa</b>.</p></li>
+          </ol>
+          <div class="claim" data-a="up" style="--d:1s">
+            <span class="q">Do coração da Itália para a mesa dos brasileiros</span>
+            <p>A promessa já aponta para a mesa. No PDV, ela precisa virar <b>ocasião, receita e solução</b>, e não só origem.</p>
+          </div>
+        </div>
+        <div class="codes">
+          <div class="c logo" data-a="scale" data-i="1"><img src="assets/img/brand/galbani-logo.svg" alt="Logo Galbani: selo Dal 1882, Nº1 in Italia"></div>
+          <div class="c" data-a="scale" data-i="2"><span class="sw"><i style="background:#094DA4"></i><i style="background:#CD1232"></i><i style="background:#009649"></i><i style="background:#fff;border:1px solid #E1DACB"></i></span><small>Cores</small><b>Azul mediterrâneo e o tricolor do selo</b></div>
+          <div class="c ph" data-a="scale" data-i="3"><button class="zoom" type="button" data-zoom="assets/img/produtos/banner-fatiados.jpg" data-gallery="marca" data-caption="Galbani Brasil|Queijos fatiados: paisagem toscana em azul, selo vermelho e verde."><img src="assets/img/produtos/fatiados.jpg" alt="Embalagens de queijos fatiados Galbani" loading="lazy"><span class="zi"></span></button><span class="cap">Embalagem</span></div>
+          <div class="c" data-a="scale" data-i="4"><span class="scr">Galbani</span><small>Tipografia</small><b>Script de marca e texto geométrico</b></div>
+          <div class="c ph" data-a="scale" data-i="5"><button class="zoom" type="button" data-zoom="assets/img/produtos/banner-requeijao.jpg" data-gallery="marca" data-caption="Galbani Brasil|Requeijão cremoso nas versões 190 g e light."><img src="assets/img/produtos/requeijao.jpg" alt="Potes de requeijão cremoso Galbani" loading="lazy"><span class="zi"></span></button><span class="cap">Nº1 in Italia</span></div>
+          <div class="c ph" data-a="scale" data-i="6"><button class="zoom" type="button" data-zoom="assets/img/produtos/parmegiano.jpg" data-gallery="marca" data-caption="Galbani Brasil|Importados DOP: Parmigiano Reggiano e Grana Padano."><img src="assets/img/produtos/parmegiano.jpg" alt="Parmigiano Reggiano Galbani" loading="lazy"><span class="zi"></span></button><span class="cap">Importados DOP</span></div>
+        </div>
+      </div>
+      <p class="src" data-a="fade" style="--d:1.3s">galbani.com.br e galbani.com.br/nossa-historia (22/10/2026); lactalisculinary.com; SuperVarejo (05/04/2024); Propmark (15/08/2024); posicionamento informado no briefing.</p>
+    </div>
+  </div>
+  <div class="notes"><p>A marca tem 140 anos de autoridade e uma promessa que já fala de mesa. O trabalho do trade é traduzir isso em ocasião de uso na frente da geladeira.</p></div>
+</section>
+
+<!-- =====================================================================
+     06 · PORTFÓLIO-BASE × OCASIÕES
+     ===================================================================== -->
+<section class="slide" id="s6" data-theme="light" data-ch="2" data-title="Quatro portas de entrada" data-thread="140,-200,6,1,.4">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>II · Contexto</b> Portfólio-base</p>
+    <h2 class="tk">Quatro SKUs de entrada cobrem cinco ocasiões da mesa, se aparecerem como <em>soluções</em>, e não como lista.</h2>
+    <div class="body" style="gap:18px">
+      <div class="pm" id="pm">
+        <svg class="links" id="pmLinks" aria-hidden="true"></svg>
+        <div class="prods">
+          <div class="prod" data-p="mus" data-a="left" data-i="0"><button class="zoom" type="button" data-zoom="assets/img/produtos/fatiados.jpg" data-gallery="port" data-caption="Mussarela|Queijo mozzarella fatiado, colonial italiano e 0% lactose."><img src="assets/img/produtos/fatiados.jpg" alt="Mussarela fatiada Galbani" loading="lazy"><span class="zi"></span></button><span><b>Mussarela</b><small>Fatiada · lanches, pizzas e gratinados</small></span></div>
+          <div class="prod" data-p="req" data-a="left" data-i="1"><button class="zoom" type="button" data-zoom="assets/img/produtos/requeijao.jpg" data-gallery="port" data-caption="Requeijão cremoso|Tradicional, light e 190 g."><img src="assets/img/produtos/requeijao.jpg" alt="Requeijão cremoso Galbani" loading="lazy"><span class="zi"></span></button><span><b>Requeijão cremoso</b><small>Tradicional e light · café e receitas</small></span></div>
+          <div class="prod" data-p="ric" data-a="left" data-i="2"><button class="zoom" type="button" data-zoom="assets/img/produtos/cremedericota.jpg" data-gallery="port" data-caption="Creme de ricota|Tradicional e light, 200 g e 380 g."><img src="assets/img/produtos/cremedericota.jpg" alt="Creme de ricota Galbani" loading="lazy"><span class="zi"></span></button><span><b>Creme de ricota</b><small>Tradicional e light · café, pastas e doces</small></span></div>
+          <div class="prod" data-p="par" data-a="left" data-i="3"><button class="zoom" type="button" data-zoom="assets/img/produtos/parmesao.jpg" data-gallery="port" data-caption="Parmesão|Ralado (50 g e 100 g), fracionado e cilindro."><img src="assets/img/produtos/parmesao.jpg" alt="Parmesão ralado Galbani" loading="lazy"><span class="zi"></span></button><span><b>Parmesão ralado</b><small>50 g e 100 g · massas e finalização</small></span></div>
+        </div>
+        <div class="mid" data-a="fade" style="--d:1.6s"><span>passe o mouse sobre um produto</span></div>
+        <div class="occs">
+          <div class="occ" data-o="lan" data-a="right" data-i="1"><i class="ic" data-ic="sandwich"></i>Lanche</div>
+          <div class="occ" data-o="caf" data-a="right" data-i="2"><i class="ic" data-ic="coffee"></i>Café da manhã</div>
+          <div class="occ" data-o="rec" data-a="right" data-i="3"><i class="ic" data-ic="book"></i>Receitas do dia a dia</div>
+          <div class="occ" data-o="mas" data-a="right" data-i="4"><i class="ic" data-ic="pasta"></i>Massas</div>
+          <div class="occ" data-o="fin" data-a="right" data-i="5"><i class="ic" data-ic="grater"></i>Finalização</div>
+        </div>
+      </div>
+      <div class="foot-row" data-a="fade" style="--d:1.4s">
+        <p class="src nb"><b style="color:var(--blu)">Mussarela e requeijão</b> estão entre os queijos mais consumidos no Brasil (ABIQ, via AgFeed, 04/09/2025).</p>
+        <p class="src">Briefing (portfólio-base); galbani.com.br (produtos e receitas). Mapa de ocasiões: leitura 75LAB a validar com Categoria.</p>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>O portfólio-base não é lista de SKUs, é um cardápio de ocasiões. Mussarela e requeijão são os queijos mais consumidos do país: a porta de entrada certa.</p></div>
+</section>
+
+<!-- =====================================================================
+     07 · MERCADO E SHOPPER EM NÚMEROS
+     ===================================================================== -->
+<section class="slide" id="s7" data-theme="dark" data-ch="2" data-title="Mercado: categoria cresce, carrinho encolhe" data-thread="-60,140,-8,1.2,.5">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>II · Contexto</b> Mercado</p>
+    <h2 class="tk">A categoria cresce e se consolida, mas o carrinho encolhe: <em>cada item precisa justificar seu lugar</em>.</h2>
+    <div class="body" style="gap:26px">
+      <div>
+        <span class="lbl" data-a="fade">Categoria de queijos</span>
+        <div class="mk" style="margin-top:12px">
+          <div class="st" data-a="up" data-i="1"><span class="num"><span data-count="1.46" data-dec="2">0</span><small>mi t</small></span><p>produção de queijos no Brasil em 2024, <b>+6% em volume</b></p><p class="src">ABIQ, via eDairyNews (18/07/2025)</p></div>
+          <div class="st" data-a="up" data-i="2"><span class="num"><span class="pre">+</span><span data-count="15">0</span><small>%</small></span><p>vendas de queijos em valor em 2024, e <b>+10% em volume</b></p><p class="src">Nielsen, via eDairyNews (18/07/2025)</p></div>
+          <div class="st" data-a="up" data-i="3"><span class="num"><span class="pre">+</span><span data-count="13.7" data-dec="1">0</span><small>%</small></span><p>faturamento de <b>mussarela</b>, o queijo que mais cresce</p><p class="src">Scanntech, via Giro News (09/12/2024)</p></div>
+        </div>
+      </div>
+      <div>
+        <span class="lbl" data-a="fade" style="--d:.6s">Shopper e carrinho</span>
+        <div class="mk" style="margin-top:12px">
+          <div class="st" data-a="up" data-i="5"><span class="num"><span class="pre">27 →</span><span data-count="22">0</span><small>itens</small></span><p>por cesta, de 2024 para 2025: <b>menos espaço para experimentar</b></p><p class="src">Worldpanel by Numerator, via Mercado&amp;Consumo (20/01/2026)</p></div>
+          <div class="st" data-a="up" data-i="6"><span class="num"><span class="pre">14% →</span><span data-count="23">0</span><small>%</small></span><p>dos itens da cesta das classes AB comprados <b>em promoção</b></p><p class="src">Kantar, 2º trimestre de 2025 (04/11/2025)</p></div>
+          <div class="st" data-a="up" data-i="7"><span class="num"><span data-count="8">0</span><small>canais</small></span><p>usados em média por shopper: <b>a marca precisa estar onde ele estiver</b></p><p class="src">Kantar (04/11/2025)</p></div>
+        </div>
+      </div>
+      <div class="mk-read" data-a="up" style="--d:1.3s">
+        <span class="lbl">Leitura 75LAB</span>
+        <p>Uma categoria aquecida atrai aquisições (Aurora, Scala, Tirolez, Savencia) e disputa o mesmo espaço frio. Para uma marca nova, <b>disponibilidade e bloco</b> são a primeira vantagem competitiva.</p>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>Dois movimentos ao mesmo tempo: queijo cresce em valor e volume, enquanto o shopper leva menos itens e compra mais em promoção. A marca nova precisa ser a escolha fácil.</p></div>
+</section>
+
+<!-- =====================================================================
+     08 · CONCORRÊNCIA
+     ===================================================================== -->
+<section class="slide" id="s8" data-theme="light" data-ch="2" data-title="Concorrência e espaço livre" data-thread="220,-80,10,1,.4">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>II · Contexto</b> Concorrência</p>
+    <h2 class="tk">A gôndola tem donos de hábito, de preço e de prestígio; o espaço livre é a <em>italianidade prática</em> do dia a dia.</h2>
+    <div class="body">
+      <div class="cmp">
+        <div class="map" data-a="scale" role="img" aria-label="Mapa qualitativo de territórios: eixo horizontal do cotidiano ao especial, eixo vertical do ingrediente à solução de uso. Galbani migra de uma percepção de origem distante para a italianidade prática do dia a dia.">
+          <span class="ax x"></span><span class="ax y"></span>
+          <span class="al l">← Cotidiano · preço</span><span class="al r">Especial · premium →</span>
+          <span class="al t">↑ Solução de uso</span><span class="al b">↓ Ingrediente</span>
+          <div class="zone" data-a="fade" style="--d:1.2s"><span>Espaço livre<br>italianidade prática<br>no cotidiano</span></div>
+          <svg class="mv" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M70 36 C 60 24 47 26 37 29"/></svg>
+          <div class="pl pb" style="left:17%;top:80%" data-a="pop" data-i="2"><i style="--sz:30px"></i><b>Regionais e marca própria</b><small>preço e capilaridade</small></div>
+          <div class="pl" style="left:34%;top:63%" data-a="pop" data-i="3"><i style="--sz:30px"></i><b>Vigor e Faixa Azul</b><small>familiaridade</small></div>
+          <div class="pl" style="left:56%;top:40%" data-a="pop" data-i="4"><i style="--sz:34px"></i><b>Tirolez</b><small>tradição e culinária</small></div>
+          <div class="pl" style="left:80%;top:72%" data-a="pop" data-i="5"><i style="--sz:28px"></i><b>Polenghi</b><small>especialidades</small></div>
+          <div class="pl gal" style="left:73%;top:36%;opacity:.6" data-a="pop" data-i="6"><i style="--sz:16px;animation:none;box-shadow:none;background:transparent;border:2px dashed var(--rosso)"></i><b style="font-size:13px">Risco de percepção</b><small>origem distante</small></div>
+          <div class="pl gal" style="left:30%;top:27%;--d:1.9s" data-a="pop"><i style="--sz:28px"></i><b>Galbani 2027</b><small>alvo</small></div>
+        </div>
+        <ul class="cmp-l">
+          <li data-a="right" data-i="1"><b>Tirolez</b><span>Amplo portfólio, tradição, culinária e inovações funcionais; em consolidação.</span><span class="o">Ocupar italianidade aplicável e solução de refeição.</span></li>
+          <li data-a="right" data-i="2"><b>Vigor e Faixa Azul</b><span>Familiaridade e presença histórica em lácteos e queijos.</span><span class="o">Bloco novo que facilite descoberta e combinação.</span></li>
+          <li data-a="right" data-i="3"><b>Polenghi (Savencia)</b><span>Autoridade em queijos e especialidades.</span><span class="o">Democratizar o toque italiano sem reduzir qualidade.</span></li>
+          <li data-a="right" data-i="4"><b>Regionais e marca própria</b><span>Preço, capilaridade e hábito local.</span><span class="o">Ser a escolha que agrega valor claro à mesa.</span></li>
+          <li data-a="right" data-i="5" style="border-bottom:0"><span style="font-size:15px"><b style="font-size:15px">Président</b> é do Grupo Lactalis: o papel de cada marca do grupo na gôndola se define em arquitetura de portfólio, não em disputa.</span></li>
+        </ul>
+      </div>
+      <p class="src" data-a="fade" style="--d:1.4s">Briefing; sites oficiais Tirolez e Vigor; Mercado&amp;Consumo (03/11/2025 e 06/03/2026); AgFeed (04/09/2025). Posições no mapa: leitura qualitativa 75LAB.</p>
+    </div>
+  </div>
+  <div class="notes"><p>Ninguém ocupa a italianidade prática do dia a dia: quem é italiano é especial, quem é cotidiano não é italiano. Atenção: Président é do mesmo grupo.</p></div>
+</section>
+
+<!-- =====================================================================
+     09 · JORNADA DO SHOPPER
+     ===================================================================== -->
+<section class="slide" id="s9" data-theme="dark" data-ch="2" data-title="Jornada do shopper" data-thread="-180,180,-4,1.1,.45">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>II · Contexto</b> Shopper</p>
+    <h2 class="tk">O shopper decide no modo rápido: marca nova só entra se <em>reduzir o esforço</em> de escolha.</h2>
+    <div class="body" style="justify-content:flex-start;padding-top:34px">
+      <div class="jr">
+        <div class="lg" data-a="fade" style="--d:.8s"><span><i></i>Atrito hoje</span><span><i class="ok"></i>Com o bloco Galbani</span></div>
+        <svg class="curve" viewBox="0 0 1000 150" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="frGrad" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#FF6B85" stop-opacity=".35"/><stop offset="1" stop-color="#FF6B85" stop-opacity="0"/></linearGradient></defs>
+          <path class="ar" d="M100 105 C 180 105 220 30 300 30 S 420 75 500 75 S 620 18 700 18 S 820 95 900 95 L 900 150 L 100 150 Z" opacity="0"/>
+          <path class="fr draw" pathLength="1" style="--d:.5s" d="M100 105 C 180 105 220 30 300 30 S 420 75 500 75 S 620 18 700 18 S 820 95 900 95"/>
+          <path class="ok draw" pathLength="1" style="--d:1.2s" d="M100 120 C 180 120 220 92 300 92 S 420 105 500 105 S 620 88 700 88 S 820 118 900 118"/>
+        </svg>
+        <ol>
+          <li data-a="up" data-i="1"><span class="stg"><i class="ic" data-ic="clock"></i><b>Contexto</b></span><p class="need">Resolver uma refeição ou lanche.</p><p class="bar"><small>Barreira</small>Pouco tempo e lista mental curta.</p><p class="opp"><small>Oportunidade</small>Falar de ocasiões, não de discurso institucional.</p></li>
+          <li class="key" data-a="up" data-i="2"><span class="stg"><i class="ic" data-ic="fridge"></i><b>Estímulo</b></span><p class="need">Encontrar a categoria fria.</p><p class="bar"><small>Barreira</small>Marca nova se mistura ao bloco competitivo.</p><p class="opp"><small>Oportunidade</small>Bloco visual Galbani e códigos de uso.</p></li>
+          <li data-a="up" data-i="3"><span class="stg"><i class="ic" data-ic="eye"></i><b>Interesse</b></span><p class="need">Comparar marca, preço, formato e benefício.</p><p class="bar"><small>Barreira</small>Italianidade pode parecer distante ou premium demais.</p><p class="opp"><small>Oportunidade</small>Traduzir em receitas e finalizações simples.</p></li>
+          <li class="key" data-a="up" data-i="4"><span class="stg"><i class="ic" data-ic="cart"></i><b>Decisão</b></span><p class="need">Escolher item conhecido ou em promoção.</p><p class="bar"><small>Barreira</small>Risco percebido em trocar.</p><p class="opp"><small>Oportunidade</small>Portfólio-base como entrada de baixa fricção; degustação seletiva.</p></li>
+          <li data-a="up" data-i="5"><span class="stg"><i class="ic" data-ic="plate"></i><b>Experiência</b></span><p class="need">Preparar e servir.</p><p class="bar"><small>Barreira</small>Uso único limita a recompra.</p><p class="opp"><small>Oportunidade</small>Receitas e comunicação por ocasião ampliam o repertório.</p></li>
+        </ol>
+      </div>
+      <p class="src" data-a="fade" style="--d:1.4s;margin-top:30px">Briefing Galbani 2027 (jornada e tensões); curva de atrito: leitura qualitativa 75LAB.</p>
+    </div>
+  </div>
+  <div class="notes"><p>Os dois picos de atrito estão na geladeira (achar a marca) e na decisão (risco de trocar). É exatamente onde o bloco e o portfólio-base atuam.</p></div>
+</section>
+
+<!-- =====================================================================
+     10 · TENSÕES
+     ===================================================================== -->
+<section class="slide" id="s10" data-theme="light" data-ch="2" data-title="Três tensões estratégicas" data-thread="60,-140,2,1,.4">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>II · Contexto</b> Tensões estratégicas</p>
+    <h2 class="tk">Três tensões definem o jogo; a central é ser <em>ajuda prática</em>, e não mais uma explicação.</h2>
+    <div class="body">
+      <div class="tens">
+        <div class="scales">
+          <div class="scale" data-a="up" data-i="1"><div class="ends"><span>Descoberta<small>o shopper quer resolver rápido</small></span><span>Hábito<small>a categoria recompensa a marca já conhecida</small></span></div><div class="rl"><span class="knob" style="--kd:0s"></span></div><p class="res">bloco e ocasião reduzem o risco de trocar.</p></div>
+          <div class="scale" data-a="up" data-i="2"><div class="ends"><span>Itália<small>a origem desperta desejo</small></span><span>Cotidiano<small>a recompra pede praticidade e mesa brasileira</small></span></div><div class="rl"><span class="knob" style="--kd:-1.6s"></span></div><p class="res">italianidade como solução, não como decoração.</p></div>
+          <div class="scale" data-a="up" data-i="3"><div class="ends"><span>Execução<small>a marca precisa de padrão alto</small></span><span>Escala<small>a verba não sustenta estrutura sofisticada em toda loja</small></span></div><div class="rl"><span class="knob" style="--kd:-3.2s"></span></div><p class="res">intensidade proporcional, por cluster.</p></div>
+        </div>
+        <div class="central" data-a="right" style="--d:.6s">
+          <span class="lbl">Tensão central</span>
+          <p class="q">Quando o shopper entra em modo de compra rápida, uma marca nova só ganha espaço se sua origem for percebida como <em>ajuda prática</em>, e não como uma explicação a mais para ler.</p>
+          <span class="bg-q" aria-hidden="true">“</span>
+          <span class="tri"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>Cada tensão tem um ponto de equilíbrio que vira decisão de projeto: bloco, tradução prática e intensidade por cluster.</p></div>
+</section>
+
+<!-- =====================================================================
+     11 · TENDÊNCIAS
+     ===================================================================== -->
+<section class="slide" id="s11" data-theme="dark" data-ch="2" data-title="Tendências aplicáveis" data-thread="-100,60,-12,1.15,.5">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>II · Contexto</b> Tendências</p>
+    <h2 class="tk">As tendências que importam aqui deixam o PDV <em>legível e mensurável</em>, não mais tecnológico.</h2>
+    <div class="body">
+      <div class="trs" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+        <div class="tr" data-a="up" data-i="0"><i class="ic" data-ic="phone"></i><b>Retail media</b><p class="dt"><span class="num">R$ 4,8 bi</span>investidos no Brasil em 2025, +37% no ano.</p><p class="ap"><small>Para Galbani</small>Ligar o bloco físico à vitrine digital da rede nas janelas de ponto extra.</p><p class="src">IAB Brasil e Ibope, via Mercado&amp;Consumo (29/04/2026)</p></div>
+        <div class="tr" data-a="up" data-i="1"><i class="ic" data-ic="cart"></i><b>Atacarejo e novos formatos</b><p class="dt"><span class="num">+18,2%</span>no faturamento de queijos no atacarejo, o canal que mais cresceu.</p><p class="ap"><small>Para Galbani</small>Cluster por formato: comunicação legível a distância e mix por canal.</p><p class="src">Scanntech, via Giro News (09/12/2024)</p></div>
+        <div class="tr" data-a="up" data-i="2"><i class="ic" data-ic="cloche"></i><b>Degustação com missão</b><p class="dt"><span class="num">1 em 3</span>que degustam compram na mesma visita (NielsenIQ, citado pelo Assaí).</p><p class="ap"><small>Para Galbani</small>Degustar o item de maior barreira, com meta de conversão e registro.</p><p class="src">SuperVarejo (09/12/2025) · dado citado, validar o estudo original</p></div>
+        <div class="tr" data-a="up" data-i="3"><i class="ic" data-ic="camera"></i><b>Execução com evidência</b><p class="dt"><span class="num">Foto + checklist</span>como prova de que o instalado foi executado no padrão.</p><p class="ap"><small>Para Galbani</small>One Shot na implantação e rotina recorrente no On Timing.</p><p class="src nb">Prática de mercado em trade marketing</p></div>
+        <div class="tr" data-a="up" data-i="4"><i class="ic" data-ic="wifi"></i><b>Ativos conectados</b><p class="dt"><span class="num">30 mil+</span>geladeiras da Coca-Cola no Brasil já tinham monitoramento IoT.</p><p class="ap"><small>Para Galbani</small>Sensores só depois de provar operação e retorno (could have).</p><p class="src">Syos, via Baguete (14/04/2022)</p></div>
+        <div class="tr" data-a="up" data-i="5"><i class="ic" data-ic="qr"></i><b>Phygital por ocasião</b><p class="dt"><span class="num">QR → receita</span>galbani.com.br já organiza receitas italianas e à moda brasileira.</p><p class="ap"><small>Para Galbani</small>QR por ocasião no stopper: do produto à receita em um toque.</p><p class="src">galbani.com.br/receitas (22/10/2026)</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>Nenhuma tendência entra por modismo. Cada uma tem uma aplicação concreta e um lugar na priorização (must, should ou could have).</p></div>
+</section>
+
+<!-- =====================================================================
+     12 · INSIGHTS
+     ===================================================================== -->
+<section class="slide" id="s12" data-theme="light" data-ch="3" data-title="Seis insights" data-thread="180,100,6,1.05,.45">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>III · Estratégia</b> Insights</p>
+    <h2 class="tk">Disponibilidade é comunicação: sem presença na loja, <em>nenhuma campanha gera escolha</em>.</h2>
+    <div class="body">
+      <div class="ins">
+        <div class="hero" data-a="left">
+          <i class="ic" data-ic="store"></i>
+          <span class="n">Insight 01</span>
+          <b>Disponibilidade é comunicação.</b>
+          <p>Se a marca não está na loja, não existe campanha que gere escolha naquele momento.</p>
+        </div>
+        <ol>
+          <li data-a="right" data-i="1"><span class="n">02</span><span><b>Quatro SKUs contam uma história</b><p>Mussarela, requeijão, creme de ricota e parmesão como soluções para ocasiões.</p></span></li>
+          <li data-a="right" data-i="2"><span class="n">03</span><span><b>O bloco resolve a descoberta</b><p>Agrupar reduz a procura visual e faz o portfólio parecer mais relevante.</p></span></li>
+          <li data-a="right" data-i="3"><span class="n">04</span><span><b>Ponto extra sem reposição vira mídia vazia</b><p>Todo ativo precisa de dono, estoque, rotina de foto e checklist.</p></span></li>
+          <li data-a="right" data-i="4"><span class="n">05</span><span><b>Dado só vale se virar decisão</b><p>Rastrear importa quando muda rota, manutenção, negociação, abastecimento ou investimento.</p></span></li>
+          <li data-a="right" data-i="5"><span class="n">06</span><span><b>Experimentação é seletiva</b><p>Degustação prova o produto de maior barreira; não compensa falta de distribuição.</p></span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>O insight 01 organiza os outros cinco: presença primeiro, depois agrupamento, ativação com dono, dados com decisão e prova seletiva.</p></div>
+</section>
+
+<!-- =====================================================================
+     13 · PERGUNTA ESTRATÉGICA
+     ===================================================================== -->
+<section class="slide" id="s13" data-theme="dark" data-ch="3" data-title="Pergunta estratégica" data-thread="0,0,0,1.3,.7">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>III · Estratégia</b> Pergunta estratégica</p>
+    <div class="hmw" style="margin-top:34px">
+      <div>
+        <h2 class="tk q" style="font-size:46px;font-weight:600">Como podemos construir um modelo de entrada no varejo que faça Galbani ser <em>encontrada, entendida, experimentada e recomprada</em>, enquanto cada ativo físico vira <span class="hl">fonte de aprendizado</span> para a expansão?</h2>
+        <p class="op" data-a="up" style="--d:1.3s"><b>Oportunidade:</b> transformar Galbani em escolha habitual de queijos e cremosos, porque sua autoridade italiana pode resolver, de forma simples e visual, mais ocasiões da mesa brasileira, desde que a marca esteja presente, agrupada e disponível.</p>
+      </div>
+      <div class="loop" data-a="scale" style="--d:.4s">
+        <svg viewBox="0 0 460 460" aria-hidden="true">
+          <circle class="orb" cx="230" cy="230" r="170"/>
+          <circle class="arc draw" pathLength="1" cx="230" cy="230" r="170" style="--d:.8s" transform="rotate(-90 230 230)"/>
+          <g class="spin"><circle cx="230" cy="60" r="6"/></g>
+        </svg>
+        <div class="v" style="left:50%;top:13%"><span class="bub"><i class="ic" data-ic="search"></i></span><b>Encontrada</b></div>
+        <div class="v" style="left:87%;top:50%"><span class="bub"><i class="ic" data-ic="eye"></i></span><b>Entendida</b></div>
+        <div class="v" style="left:50%;top:87%"><span class="bub"><i class="ic" data-ic="cloche"></i></span><b>Experimentada</b></div>
+        <div class="v" style="left:13%;top:50%"><span class="bub"><i class="ic" data-ic="cycle"></i></span><b>Recomprada</b></div>
+        <p class="core"><b>Aprendizado</b>cada ativo gera dado para a próxima onda</p>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>Pausa. Esta é a pergunta que a estratégia responde. Repare que o ciclo não termina na recompra: termina no aprendizado que alimenta a próxima onda.</p></div>
+</section>
+
+<!-- =====================================================================
+     14 · DE → PARA
+     ===================================================================== -->
+<section class="slide" id="s14" data-theme="light" data-ch="3" data-title="De SKUs dispersos a um bloco" data-thread="-160,-60,-6,1,.4">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>III · Estratégia</b> Estratégia central</p>
+    <h2 class="tk">De SKUs dispersos a um <em>bloco Galbani</em> reconhecível, abastecido e relevante.</h2>
+    <div class="body">
+      <div class="dp">
+        <div class="field" id="field" data-a="scale" role="img" aria-label="Animação: embalagens Galbani espalhadas entre concorrentes se reúnem em um bloco de marca.">
+          <span class="tag" id="fieldTag">Hoje · SKUs dispersos</span>
+          <div class="tog"><button type="button" data-st="0" aria-pressed="true">De</button><button type="button" data-st="1" aria-pressed="false">Para</button></div>
+        </div>
+        <div class="fromto">
+          <div class="ft" data-a="right" data-i="1"><span class="k">De</span><p>Presença pontual, portfólio disperso e execução difícil de comparar entre lojas.</p></div>
+          <div class="ft to" data-a="right" data-i="2"><span class="k">Para</span><p>Um bloco Galbani reconhecível, abastecido e relevante para diferentes usos da mesa.</p></div>
+          <div class="ft" data-a="right" data-i="3"><span class="k">Como</span>
+            <ul class="lev">
+              <li><i class="ic" data-ic="grid"></i>Base de mix por cluster</li>
+              <li><i class="ic" data-ic="eye"></i>Visibilidade proporcional</li>
+              <li><i class="ic" data-ic="book"></i>Conteúdo por ocasião</li>
+              <li><i class="ic" data-ic="camera"></i>Gestão de ativos e evidências</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>Use o botão De/Para para repetir a animação. A mudança é de dispersão para bloco, e de execução incomparável para execução padronizada.</p></div>
+</section>
+
+<!-- =====================================================================
+     15 · PILARES
+     ===================================================================== -->
+<section class="slide" id="s15" data-theme="dark" data-ch="3" data-title="Cinco pilares" data-thread="140,160,8,1.1,.45">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>III · Estratégia</b> Pilares</p>
+    <h2 class="tk">Cinco movimentos, nesta ordem: <em>entrar, agrupar, ativar, provar e aprender</em>.</h2>
+    <div class="body">
+      <ol class="pil">
+        <li data-a="up" data-i="0"><div class="hd"><i class="ic" data-ic="enter"></i><span class="n">01</span></div><b>Entrar</b><p>Portfólio-base nas lojas de maior potencial, com condição comercial e abastecimento combinados antes da ativação.</p></li>
+        <li data-a="up" data-i="1"><div class="hd"><i class="ic" data-ic="grid"></i><span class="n">02</span></div><b>Agrupar</b><p>Bloco de marca e navegação por ocasião: o shopper localiza Galbani em segundos.</p></li>
+        <li data-a="up" data-i="2"><div class="hd"><i class="ic" data-ic="mega"></i><span class="n">03</span></div><b>Ativar</b><p><i>Do seu jeito, à sua mesa</i> como convite a usos reais: lanche, café, receita e finalização.</p></li>
+        <li data-a="up" data-i="3"><div class="hd"><i class="ic" data-ic="cloche"></i><span class="n">04</span></div><b>Provar</b><p>Degustação e ponto extra com missão clara: introduzir, demonstrar, vender e registrar.</p></li>
+        <li data-a="up" data-i="4"><div class="hd"><i class="ic" data-ic="dash"></i><span class="n">05</span></div><b>Aprender</b><p>Acompanhar ativos, execução, ruptura e resultado para decidir escala com evidência.</p></li>
+      </ol>
+      <div class="back-loop" data-a="fade" style="--d:1.2s">
+        <svg viewBox="0 0 1000 56" preserveAspectRatio="none" aria-hidden="true"><path class="draw" pathLength="1" style="--d:1.3s" d="M900 2 V 30 Q 900 50 880 50 H 120 Q 100 50 100 30 V 2"/></svg>
+        <span>o aprendizado abre a próxima onda</span>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>A ordem importa: não se ativa antes de entrar, não se prova sem agrupar. O último pilar volta para o primeiro.</p></div>
+</section>
+
+<!-- =====================================================================
+     16 · TERRITÓRIOS
+     ===================================================================== -->
+<section class="slide" id="s16" data-theme="light" data-ch="4" data-title="Três territórios" data-thread="-220,-100,-8,1,.4">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>IV · Solução</b> Territórios conceituais</p>
+    <h2 class="tk">Três territórios avaliados; só um transforma o posicionamento em <em>operação de loja</em>.</h2>
+    <div class="body">
+      <div class="terr">
+        <div class="tc" data-a="up" data-i="0">
+          <span class="n">Território A</span>
+          <h3>Seu jeito de italiano</h3>
+          <p>Italianidade sem rigidez: o melhor da origem entra nas combinações reais de cada casa. Ganha vida em pratos cotidianos, creators e degustação.</p>
+          <div class="met"><div>Conexão com o PDV<span class="t"><i style="--w:40%"></i></span></div><div>Escala operacional<span class="t"><i style="--w:45%"></i></span></div><div>Força de comunicação<span class="t"><i style="--w:90%"></i></span></div><p class="v">Forte para comunicação; exige cuidado para não perder a credencial.</p></div>
+        </div>
+        <div class="tc" data-a="up" data-i="1">
+          <span class="n">Território B</span>
+          <h3>Mesa que se encontra</h3>
+          <p>Galbani como ingrediente que reúne rotinas e preferências diferentes. Desdobra em ações de fim de semana e mesa de degustação.</p>
+          <div class="met"><div>Conexão com o PDV<span class="t"><i style="--w:35%"></i></span></div><div>Escala operacional<span class="t"><i style="--w:40%"></i></span></div><div>Força de comunicação<span class="t"><i style="--w:75%"></i></span></div><p class="v">Mais emocional; menos direto para distribuição e listagem.</p></div>
+        </div>
+        <div class="tc rec" id="recCard" data-a="up" data-i="2" style="--d:.6s">
+          <span class="pill rec">Recomendado</span>
+          <span class="n">Território C</span>
+          <h3>Da geladeira à mesa</h3>
+          <p>A presença Galbani começa no frio e termina na solução de uma refeição: geladeira ou ponta com escolha de uso, receita curta e QR por momento.</p>
+          <div class="met"><div>Conexão com o PDV<span class="t"><i style="--w:95%"></i></span></div><div>Escala operacional<span class="t"><i style="--w:85%"></i></span></div><div>Força de comunicação<span class="t"><i style="--w:75%"></i></span></div><p class="v">Operacional, ligado ao PDV e escalável.</p></div>
+        </div>
+      </div>
+      <p class="src nb" data-a="fade" style="--d:1.3s">Barras: leitura qualitativa 75LAB sobre os critérios do briefing, não uma pesquisa.</p>
+    </div>
+  </div>
+  <div class="notes"><p>Os dois primeiros são bons para comunicação. O terceiro é o único que funciona como sistema de loja. Avançar para o reveal.</p></div>
+</section>
+
+<!-- =====================================================================
+     17 · REVEAL
+     ===================================================================== -->
+<section class="slide" id="s17" data-theme="dark" data-ch="4" data-title="Da geladeira à mesa" data-iris="1" data-thread="0,-60,0,1.4,.8">
+  <div class="split" aria-hidden="true">
+    <div class="side cold"><img src="assets/img/cenas/gondola-fria-iogurtes.jpg" alt=""></div>
+    <div class="side warm"><img src="assets/img/cenas/macarronada-frango.jpg" alt=""></div>
+  </div>
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>IV · Solução</b> A plataforma</p>
+    <h2 class="big" aria-label="Da geladeira à mesa"><span class="a">Da geladeira</span> <span class="b">à mesa</span><span class="shine"></span></h2>
+    <p class="tag" data-a="up" style="--d:2.1s"><b>Do seu jeito, à sua mesa</b> vira princípio operacional: a marca aparece onde se escolhe, orienta como usar e continua presente quando se serve.</p>
+    <div class="beats">
+      <svg viewBox="0 0 1000 4" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="beatGrad" gradientUnits="userSpaceOnUse" x1="160" x2="840" y1="0" y2="0"><stop offset="0" stop-color="#7CC0F5"/><stop offset="1" stop-color="#FFC27A"/></linearGradient></defs><path class="draw" pathLength="1" style="--d:2.6s" d="M160 2 H840"/></svg>
+      <div class="beat" data-a="up" data-i="0" style="--d:2.5s"><span class="bub"><i class="ic" data-ic="fridge"></i></span><b>Onde se escolhe</b><small>bloco no frio, fácil de achar</small></div>
+      <div class="beat" data-a="up" data-i="1" style="--d:2.5s"><span class="bub"><i class="ic" data-ic="book"></i></span><b>Como usar</b><small>ocasião, receita curta e QR</small></div>
+      <div class="beat" data-a="up" data-i="2" style="--d:2.5s"><span class="bub"><i class="ic" data-ic="plate"></i></span><b>Quando se serve</b><small>a marca à mesa, pronta para a recompra</small></div>
+    </div>
+  </div>
+  <div class="notes"><p>Momento central. A plataforma pega o posicionamento da marca e o transforma em regra de loja: aparecer, orientar, continuar presente.</p></div>
+</section>
+
+<!-- =====================================================================
+     18 · BLOCO EM VISTA EXPLODIDA
+     ===================================================================== -->
+<section class="slide" id="s18" data-theme="light" data-ch="4" data-title="O bloco Da geladeira à mesa" data-thread="200,-160,6,1,.35">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>IV · Solução</b> Como funciona</p>
+    <h2 class="tk">Um bloco que se lê em segundos: <em>marca, ocasião, produto e preço</em>.</h2>
+    <div class="body">
+      <div class="bk">
+        <div class="ex" id="ex" data-a="scale" aria-label="Vista explodida interativa do bloco de marca. Arraste para girar; use o controle para abrir as camadas.">
+          <span class="note">Ilustração conceitual · arraste para girar</span>
+          <div class="scn"><div class="rig" id="rig">
+            <span class="shadow"></span>
+            <div class="lay l-base" data-l="base"><span class="lt">Estrutura lavável e modular</span></div>
+            <div class="lay l-prc" data-l="prc"><span class="pr"><small>preço</small>R$ ··,··</span><span class="qr" aria-hidden="true"></span><span class="lt">Preço legível + QR de receita</span></div>
+            <div class="lay l-prd" data-l="prd"><i style="background-image:url(assets/img/produtos/fatiados.jpg)"></i><i style="background-image:url(assets/img/produtos/requeijao.jpg)"></i><i style="background-image:url(assets/img/produtos/cremedericota.jpg)"></i><i style="background-image:url(assets/img/produtos/parmesao.jpg)"></i><span class="lt">Portfólio-base agrupado</span></div>
+            <div class="lay l-occ" data-l="occ"><span>Lanche</span><span>Café</span><span>Receita</span><span>Finalização</span><span class="lt">Régua de ocasiões</span></div>
+            <div class="lay l-top" data-l="top"><img src="assets/img/brand/galbani-logo.svg" alt=""><span>Da geladeira à mesa</span><span class="lt">Testeira de marca</span></div>
+          </div></div>
+          <div class="ui"><label for="exGap">Abrir camadas</label><input type="range" id="exGap" min="0" max="70" value="0"><span class="hint">arraste para girar</span></div>
+        </div>
+        <ul class="bk-l">
+          <li data-layer="top,prd" data-a="right" data-i="1"><span class="k">Hero</span><span><b>Bloco Da geladeira à mesa</b><p>Módulo de presença fria ou bloco de gôndola que reúne o portfólio e organiza a leitura por ocasião.</p></span></li>
+          <li data-layer="occ,prc" data-a="right" data-i="2"><span class="k">Support</span><span><b>Régua, stopper e receita</b><p>Preço legível, bandeja de uso, receitas curtas com QR e ponto extra em janela comercial.</p></span></li>
+          <li data-layer="base" data-a="right" data-i="3"><span class="k">Scale</span><span><b>Kit modular por loja</b><p>Peças substituíveis e troca de comunicação, sem forçar ilha onde a operação não suporta.</p></span></li>
+          <li data-layer="prd" data-a="right" data-i="4"><span class="k">Prova</span><span><b>Degustação com missão</b><p>Só com estoque, item-alvo, argumentário e registro de resultado.</p></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>Arraste para girar e abra as camadas. A leitura em segundos segue a hierarquia: marca, ocasião, produto, preço.</p></div>
+</section>
+
+<!-- =====================================================================
+     19 · ATIVOS DO CATÁLOGO
+     ===================================================================== -->
+<section class="slide" id="s19" data-theme="dark" data-ch="4" data-title="Ativos e papéis" data-thread="-120,120,-4,1.1,.45">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>IV · Solução</b> Ecossistema de ativos</p>
+    <h2 class="tk">A moldura de freezer cobre com o <em>menor custo por posição</em>; ponta e ilha ficam com as lojas âncora.</h2>
+    <div class="body">
+      <div class="as">
+        <div class="cps">
+          <div class="cap" data-a="fade"><span>Ativo do catálogo DPA</span><span>Custo por posição de produto</span></div>
+          <div class="row best" data-a="up" data-i="1"><span class="nm"><b>Moldura de freezer</b><small>204 produtos · <span class="pw no">sem energia</span> · 30 dias</small></span><span class="tk2"><i class="grow" style="--w:21.8%;--i:1"></i></span><span class="v">R$ <span data-count="12.67" data-dec="2">0</span><small>R$ 2.390 a 2.780</small></span></div>
+          <div class="row" data-a="up" data-i="2"><span class="nm"><b>Geladeira com móvel</b><small>52 produtos · <span class="pw">energia</span> · 20 dias</small></span><span class="tk2"><i class="grow" style="--w:57.9%;--i:2"></i></span><span class="v">R$ <span data-count="33.65" data-dec="2">0</span><small>sem a geladeira</small></span></div>
+          <div class="row" data-a="up" data-i="3"><span class="nm"><b>Ilha com geladeira</b><small>432 produtos · <span class="pw">energia</span> · 30 dias</small></span><span class="tk2"><i class="grow" style="--w:58.3%;--i:3"></i></span><span class="v">R$ <span data-count="33.88" data-dec="2">0</span><small>sem a geladeira</small></span></div>
+          <div class="row" data-a="up" data-i="4"><span class="nm"><b>Ponta de gôndola</b><small>216 produtos · <span class="pw">energia</span> · 20 dias</small></span><span class="tk2"><i class="grow" style="--w:100%;--i:4"></i></span><span class="v">R$ <span data-count="58.10" data-dec="2">0</span><small>sem a geladeira</small></span></div>
+          <div class="row" data-a="up" data-i="5"><span class="nm"><b>Balcão, mesa e bandejas</b><small>15 a 20 dias · a partir de R$ 420</small></span><span class="tk2" style="background:none;font-size:14px;color:var(--mut);display:flex;align-items:center">ativação curta, sem posição fixa</span><span class="v" style="font-size:16px">—</span></div>
+          <p class="src" style="margin-top:12px;--d:1.2s" data-a="fade">DPA, Catálogo de Ativos 2027 (14/10/2026). Valores estimados, sem frete. Custo por posição: cálculo 75LAB sobre o ponto médio da faixa.</p>
+        </div>
+        <div class="roles">
+          <div class="role c" data-a="right" data-i="2"><span class="cl">C</span><span><b>Cobertura</b><p>Moldura de freezer onde já há freezer e bom tráfego, mais materiais leves. <em>Abre presença sem imobilizar capital.</em></p></span></div>
+          <div class="role" data-a="right" data-i="3"><span class="cl">B</span><span><b>Crescimento</b><p>Geladeira com móvel, depois de validar o custo total de equipamento e energia.</p></span></div>
+          <div class="role a" data-a="right" data-i="4"><span class="cl">A</span><span><b>Âncora</b><p>Ponta de gôndola em janela negociada; ilha em poucas lojas. <em>Ilha não é ferramenta de cobertura.</em></p></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>Leitura nova do catálogo: dividindo o preço pela capacidade, a moldura de freezer custa cerca de um quinto da ponta por posição de produto, e não pede energia.</p></div>
+</section>
+
+<!-- =====================================================================
+     20 · CLUSTERS
+     ===================================================================== -->
+<section class="slide" id="s20" data-theme="light" data-ch="4" data-title="Clusters de loja" data-thread="160,-40,4,1,.4">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>IV · Solução</b> Clusters</p>
+    <h2 class="tk">Três clusters, três intensidades: investir na proporção do <em>potencial e da capacidade de operar</em>.</h2>
+    <div class="body">
+      <div class="cls">
+        <div class="cm" id="cm" data-a="scale"></div>
+        <div class="cl-side">
+          <div class="rule" data-a="right" data-i="1"><span class="lbl">Regra de alocação</span><p>O ativo segue a loja, e não o contrário: cada cluster recebe a intensidade que consegue manter.</p></div>
+          <div data-a="right" data-i="2"><span class="lbl">Critérios para classificar as lojas</span>
+            <ul class="crit" style="margin-top:12px">
+              <li><i class="ic" data-ic="chart"></i>Potencial de venda da loja</li>
+              <li><i class="ic" data-ic="plug"></i>Infraestrutura fria e energia</li>
+              <li><i class="ic" data-ic="layers"></i>Espaço disponível e contrapartida</li>
+              <li><i class="ic" data-ic="truck"></i>Capacidade de reposição</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="src nb" data-a="fade" style="--d:1.3s">Intensidade: leitura 75LAB a partir do briefing. Quantidade de lojas por cluster a definir com a base de redes no kick-off.</p>
+    </div>
+  </div>
+  <div class="notes"><p>Cluster A prova o modelo, B aumenta SKUs por loja com baixo custo, C abre disponibilidade sem imobilizar capital.</p></div>
+</section>
+
+<!-- =====================================================================
+     21 · VERBA
+     ===================================================================== -->
+<section class="slide" id="s21" data-theme="dark" data-ch="4" data-title="Governança da verba" data-thread="-60,-120,-6,1.15,.45">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>IV · Solução</b> Governança de investimento</p>
+    <h2 class="tk">A divisão recebida soma 110%: corrigir antes de contratar evita <em>R$ 100 mil sem cobertura</em>.</h2>
+    <div class="body" style="gap:30px">
+      <div class="bud">
+        <div class="rowb" data-a="fade">
+          <span class="k"><b>Divisão recebida</b><small>30 + 25 + 30 + 25 = 110%</small></span>
+          <div class="track recv">
+            <div class="segs2">
+              <span class="sg" style="--p:30;--i:0"><b>30%</b></span>
+              <span class="sg" style="--p:25;--i:1"><b>25%</b></span>
+              <span class="sg" style="--p:30;--i:2"><b>30%</b></span>
+              <span class="sg" style="--p:15;--i:3"><b>25%</b></span>
+              <span class="sg over" style="--p:10;--i:4"><b>+10%</b></span>
+            </div>
+            <span class="frame"></span>
+            <span class="over-tag" data-a="fade" style="--d:2s">R$ 100 mil acima do total</span>
+          </div>
+        </div>
+        <div class="rowb" data-a="fade" style="--d:.8s">
+          <span class="k"><b style="color:var(--lime)">Proposta 75LAB</b><small>30 + 30 + 25 + 15 = 100%</small></span>
+          <div class="track fix" style="width:calc(100% / 1.1)">
+            <div class="segs2">
+              <span class="sg" style="--p:33;--i:5"><b>R$ 300 mil</b><small>Distribuição e mix · 30%</small></span>
+              <span class="sg" style="--p:33;--i:6"><b>R$ 300 mil</b><small>Espaço e execução · 30%</small></span>
+              <span class="sg" style="--p:27.5;--i:7"><b>R$ 250 mil</b><small>Sellout e giro · 25%</small></span>
+              <span class="sg" style="--p:16.5;--i:8"><b>R$ 150 mil</b><small>Dados e Codice · 15%</small></span>
+            </div>
+            <span class="frame" style="width:100%"></span>
+          </div>
+        </div>
+        <div class="rowb" data-a="up" style="--d:1.6s">
+          <span></span>
+          <div class="objs" style="grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;width:calc(100% / 1.1)">
+            <div style="border-top-color:var(--sky);color:var(--mut)">Incentivos, abertura, materiais de entrada, mix e suporte comercial.</div>
+            <div style="border-top-color:#A9D3F7;color:var(--mut)">Blocos de marca, ponto extra, comunicação, instalação e materiais por cluster.</div>
+            <div style="border-top-color:#FFC27A;color:var(--mut)">Degustação seletiva, ativações e mecânicas permitidas pelo varejo.</div>
+            <div style="border-top-color:var(--lime);color:var(--mut)">Cadastro, evidências, treinamento, manutenção, contingência e leitura do piloto.</div>
+          </div>
+        </div>
+      </div>
+      <div class="bud-note" data-a="up" style="--d:2s">
+        <span class="lbl">Confirmar se R$ 1 milhão inclui</span>
+        <ul>
+          <li><i class="ic" data-ic="box"></i>Ativos</li><li><i class="ic" data-ic="truck"></i>Frete</li><li><i class="ic" data-ic="wrench"></i>Instalação</li><li><i class="ic" data-ic="people"></i>Operação</li><li><i class="ic" data-ic="cloche"></i>Degustação</li><li><i class="ic" data-ic="cloud"></i>Tecnologia</li><li><i class="ic" data-ic="chart"></i>Mensuração</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>Ponto de governança: aprovação condicionada a escopo e custo total. Os 15% da última frente protegem dados, treinamento e contingência.</p></div>
+</section>
+
+<!-- =====================================================================
+     22 · OPERAÇÃO
+     ===================================================================== -->
+<section class="slide" id="s22" data-theme="light" data-ch="5" data-title="Quatro portões de operação" data-thread="-200,80,-2,1,.4">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>V · Execução e dados</b> Design, produção e operação</p>
+    <h2 class="tk">Nenhum ativo entra na loja sem passar por <em>quatro portões</em>.</h2>
+    <div class="body" style="gap:34px">
+      <ul class="fr3">
+        <li data-a="up" data-i="0"><i class="ic" data-ic="pen"></i><span><b>Design</b><p>Hierarquia rápida (marca, ocasião, produto e preço) e família modular que agrupa sem poluir.</p></span></li>
+        <li data-a="up" data-i="1"><i class="ic" data-ic="box"></i><span><b>Produção</b><p>Materiais laváveis, peças substituíveis, troca de comunicação, acesso frontal e desmontagem.</p></span></li>
+        <li data-a="up" data-i="2"><i class="ic" data-ic="people"></i><span><b>Operação</b><p>Dono por loja, abastecimento, instalação, foto de aceite, visita, manutenção e retirada.</p></span></li>
+      </ul>
+      <div class="gates">
+        <div class="gate" data-a="up" data-i="3"><span class="gt"><i class="ic" data-ic="doc"></i></span><span class="w">Portão 1</span><b>Antes de produzir</b><ul><li style="--k:0">Aprovação da rede</li><li style="--k:1">Ponto de energia</li><li style="--k:2">Dimensão e fluxo</li><li style="--k:3">Instalação e frete</li><li style="--k:4">Responsável operacional</li></ul></div>
+        <div class="gate" data-a="up" data-i="4"><span class="gt"><i class="ic" data-ic="box"></i></span><span class="w">Portão 2</span><b>Antes de ativar</b><ul><li style="--k:5">Estoque suficiente</li><li style="--k:6">Preço visível e mix acordado</li><li style="--k:7">Equipe treinada</li><li style="--k:8">Roteiro de reposição</li><li style="--k:9">Registro inicial no Codice</li></ul></div>
+        <div class="gate" data-a="up" data-i="5"><span class="gt"><i class="ic" data-ic="camera"></i></span><span class="w">Portão 3</span><b>Durante</b><ul><li style="--k:10">Checklist e foto</li><li style="--k:11">Disponibilidade e ruptura</li><li style="--k:12">Avaria</li><li style="--k:13">Desconto ou promoção</li><li style="--k:14">Leitura de giro, quando houver</li></ul></div>
+        <div class="gate" data-a="up" data-i="6"><span class="gt"><i class="ic" data-ic="target"></i></span><span class="w">Portão 4</span><b>Depois</b><ul><li style="--k:15">Custo por loja</li><li style="--k:16">Execução no padrão</li><li style="--k:17">Incremento, quando mensurável</li><li style="--k:18">Tempo de ativo disponível</li><li style="--k:19">Manter, corrigir ou replicar</li></ul></div>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>Os portões evitam os dois erros mais caros: produzir para loja que não comporta e ativar sem estoque.</p></div>
+</section>
+
+<!-- =====================================================================
+     23 · CODICE
+     ===================================================================== -->
+<section class="slide" id="s23" data-theme="dark" data-ch="5" data-title="Codice: governança do ativo" data-thread="120,-140,6,1.1,.45">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>V · Execução e dados</b> Codice</p>
+    <h2 class="tk">Codice entra como <em>governança do ativo e da execução</em>, e não como tecnologia pela tecnologia.</h2>
+    <div class="body">
+      <div class="cd">
+        <ol class="stack">
+          <li class="hd"><span></span><span>Camada</span><span>O que controla</span><span>Valor para Galbani</span></li>
+          <li style="--l:4" data-a="down" data-i="5"><i class="ic" data-ic="bulb"></i><b>Aprendizado comercial</b><span class="w">Execução × ruptura, mix e sellout, quando houver dado.</span><span class="v">Indica qual formato, loja e combinação merecem escala.</span></li>
+          <li style="--l:3" data-a="down" data-i="4"><i class="ic" data-ic="dash"></i><b>Visão gerencial</b><span class="w">Painel por rede e cluster, mapa de ativos, prioridade de visitas.</span><span class="v">Direciona equipe e verba para risco ou oportunidade.</span></li>
+          <li style="--l:2" data-a="down" data-i="3"><i class="ic" data-ic="wrench"></i><b>Chamados e manutenção</b><span class="w">Avaria, pendência, reposição e SLA.</span><span class="v">Reduz ativo parado e protege o investimento.</span></li>
+          <li style="--l:1" data-a="down" data-i="2"><i class="ic" data-ic="camera"></i><b>Evidência de execução</b><span class="w">Checklist, foto, mix, comunicação, preço e condição visual.</span><span class="v">Transforma instalado em executado no padrão.</span></li>
+          <li style="--l:0" data-a="down" data-i="1"><i class="ic" data-ic="idcard"></i><b>Cadastro único</b><span class="w">Ativo, loja, rede, localização, responsável, instalação e status.</span><span class="v">Evita ativo invisível e habilita inventário auditável.</span></li>
+        </ol>
+        <div class="guard" data-a="right" style="--d:.9s">
+          <span class="lbl"><i class="ic" data-ic="shield"></i>Guardrails</span>
+          <p>Codice não substitui manutenção, promotor ou abastecimento.</p>
+          <ul>
+            <li>Monitoramento de temperatura</li>
+            <li>Geolocalização em tempo real</li>
+            <li>Integração com dados de venda</li>
+            <li>Coleta de dados pessoais</li>
+          </ul>
+          <p class="ok">Nada disso entra na proposta sem escopo técnico, autorização e base legal definidos. A funcionalidade contratada precisa ser confirmada antes de qualquer proposta comercial.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>A pilha cresce de baixo para cima: sem cadastro não há evidência, sem evidência não há gestão, sem gestão não há aprendizado.</p></div>
+</section>
+
+<!-- =====================================================================
+     24 · PLANO DE RASTREAMENTO 75LAB
+     ===================================================================== -->
+<section class="slide" id="s24" data-theme="light" data-ch="5" data-title="Plano de Rastreamento 75LAB" data-thread="-140,-180,-6,1,.4">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>V · Execução e dados</b> Plano de Rastreamento 75LAB</p>
+    <h2 class="tk">Dois ritmos de rastreio: uma <em>fotografia</em> da implantação e um <em>filme</em> da permanência.</h2>
+    <div class="body">
+      <div class="trk">
+        <div class="mode" data-a="left">
+          <div class="hd"><span class="lbl">Modalidade 01</span><i class="ic" data-ic="camera" style="--s:34px;color:var(--rosso)"></i></div>
+          <h3>One Shot</h3>
+          <p class="what"><b>Leitura pontual da implantação:</b> o ativo foi instalado, abastecido e está no padrão?</p>
+          <div class="vis"><svg viewBox="0 0 600 80" preserveAspectRatio="none" aria-hidden="true"><line class="base" x1="0" y1="40" x2="600" y2="40"/><circle class="flash" cx="160" cy="40" r="14"/><circle class="p r" cx="160" cy="40" r="9"/><text x="182" y="30" font-family="IBM Plex Mono" font-size="13" fill="#55677F">implantação · dia 0</text></svg></div>
+          <ul class="items">
+            <li><i class="ic" data-ic="box"></i>Implantação</li>
+            <li><i class="ic" data-ic="camera"></i>Foto de aceite</li>
+            <li><i class="ic" data-ic="grid"></i>Presença do mix</li>
+            <li><i class="ic" data-ic="tag"></i>Preço visível</li>
+            <li><i class="ic" data-ic="check"></i>Conformidade ao padrão</li>
+            <li><i class="ic" data-ic="pin"></i>Loja e data do registro</li>
+          </ul>
+          <p class="out"><b>Entrega:</b> relatório de implantação por loja e cluster, com evidências.</p>
+        </div>
+        <div class="mode ot" data-a="right">
+          <div class="hd"><span class="lbl">Modalidade 02</span><i class="ic" data-ic="cycle" style="--s:34px;color:var(--lime)"></i></div>
+          <h3>On Timing</h3>
+          <p class="what"><b>Acompanhamento recorrente</b> do ativo durante toda a permanência no PDV.</p>
+          <div class="vis"><svg viewBox="0 0 600 80" preserveAspectRatio="none" aria-hidden="true"><line class="base" x1="0" y1="40" x2="600" y2="40"/><polyline class="pl draw" pathLength="1" style="--d:.8s;stroke:#C0EE4E" points="0,48 60,40 120,30 180,44 240,26 300,36 360,22 420,34 480,20 540,28 600,18"/><circle class="p" cx="120" cy="30" r="5"/><circle class="p" cx="240" cy="26" r="5"/><circle class="p" cx="360" cy="22" r="5"/><circle class="p" cx="480" cy="20" r="5"/><circle class="flash" cx="600" cy="18" r="8" style="fill:#C0EE4E"/></svg></div>
+          <ul class="items">
+            <li><i class="ic" data-ic="calendar"></i>Visitas e checklists</li>
+            <li><i class="ic" data-ic="alert"></i>Disponibilidade e ruptura</li>
+            <li><i class="ic" data-ic="wrench"></i>Avarias e chamados</li>
+            <li><i class="ic" data-ic="clock"></i>SLA de manutenção</li>
+            <li><i class="ic" data-ic="layers"></i>Troca de comunicação</li>
+            <li><i class="ic" data-ic="bell"></i>Histórico e alertas</li>
+          </ul>
+          <p class="out"><b>Entrega:</b> painel por rede e cluster e ritual mensal de decisão.</p>
+          <p class="cl">Sensores (temperatura, porta, localização) só como could have, depois de escopo técnico e LGPD.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>One Shot responde “foi feito?”. On Timing responde “continua funcionando?”. As duas alimentam o Codice.</p></div>
+</section>
+
+<!-- =====================================================================
+     25 · DO SINAL À DECISÃO
+     ===================================================================== -->
+<section class="slide" id="s25" data-theme="dark" data-ch="5" data-title="Do ativo à decisão" data-thread="0,180,0,1.2,.5">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>V · Execução e dados</b> Fluxo de rastreamento</p>
+    <h2 class="tk">Do ativo à decisão: todo registro precisa terminar em <em>manter, corrigir ou replicar</em>.</h2>
+    <div class="body" style="gap:40px">
+      <div class="pipe">
+        <span class="wire"><i class="pk" style="--k:0"></i><i class="pk" style="--k:1"></i><i class="pk" style="--k:2"></i><i class="pk" style="--k:3"></i></span>
+        <div class="pn" data-a="up" data-i="0"><span class="bub"><i class="ic" data-ic="fridge"></i></span><span class="st">01</span><b>Display e ativação</b><p>Bloco, ponto extra ou degustação cadastrados.</p></div>
+        <div class="pn" data-a="up" data-i="1"><span class="bub"><i class="ic" data-ic="camera"></i></span><span class="st">02</span><b>Captação</b><p>Checklist, foto, ruptura e chamado em campo.</p></div>
+        <div class="pn" data-a="up" data-i="2"><span class="bub"><i class="ic" data-ic="phone"></i></span><span class="st">03</span><b>Transmissão</b><p>Registro enviado pelo time de campo.</p></div>
+        <div class="pn" data-a="up" data-i="3"><span class="bub"><i class="ic" data-ic="cloud"></i></span><span class="st">04</span><b>Plataforma</b><p>Codice centraliza ativo, loja e evidência.</p></div>
+        <div class="pn" data-a="up" data-i="4"><span class="bub"><i class="ic" data-ic="data"></i></span><span class="st">05</span><b>Dados</b><p>Base única por ativo, loja, rede e cluster.</p></div>
+        <div class="pn" data-a="up" data-i="5"><span class="bub"><i class="ic" data-ic="bulb"></i></span><span class="st">06</span><b>Insights</b><p>Painel aponta risco, ruptura e oportunidade.</p></div>
+        <div class="pn" data-a="up" data-i="6"><span class="bub"><i class="ic" data-ic="target"></i></span><span class="st">07</span><b>Decisão</b><p>Ritual mensal com dono e gatilhos definidos.</p></div>
+      </div>
+      <div class="dec3" data-a="up" style="--d:1.2s">
+        <span class="lbl">Decisões possíveis</span>
+        <div><i class="ic" data-ic="check"></i><span>Manter<small>o padrão se sustenta</small></span></div>
+        <div><i class="ic" data-ic="wrench"></i><span>Corrigir<small>mix, formato ou mensagem</small></span></div>
+        <div><i class="ic" data-ic="layers"></i><span>Replicar<small>na próxima onda de lojas</small></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>O fluxo só fecha se houver dono e ritual. Codice registra; quem decide é o comitê mensal.</p></div>
+</section>
+
+<!-- =====================================================================
+     26 · KPIs
+     ===================================================================== -->
+<section class="slide" id="s26" data-theme="light" data-ch="5" data-title="Indicadores em quatro camadas" data-thread="180,-60,4,1,.4">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>V · Execução e dados</b> KPIs</p>
+    <h2 class="tk">Medimos em quatro camadas, e só chamamos de resultado o que tiver <em>baseline</em>.</h2>
+    <div class="body" style="gap:24px">
+      <div class="kpi">
+        <div class="kq" data-a="up" data-i="0"><div class="hd"><h3>Negócio</h3><i class="ic" data-ic="coin"></i></div><ul><li>Sellout</li><li>Vendas incrementais</li><li>Ticket ou itens por compra</li><li>Margem, quando disponível</li></ul><p class="how"><b>Como medir</b>Antes × depois e, se possível, lojas com e sem intervenção.</p></div>
+        <div class="kq" data-a="up" data-i="1"><div class="hd"><h3>Trade</h3><i class="ic" data-ic="store"></i></div><ul><li>PDVs ativos</li><li>Distribuição ponderada</li><li>SKUs ativos por loja</li><li>Share de exposição e ponto extra</li><li>Ruptura</li></ul><p class="how"><b>Como medir</b>Base comercial e auditoria de campo.</p></div>
+        <div class="kq" data-a="up" data-i="2"><div class="hd"><h3>Shopper</h3><i class="ic" data-ic="people"></i></div><ul><li>Interações e degustações</li><li>Conversão da ação</li><li>Leituras de QR</li><li>Percepção rápida</li></ul><p class="how"><b>Como medir</b>Contagem e abordagem padronizada por ativação.</p></div>
+        <div class="kq" data-a="up" data-i="3"><div class="hd"><h3>Operação</h3><i class="ic" data-ic="wrench"></i></div><ul><li>Ativos instalados e disponíveis</li><li>SLA de manutenção</li><li>Execução conforme padrão</li><li>Fotos aceitas</li></ul><p class="how"><b>Como medir</b>Codice e aceite de campo.</p></div>
+      </div>
+      <div class="rr" data-a="up" style="--d:1s">
+        <div class="re"><b>Resultado real</b><span>Medido contra baseline, com lojas de controle quando possível.</span></div>
+        <div class="es"><b>Resultado esperado</b><span>Hipótese do piloto. Nenhuma meta de ROI é assumida antes do baseline.</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>Não prometemos ROI. Prometemos um método: baseline no kick-off, leitura comparável e decisão de escala com evidência.</p></div>
+</section>
+
+<!-- =====================================================================
+     27 · PRÉ-MORTEM
+     ===================================================================== -->
+<section class="slide" id="s27" data-theme="dark" data-ch="5" data-title="Pré-mortem" data-thread="-160,100,-8,1.1,.45">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>V · Execução e dados</b> Pré-mortem</p>
+    <h2 class="tk">Seis maneiras de o piloto falhar, e a <em>trava</em> de cada uma.</h2>
+    <div class="body">
+      <div class="pmx">
+        <div class="rk" data-a="up" data-i="0"><span class="n"><i class="ic" data-ic="alert"></i>Risco 01</span><p class="risk">O ativo é instalado, mas não tem estoque.</p><p class="mit"><i class="ic" data-ic="shield"></i>Ativar só com estoque mínimo e dono de reposição definidos; alerta de ruptura no checklist.</p></div>
+        <div class="rk" data-a="up" data-i="1"><span class="n"><i class="ic" data-ic="alert"></i>Risco 02</span><p class="risk">A verba é consumida por equipamento e frete.</p><p class="mit"><i class="ic" data-ic="shield"></i>Fechar o custo total de propriedade, e não só o da peça; priorizar a infraestrutura existente.</p></div>
+        <div class="rk" data-a="up" data-i="2"><span class="n"><i class="ic" data-ic="alert"></i>Risco 03</span><p class="risk">A loja não mantém o padrão.</p><p class="mit"><i class="ic" data-ic="shield"></i>Aceite com foto, treinamento simples e rotina de auditoria e visita.</p></div>
+        <div class="rk" data-a="up" data-i="3"><span class="n"><i class="ic" data-ic="alert"></i>Risco 04</span><p class="risk">O Codice registra, mas ninguém decide.</p><p class="mit"><i class="ic" data-ic="shield"></i>Ritual mensal com dono, gatilhos e decisão documentada.</p></div>
+        <div class="rk" data-a="up" data-i="4"><span class="n"><i class="ic" data-ic="alert"></i>Risco 05</span><p class="risk">Mensagem bonita não gera navegação.</p><p class="mit"><i class="ic" data-ic="shield"></i>Testar a comunicação em segundos: marca, ocasião, produto e preço legíveis a distância.</p></div>
+        <div class="rk" data-a="up" data-i="5"><span class="n"><i class="ic" data-ic="alert"></i>Risco 06</span><p class="risk">Degustação sem objetivo.</p><p class="mit"><i class="ic" data-ic="shield"></i>Definir item, volume, abordagem, conversão e disponibilidade antes de aprovar a ação.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>Imaginamos o piloto fracassado e voltamos para trás: cada causa provável já tem uma trava no plano.</p></div>
+</section>
+
+<!-- =====================================================================
+     28 · BENEFÍCIOS CONECTADOS
+     ===================================================================== -->
+<section class="slide" id="s28" data-theme="light" data-ch="5" data-title="Benefícios conectados" data-thread="0,-200,0,1,.35">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>V · Execução e dados</b> Benefícios</p>
+    <h2 class="tk">Um mesmo sistema gera valor para <em>seis públicos</em> ao mesmo tempo.</h2>
+    <div class="body" style="padding-top:10px">
+      <div class="web" id="web">
+        <svg class="links" id="webLinks" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+        <div class="hub" data-a="scale"><img src="assets/img/brand/galbani-logo.svg" alt="Galbani"><b>Da geladeira<br>à mesa</b><small>bloco + Codice</small></div>
+        <div class="bn" style="left:15%;top:14%" data-a="pop" data-i="1"><span class="bub"><i class="ic" data-ic="people"></i></span><span><b>Shopper</b><p>Encontra a marca em segundos e entende como usar.</p></span></div>
+        <div class="bn" style="left:85%;top:14%" data-a="pop" data-i="2"><span class="bub"><i class="ic" data-ic="flag"></i></span><span><b>Marca</b><p>Italianidade vira uso cotidiano e repertório de receitas.</p></span></div>
+        <div class="bn" style="left:85%;top:50%" data-a="pop" data-i="3"><span class="bub"><i class="ic" data-ic="store"></i></span><span><b>Varejo</b><p>Categoria fria organizada e ponto extra com missão.</p></span></div>
+        <div class="bn" style="left:85%;top:86%" data-a="pop" data-i="4"><span class="bub"><i class="ic" data-ic="handshake"></i></span><span><b>Comercial</b><p>Negociação por cluster com evidência de execução.</p></span></div>
+        <div class="bn" style="left:15%;top:86%" data-a="pop" data-i="5"><span class="bub"><i class="ic" data-ic="wrench"></i></span><span><b>Operação</b><p>Dono, checklist e SLA: menos ativo parado.</p></span></div>
+        <div class="bn" style="left:15%;top:50%" data-a="pop" data-i="6"><span class="bub"><i class="ic" data-ic="data"></i></span><span><b>Dados</b><p>Escala decidida com evidência, loja a loja.</p></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>Benefícios encadeados: o shopper acha, o varejo vende, a operação mantém, os dados mostram, o comercial negocia e a marca cresce.</p></div>
+</section>
+
+<!-- =====================================================================
+     29 · ENTREGÁVEIS E PRIORIZAÇÃO
+     ===================================================================== -->
+<section class="slide" id="s29" data-theme="dark" data-ch="6" data-title="Entregáveis e priorização" data-thread="160,80,6,1.1,.45">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>VI · Próximos passos</b> Entregáveis e priorização</p>
+    <h2 class="tk">Primeiro o essencial: tecnologia avançada só entra <em>depois de provar</em> retorno e operação.</h2>
+    <div class="body">
+      <div class="pr">
+        <ul class="ent">
+          <li data-a="up" data-i="0"><i class="ic" data-ic="compass"></i><span><b>Estratégia</b><p>Mapa de redes e lojas, matriz de clusters, árvore de mix e playbook de execução.</p></span></li>
+          <li data-a="up" data-i="1"><i class="ic" data-ic="pen"></i><span><b>Criação</b><p>Território, KV de varejo, kit por ocasião, arquitetura de comunicação e manual visual.</p></span></li>
+          <li data-a="up" data-i="2"><i class="ic" data-ic="layers"></i><span><b>3D e engenharia</b><p>Adaptação dos ativos, vistas de loja, técnico, especificações e protótipo, se necessário.</p></span></li>
+          <li data-a="up" data-i="3"><i class="ic" data-ic="truck"></i><span><b>Implementação</b><p>Instalação, logística, checklist de aceite, treinamento e rotina de manutenção.</p></span></li>
+          <li data-a="up" data-i="4"><i class="ic" data-ic="data"></i><span><b>Codice e dados</b><p>Modelo de cadastro, campos, painel, checklist, evidências e chamados.</p></span></li>
+          <li data-a="up" data-i="5"><i class="ic" data-ic="chart"></i><span><b>Mensuração</b><p>Baseline, quadro de KPIs, plano de coleta, relatório do piloto e regra de escala.</p></span></li>
+        </ul>
+        <div class="mos">
+          <div class="mo m" style="--i:0" data-a="right" data-i="1"><span class="k">Must have<b>Agora</b></span><p>Lojas e mix definidos, baseline, bloco de marca, regras operacionais, checklist e cadastro de ativos, plano de abastecimento.</p></div>
+          <div class="mo s" style="--i:1" data-a="right" data-i="2"><span class="k">Should have<b>No piloto</b></span><p>Ponto extra por janela, degustação seletiva, QR de receitas, painel consolidado e teste A/B por formato.</p></div>
+          <div class="mo c" style="--i:2" data-a="right" data-i="3"><span class="k">Could have<b>Depois de provar</b></span><p>Integrações de dados mais profundas, sensores e experiências digitais avançadas.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>O must have já resolve presença, bloco e governança. Sensores e integrações só depois que o piloto provar operação e retorno.</p></div>
+</section>
+
+<!-- =====================================================================
+     30 · CRONOGRAMA
+     ===================================================================== -->
+<section class="slide" id="s30" data-theme="light" data-ch="6" data-title="Cronograma" data-thread="-120,-120,-4,1,.4">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>VI · Próximos passos</b> Cronograma</p>
+    <h2 class="tk">Doze semanas da descoberta à <em>regra de escala</em>.</h2>
+    <div class="body" style="gap:24px">
+      <div class="gantt" data-a="fade">
+        <span></span>
+        <div class="wk"><span>S1</span><span>S2</span><span>S3</span><span>S4</span><span>S5</span><span>S6</span><span>S7</span><span>S8</span><span>S9</span><span>S10</span><span>S11</span><span>S12</span><span>Depois</span></div>
+        <div class="gl"><b>Descoberta</b><small>semanas 1–2</small></div>
+        <div class="gr"><span class="gb" style="--c:1 / 3;--i:0">Lojas, dados, verba, ativos, Codice</span></div>
+        <div class="gl"><b>Estratégia e criação</b><small>semanas 3–4</small></div>
+        <div class="gr"><span class="gb" style="--c:3 / 5;--i:1">Clusters, mix, território, KPIs</span></div>
+        <div class="gl"><b>Desenvolvimento</b><small>semanas 5–7</small></div>
+        <div class="gr"><span class="gb" style="--c:5 / 8;--i:2">KV, materiais, técnico, Codice e treino</span></div>
+        <div class="gl"><b>Piloto</b><small>semanas 8–11</small></div>
+        <div class="gr"><span class="gb p" style="--c:8 / 12;--i:3">Instalação, ponto extra ou degustação, acompanhamento</span></div>
+        <div class="gl"><b>Aprendizado</b><small>semana 12</small></div>
+        <div class="gr"><span class="gb l" style="--c:12 / 13;--i:4">Leitura</span></div>
+        <div class="gl"><b>Escala</b><small>em ondas</small></div>
+        <div class="gr"><span class="gb e" style="--c:13 / 14;--i:5">Ondas</span></div>
+        <div class="gl"><b>Marcos</b><small>aprovações</small></div>
+        <div class="gr"><span class="ms" style="left:0%;--i:0"></span><span class="ms" style="left:30.77%;--i:1"></span><span class="ms" style="left:53.85%;--i:2"></span><span class="ms" style="left:92.31%;--i:3"></span></div>
+      </div>
+      <ul class="gnote" data-a="up" style="--d:1.4s">
+        <li><i></i><span><b>Kick-off</b>workshop de 90 minutos</span></li>
+        <li><i></i><span><b>Fim da S4</b>clusters, mix e território aprovados</span></li>
+        <li><i></i><span><b>Fim da S7</b>técnico aprovado e Codice configurado</span></li>
+        <li><i></i><span><b>Fim da S12</b>relatório do piloto e regra de escala</span></li>
+        <li><span><b>A definir</b>datas e responsáveis de cada fase, no workshop</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="notes"><p>Cronograma em semanas, sem datas: elas dependem do kick-off. Os marcos são pontos de aprovação, não só de entrega.</p></div>
+</section>
+
+<!-- =====================================================================
+     31 · PRÓXIMO PASSO
+     ===================================================================== -->
+<section class="slide" id="s31" data-theme="dark" data-ch="6" data-title="Workshop de 90 minutos" data-thread="120,140,8,1.2,.5">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>VI · Próximos passos</b> Próximo passo objetivo</p>
+    <h2 class="tk">Próximo passo: um workshop de <em>90 minutos</em> para fechar seis decisões.</h2>
+    <div class="body">
+      <div class="ws">
+        <div class="ring" data-a="scale">
+          <svg viewBox="0 0 440 440" aria-hidden="true">
+            <circle class="bgc" cx="220" cy="220" r="190"/>
+            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:0;stroke:#7CC0F5" transform="rotate(1 220 220)"/>
+            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:1;stroke:#A9D3F7" transform="rotate(61 220 220)"/>
+            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:2;stroke:#FFC27A" transform="rotate(121 220 220)"/>
+            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:3;stroke:#C0EE4E" transform="rotate(181 220 220)"/>
+            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:4;stroke:#FF7D93" transform="rotate(241 220 220)"/>
+            <circle class="seg" cx="220" cy="220" r="190" style="--len:193;--i:5;stroke:#FFFFFF" transform="rotate(301 220 220)"/>
+          </svg>
+          <div class="ctr"><span><span class="num" data-count="90">0</span><small>minutos · 6 decisões</small></span></div>
+        </div>
+        <div>
+          <ol class="dec6">
+            <li data-a="up" data-i="1"><span class="n" style="--c:#7CC0F5">1</span><b>Redes e lojas prioritárias</b></li>
+            <li data-a="up" data-i="2"><span class="n" style="--c:#A9D3F7">2</span><b>Baseline de distribuição e giro</b></li>
+            <li data-a="up" data-i="3"><span class="n" style="--c:#FFC27A">3</span><b>Orçamento corrigido</b></li>
+            <li data-a="up" data-i="4"><span class="n" style="--c:#C0EE4E">4</span><b>Definição funcional do Codice</b></li>
+            <li data-a="up" data-i="5"><span class="n" style="--c:#FF7D93">5</span><b>Custo total dos ativos</b></li>
+            <li data-a="up" data-i="6"><span class="n" style="--c:#FFFFFF">6</span><b>Critério de seleção do piloto</b></li>
+          </ol>
+          <div class="who" data-a="up" style="--d:1.3s">
+            <span class="lbl">Na sala</span>
+            <span><i class="ic" data-ic="handshake"></i>Comercial</span><span><i class="ic" data-ic="store"></i>Trade</span><span><i class="ic" data-ic="truck"></i>Operação</span><span><i class="ic" data-ic="grid"></i>Categoria</span><span><i class="ic" data-ic="data"></i>Codice</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>Pedido objetivo: agendar o workshop. Com essas seis decisões fechadas, a proposta comercial sai sem estimativas abertas.</p></div>
+</section>
+
+<!-- =====================================================================
+     32 · ENCERRAMENTO
+     ===================================================================== -->
+<section class="slide" id="s32" data-theme="dark" data-ch="6" data-title="Encerramento" data-thread="0,0,0,1.5,.6">
+  <div class="bgimg" aria-hidden="true"><img src="assets/img/cenas/pasta-alla-norma.jpg" alt=""></div>
+  <div class="sl">
+    <p class="eyebrow" data-a="fade" style="justify-content:center"><span class="tri"></span><b>Encerramento</b></p>
+    <h2 class="l1 tk" style="max-width:none;margin-top:26px">Na Itália, Galbani quer dizer <em>confiança</em>.</h2>
+    <p class="l2" data-a="up" style="--d:1.2s">No Brasil, a confiança começa onde a escolha acontece: <span class="script">da geladeira à mesa.</span></p>
+    <span class="tri" data-a="fade" style="--d:2s"></span>
+  </div>
+  <div class="notes"><p>Fechar voltando à abertura. A promessa da marca é confiança; no Brasil ela começa por estar presente, agrupada e disponível.</p></div>
+</section>
+
+<!-- =====================================================================
+     33 · INSTITUCIONAL
+     ===================================================================== -->
+<section class="slide" id="s33" data-theme="dark" data-ch="6" data-title="Contatos" data-thread="-80,-60,-6,1.1,.45">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>Contatos</b> 75LAB · Aceleradora de Trade Marketing</p>
+    <h2 class="tk fin">Vamos colocar Galbani <em>na mesa do brasileiro</em>.</h2>
+    <div class="body">
+      <div class="inst">
+        <div class="card" data-a="up" data-i="0">
+          <h4><i class="ic" data-ic="building"></i>75LAB</h4>
+          <dl>
+            <dt>Razão social</dt><dd>75LAB Estratégia, Design e Produção Ltda.</dd>
+            <dt>CNPJ</dt><dd>55.470.982/0001-77</dd>
+            <dt>Endereço</dt><dd>Av. das Nações Unidas, 12901 · São Paulo · SP</dd>
+            <dt>Telefone</dt><dd class="tbd">[a preencher]</dd>
+            <dt>Site</dt><dd><a href="https://75lab.com.br" target="_blank" rel="noopener">75lab.com.br</a></dd>
+            <dt>E-mail</dt><dd>contato@75lab.com.br<button class="copy" type="button" data-copy="contato@75lab.com.br" aria-label="Copiar e-mail da 75LAB">copiar</button></dd>
+            <dt>Redes</dt><dd><a href="https://www.instagram.com/setecincolab/" target="_blank" rel="noopener">@setecincolab</a> · <a href="https://www.linkedin.com/company/75lab" target="_blank" rel="noopener">LinkedIn</a></dd>
+          </dl>
+        </div>
+        <div class="card" data-a="up" data-i="1">
+          <h4><i class="ic" data-ic="people"></i>Apresentação</h4>
+          <dl>
+            <dt>Nome</dt><dd>Vanessa Morelli</dd>
+            <dt>Cargo</dt><dd>Diretora Comercial</dd>
+            <dt>E-mail</dt><dd><a href="mailto:vanessa.morelli@75lab.com.br">vanessa.morelli@75lab.com.br</a><button class="copy" type="button" data-copy="vanessa.morelli@75lab.com.br" aria-label="Copiar e-mail da Vanessa">copiar</button></dd>
+            <dt>Telefone</dt><dd><a href="tel:+5511983982803">(11) 98398-2803</a></dd>
+          </dl>
+        </div>
+        <div class="lg" data-a="scale" data-i="2">
+          <img class="l1" src="assets/img/brand/galbani-logo.svg" alt="Galbani">
+          <img class="l2" src="assets/img/brand/75lab-black.png" alt="75LAB">
+          <small>Planejamento estratégico de trade<br>Galbani 2027 · 22 de outubro de 2026</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notes"><p>Deixar esta tela aberta no fim da reunião. Os e-mails podem ser copiados com um clique.</p></div>
+</section>
+
+<!-- =====================================================================
+     APÊNDICE · FONTES
+     ===================================================================== -->
+<section class="slide apx" id="a1" data-theme="light" data-ch="7" data-title="Fontes consultadas" data-thread="0,-100,0,1,.3">
+  <div class="sl">
+    <p class="eyebrow" data-a="fade"><span class="tri"></span><b>Apoio</b> Fontes e nota metodológica</p>
+    <h2 class="tk" style="font-size:40px">Todo número tem fonte; toda leitura qualitativa está marcada como da 75LAB.</h2>
+    <div class="body" style="justify-content:flex-start;padding-top:22px;gap:16px">
+      <ul class="srcs">
+        <li><b>Briefing e Catálogo de Ativos DPA 2027</b>Briefing Galbani 2027; catálogo recebido em 14/10/2026 (ativos, custos estimados sem frete, capacidades, energia e prazos).</li>
+        <li><b>Galbani Brasil</b>galbani.com.br, produtos, receitas e nossa-historia (22/10/2026); lactalisculinary.com (história global).</li>
+        <li><b>Chegada e campanha</b>SuperVarejo (05/04/2024); Giro News (09/04/2024); Propmark (15/08/2024).</li>
+        <li><b>Mercado de queijos</b>ABIQ e Nielsen via eDairyNews/Globo Rural (18/07/2025); Scanntech via Giro News (09/12/2024); ABIQ via AgFeed (04/09/2025).</li>
+        <li><b>Shopper</b>Kantar, consumo massivo 2º tri 2025 (04/11/2025); Worldpanel by Numerator via Mercado&amp;Consumo (20/01/2026).</li>
+        <li><b>Concorrência</b>Sites oficiais Tirolez e Vigor; Mercado&amp;Consumo (03/11/2025, Tirolez; 06/03/2026, Savencia e Quatá); NIQ via Mercado&amp;Consumo (21/08/2026, marcas próprias).</li>
+        <li><b>Tendências</b>IAB Brasil e Ibope via Mercado&amp;Consumo (29/04/2026); SuperVarejo (09/12/2025); Baguete (14/04/2022).</li>
+        <li><b>Fotos</b>Produtos e receitas: galbani.com.br. Gôndola e freezer: Eduardo Soares (Unsplash). Corredor: ilja Freiberg (Unsplash).</li>
+      </ul>
+      <p class="method"><b>Nota metodológica.</b> Dados de mercado são contexto, não meta de performance. Posições do mapa de concorrência, barras dos territórios, intensidade por cluster e custo por posição são leituras ou cálculos da 75LAB. Números, funcionalidades do Codice e claims de produto devem ser validados com as áreas responsáveis antes de constar em materiais comerciais.</p>
+    </div>
+  </div>
+  <div class="notes"><p>Material de apoio para perguntas sobre fontes.</p></div>
+</section>
+
+  </main>
+</div>
+</div>
+
+<div class="apx-open"><button type="button" id="apxOpen">Ver fontes e nota metodológica</button></div>
+
+<!-- menu de capítulos -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Capítulos da apresentação">
+  <button class="close-m" id="menuClose" type="button" aria-label="Fechar capítulos">×</button>
+  <div class="mc" id="menuA"></div>
+  <div class="mc" id="menuB"></div>
+  <div class="mc" id="menuC">
+    <p class="keys"><kbd>→</kbd> <kbd>espaço</kbd> avançar · <kbd>←</kbd> voltar · clique nas laterais<br><kbd>M</kbd> capítulos · <kbd>N</kbd> notas · <kbd>F</kbd> tela cheia · <kbd>Esc</kbd> fechar</p>
+  </div>
+</div>
+
+<!-- lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+  <span class="lb-c" id="lbCount"></span>
+  <button class="lb-x" id="lbClose" type="button" aria-label="Fechar imagem">×</button>
+  <button class="lb-p" id="lbPrev" type="button" aria-label="Imagem anterior"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 3 5 8l5 5"/></svg></button>
+  <button class="lb-n" id="lbNext" type="button" aria-label="Próxima imagem"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 3 5 5-5 5"/></svg></button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+</div>
+
+<div class="np" id="np" aria-live="polite"></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="assets/js/deck.js"></script>
+</body>
+</html>
