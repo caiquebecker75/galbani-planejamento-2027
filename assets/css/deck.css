@@ -405,37 +405,55 @@ ul,ol{padding:0;list-style:none}
 .mk-read p b{font-style:italic;font-weight:400;color:var(--acc)}
 
 /* =========================================================================
-   08 · CONCORRÊNCIA
+   04 · CONCORRÊNCIA: mapa de territórios com legendas no hover
    ========================================================================= */
-.cmp{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:56px;align-items:center}
-.map{position:relative;aspect-ratio:16/10.5;border-radius:4px;background-color:var(--cardbg);border:1px solid var(--cardline);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:10% 10%;background-position:-1px -1px}
-.map .ax{position:absolute;background:var(--fg)}
-.map .ax.x{left:5%;right:5%;top:50%;height:1px}
-.map .ax.y{top:6%;bottom:6%;left:50%;width:1px}
-.map .al{position:absolute;font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);background:var(--cardbg);padding:2px 4px}
-.map .al.l{left:3%;top:calc(50% + 8px)}
-.map .al.r{right:3%;top:calc(50% + 8px);text-align:right}
-.map .al.t{left:calc(50% + 10px);top:4%}
-.map .al.b{left:calc(50% + 10px);bottom:4%}
-.map .zone{position:absolute;left:8%;top:9%;width:40%;height:38%;border-radius:200px 200px 0 0;border:1.5px dashed var(--rosso);background:rgba(205,18,50,.05);display:flex;align-items:flex-end;padding:14px 18px}
-.map .zone span{font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--rosso);line-height:1.5}
-.map .pl{position:absolute;translate:-50% -50%;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;width:180px}
-.map .pl i{width:var(--sz,26px);height:var(--sz,26px);border-radius:50%;background:var(--blu)}
-.map .pl b{font-family:var(--f-serif);font-weight:500;font-size:17px;line-height:1.15}
-.map .pl small{font-size:12.5px;color:var(--mut);line-height:1.3}
-.map .pl.pb i{background:#9A9183}
-.map .pl.gal i{background:var(--rosso);animation:galP 2.6s ease-in-out infinite}
-.map .pl.gal b{color:var(--rosso);font-style:italic}
+.tmap-body{justify-content:flex-start;gap:14px;padding-top:26px}
+.tmap{position:relative;flex:1;min-height:0;border-radius:4px;background-color:var(--cardbg);border:1px solid var(--cardline);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:5% 10%;background-position:-1px -1px}
+.tmap .ax{position:absolute;background:var(--fg);pointer-events:none}
+.tmap .ax.x{left:3%;right:3%;top:50%;height:1px}
+.tmap .ax.y{top:5%;bottom:5%;left:50%;width:1px}
+.tmap .al{position:absolute;font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);background:var(--cardbg);padding:2px 6px;pointer-events:none}
+.tmap .al.l{left:2.4%;top:calc(50% + 8px)}
+.tmap .al.r{right:2.4%;top:calc(50% + 8px)}
+.tmap .al.t{left:calc(50% + 10px);top:3.5%}
+.tmap .al.b{left:calc(50% + 10px);bottom:3.5%}
+.tmap .zone{position:absolute;left:5%;top:8%;width:38%;height:40%;border-radius:50% 50% 0 0 / 100% 100% 0 0;border:1.5px dashed var(--rosso);border-bottom:0;background:linear-gradient(180deg,rgba(205,18,50,.07),rgba(205,18,50,.02));display:flex;align-items:flex-end;justify-content:center;padding-bottom:12px;pointer-events:none}
+.tmap .zone span{font-family:var(--f-serif);font-style:italic;font-size:17px;color:var(--rosso)}
+.tmap .mv{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.tmap .mv path{fill:none;stroke:var(--rosso);stroke-width:1.5;stroke-dasharray:5 7;vector-effect:non-scaling-stroke;opacity:.7}
+.tmap .hint{position:absolute;right:18px;top:14px;display:flex;align-items:center;gap:8px;font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);pointer-events:none;transition:opacity .4s}
+.tmap .hint .ic{--s:16px;color:var(--rosso)}
+.tmap:has(.pl:hover,.pl:focus-visible,.pl.on) .hint{opacity:0}
+.tmap .pl{position:absolute;z-index:2;display:flex;align-items:center;gap:12px;height:28px;translate:-12px -14px;padding:0;text-align:left;cursor:default;transition:opacity .35s var(--ease)}
+.tmap .pl>i{flex:none;width:24px;height:24px;border-radius:50%;background:var(--blu);box-shadow:0 0 0 0 rgba(9,77,164,.25);transition:transform .35s var(--ease),box-shadow .35s}
+.tmap .pl>b{font-family:var(--f-serif);font-weight:500;font-size:20px;white-space:nowrap;transition:color .3s}
+.tmap .pl.pb>i{background:#9A9183}
+.tmap .pl.gal>i{width:28px;height:28px;margin:-2px;background:var(--rosso);animation:galP 2.6s ease-in-out infinite}
+.tmap .pl.gal>b{font-style:italic;color:var(--rosso);font-size:22px}
+.tmap .pl.risk>i{width:18px;height:18px;margin:3px;background:transparent;border:2px dashed var(--rosso)}
+.tmap .pl.risk>b{font-style:italic;font-size:16px;color:var(--rosso);opacity:.8}
 @keyframes galP{0%,100%{box-shadow:0 0 0 6px rgba(205,18,50,.18)}50%{box-shadow:0 0 0 14px rgba(205,18,50,.04)}}
-.map .mv{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
-.map .mv path{fill:none;stroke:var(--rosso);stroke-width:.35;stroke-dasharray:1.2 1.2}
-.cmp-l{display:grid}
-.cmp-l li{display:grid;gap:4px;padding:14px 0;border-bottom:1px solid var(--line)}
-.cmp-l li:first-child{border-top:2px solid var(--fg)}
-.cmp-l b{font-family:var(--f-serif);font-weight:500;font-size:21px}
-.cmp-l span{font-size:15.5px;line-height:1.42;color:var(--mut)}
-.cmp-l .o{font-size:15.5px;line-height:1.42;color:var(--fg);font-weight:700}
-.cmp-l .o::before{content:"→ ";color:var(--rosso)}
+.tmap .pl:hover,.tmap .pl:focus-visible,.tmap .pl.on{z-index:6}
+.tmap .pl:hover>i,.tmap .pl:focus-visible>i,.tmap .pl.on>i{transform:scale(1.25);box-shadow:0 0 0 8px rgba(9,77,164,.14)}
+.tmap .pl:hover>b,.tmap .pl:focus-visible>b,.tmap .pl.on>b{color:var(--rosso)}
+.tmap:has(.pl:hover,.pl:focus-visible,.pl.on) .pl:not(:hover):not(:focus-visible):not(.on){opacity:.3}
+.tmap:has(.pl:hover,.pl:focus-visible,.pl.on) .zone{opacity:.45}
+.tmap .tip{position:absolute;top:50%;width:330px;display:grid;gap:4px;padding:18px 20px 18px;border-radius:4px;background:var(--ink);color:#F5EFE3;box-shadow:0 26px 50px -24px rgba(29,26,22,.6);text-align:left;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-50%) translateX(var(--tx,-8px));transition:opacity .3s var(--ease),transform .45s var(--ease),visibility 0s linear .3s}
+.tmap .pl[data-side="r"] .tip{left:calc(100% + 18px)}
+.tmap .pl[data-side="l"] .tip{right:calc(100% + 18px);--tx:8px}
+.tmap .pl[data-v="down"] .tip{top:-14px;transform:translateX(var(--tx,-8px))}
+.tmap .pl[data-v="up"] .tip{top:auto;bottom:-14px;transform:translateX(var(--tx,-8px))}
+.tmap .pl:hover .tip,.tmap .pl:focus-visible .tip,.tmap .pl.on .tip{opacity:1;visibility:visible;--tx:0px;transition-delay:0s}
+.tmap .tip small{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,239,227,.6)}
+.tmap .tip small.o{margin-top:10px;padding-top:10px;border-top:1px solid rgba(245,239,227,.18);color:var(--peach)}
+.tmap .tip span{font-size:15px;line-height:1.45;color:rgba(245,239,227,.86)}
+.tmap .tip strong{font-family:var(--f-serif);font-weight:500;font-size:19px;line-height:1.28;color:#F5EFE3}
+.tmap .pl.gal .tip{background:var(--rosso)}
+.tmap .pl.gal .tip small.o{color:#FFD8A8;border-top-color:rgba(255,247,236,.3)}
+.tmap-list{display:none}
+.tmap-body .foot-row{align-items:flex-start}
+.tmap-body .pres{max-width:62ch;text-align:right}
+.tmap-body .pres b{font-weight:700;color:var(--fg)}
 
 /* =========================================================================
    09 · JORNADA DO SHOPPER
@@ -1160,13 +1178,6 @@ html.m .pm .prod{grid-template-columns:110px minmax(0,1fr);height:96px}
 html.m .mk .st .num{font-size:62px}
 html.m .mk-read{grid-template-columns:minmax(0,1fr);gap:8px}
 html.m .mk-read p{font-size:19px}
-html.m .map{aspect-ratio:auto;height:440px}
-html.m .map .zone span{display:none}
-html.m .map .pl.gal[style*="opacity"]{display:none}
-html.m .map .pl{width:110px}
-html.m .map .pl b{font-size:13px}
-html.m .map .pl small{display:none}
-html.m .map .al{font-size:9px}
 html.m .jr svg.curve,html.m .jr .lg{display:none}
 html.m .jr ol{padding-top:0;gap:22px}
 html.m .jr .need{min-height:0}
@@ -1332,3 +1343,18 @@ html.m .inv .ir{grid-template-columns:12px minmax(0,1fr) auto;gap:6px 12px}
 html.m .inv .ir p{grid-column:2 / -1}
 html.m .inv .ir .v{font-size:22px}
 html.m .inv-foot .ctc{padding-left:0;border-left:0;padding-top:16px;border-top:1px solid var(--line)}
+html.m .tmap{flex:none;height:440px;background-size:10% 10%}
+html.m .tmap .pl>b{font-size:14px}
+html.m .tmap .pl.gal>b{font-size:15px}
+html.m .tmap .pl.risk,html.m .tmap .hint,html.m .tmap .tip,html.m .tmap .zone span{display:none}
+html.m .tmap .al{font-size:9px}
+html.m .tmap-list{display:grid;gap:0}
+html.m .tmap-list li{padding:14px 0;border-bottom:1px solid var(--line);display:grid;gap:4px}
+html.m .tmap-list b{font-family:var(--f-serif);font-weight:500;font-size:20px}
+html.m .tmap-list span{font-size:15px;line-height:1.45;color:var(--mut)}
+html.m .tmap-list strong{font-size:15px;line-height:1.45;font-weight:700}
+html.m .tmap-list strong::before{content:"→ ";color:var(--rosso)}
+html.m .tmap-body .foot-row{flex-direction:column;gap:10px}
+html.m .tmap-body .pres{text-align:left}
+html.m .tmap .mv{display:none}
+html.m .tmap .pl[data-side="l"]{flex-direction:row-reverse;translate:calc(-100% + 12px) -14px}

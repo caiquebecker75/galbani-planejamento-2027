@@ -172,30 +172,44 @@
   <div class="sl">
     <p class="eyebrow" data-a="fade"><span class="tri"></span><b>I · O desafio</b> Concorrência</p>
     <h2 class="tk">A gôndola tem donos de hábito, de preço e de prestígio; o espaço livre é a <em>italianidade prática</em> do dia a dia.</h2>
-    <div class="body">
-      <div class="cmp">
-        <div class="map" data-a="scale" role="img" aria-label="Mapa qualitativo de territórios: eixo horizontal do cotidiano ao especial, eixo vertical do ingrediente à solução de uso. Galbani migra de uma percepção de origem distante para a italianidade prática do dia a dia.">
-          <span class="ax x"></span><span class="ax y"></span>
+    <div class="body tmap-body">
+      <div class="tmap" id="tmap" data-a="fade" aria-label="Mapa qualitativo de territórios: do cotidiano ao especial e do ingrediente à solução de uso. Passe o mouse ou o foco sobre cada marca para ver a leitura.">
+          <span class="ax x" aria-hidden="true"></span><span class="ax y" aria-hidden="true"></span>
           <span class="al l">← Cotidiano · preço</span><span class="al r">Especial · premium →</span>
           <span class="al t">↑ Solução de uso</span><span class="al b">↓ Ingrediente</span>
-          <div class="zone" data-a="fade" style="--d:1.2s"><span>Espaço livre<br>italianidade prática<br>no cotidiano</span></div>
-          <svg class="mv" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M70 36 C 60 24 47 26 37 29"/></svg>
-          <div class="pl pb" style="left:17%;top:80%" data-a="pop" data-i="2"><i style="--sz:30px"></i><b>Regionais e marca própria</b><small>preço e capilaridade</small></div>
-          <div class="pl" style="left:34%;top:63%" data-a="pop" data-i="3"><i style="--sz:30px"></i><b>Vigor e Faixa Azul</b><small>familiaridade</small></div>
-          <div class="pl" style="left:56%;top:40%" data-a="pop" data-i="4"><i style="--sz:34px"></i><b>Tirolez</b><small>tradição e culinária</small></div>
-          <div class="pl" style="left:80%;top:72%" data-a="pop" data-i="5"><i style="--sz:28px"></i><b>Polenghi</b><small>especialidades</small></div>
-          <div class="pl gal" style="left:76%;top:33%;opacity:.6" data-a="pop" data-i="6"><i style="--sz:16px;animation:none;box-shadow:none;background:transparent;border:2px dashed var(--rosso)"></i><b style="font-size:13px">Risco de percepção</b><small>origem distante</small></div>
-          <div class="pl gal" style="left:30%;top:21%;--d:1.9s" data-a="pop"><i style="--sz:28px"></i><b>Galbani 2027</b><small>alvo</small></div>
-        </div>
-        <ul class="cmp-l">
-          <li data-a="right" data-i="1"><b>Tirolez</b><span>Amplo portfólio, tradição, culinária e inovações funcionais; em consolidação.</span><span class="o">Ocupar italianidade aplicável e solução de refeição.</span></li>
-          <li data-a="right" data-i="2"><b>Vigor e Faixa Azul</b><span>Familiaridade e presença histórica em lácteos e queijos.</span><span class="o">Bloco novo que facilite descoberta e combinação.</span></li>
-          <li data-a="right" data-i="3"><b>Polenghi (Savencia)</b><span>Autoridade em queijos e especialidades.</span><span class="o">Democratizar o toque italiano sem reduzir qualidade.</span></li>
-          <li data-a="right" data-i="4"><b>Regionais e marca própria</b><span>Preço, capilaridade e hábito local.</span><span class="o">Ser a escolha que agrega valor claro à mesa.</span></li>
-          <li data-a="right" data-i="5" style="border-bottom:0"><span style="font-size:15px"><b style="font-size:15px">Président</b> é do Grupo Lactalis: o papel de cada marca do grupo na gôndola se define em arquitetura de portfólio, não em disputa.</span></li>
-        </ul>
+          <div class="zone" data-a="fade" style="--d:1.1s" aria-hidden="true"><span>Espaço livre · italianidade prática no cotidiano</span></div>
+          <svg class="mv" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path class="flow-dash" d="M73.5 29.5 C 62 14 44 14 29 23"/></svg>
+          <p class="hint" data-a="fade" style="--d:1.6s"><i class="ic" data-ic="pointer"></i>Passe o mouse sobre cada marca</p>
+          <button class="pl gal" type="button" style="left:28%;top:24%" data-side="r" data-v="down" data-a="pop" data-i="7" aria-describedby="tip0">
+            <i aria-hidden="true"></i><b>Galbani 2027</b>
+            <span class="tip" id="tip0" role="tooltip"><small>O alvo</small><span>Ninguém ocupa a italianidade prática do dia a dia: quem é italiano é especial, quem é cotidiano não é italiano.</span><small class="o">Espaço para Galbani</small><strong>Autoridade italiana como solução simples para a mesa de todo dia.</strong></span>
+          </button>
+          <button class="pl risk" type="button" style="left:74%;top:30%" data-side="l" data-v="down" data-a="pop" data-i="6" aria-describedby="tip1">
+            <i aria-hidden="true"></i><b>Risco de percepção</b>
+            <span class="tip" id="tip1" role="tooltip"><small>Origem distante</small><span>A italianidade pode parecer distante ou premium demais na hora da compra rápida.</span><small class="o">Como evitar</small><strong>Traduzir a origem em receitas, ocasiões e finalizações simples.</strong></span>
+          </button>
+          <button class="pl" type="button" style="left:57%;top:45%" data-side="r" data-v="mid" data-a="pop" data-i="2" aria-describedby="tip2">
+            <i aria-hidden="true"></i><b>Tirolez</b>
+            <span class="tip" id="tip2" role="tooltip"><small>Força e território</small><span>Amplo portfólio, tradição, culinária e inovações funcionais; em consolidação.</span><small class="o">Espaço para Galbani</small><strong>Ocupar italianidade aplicável e solução de refeição.</strong></span>
+          </button>
+          <button class="pl" type="button" style="left:35%;top:64%" data-side="r" data-v="mid" data-a="pop" data-i="3" aria-describedby="tip3">
+            <i aria-hidden="true"></i><b>Vigor e Faixa Azul</b>
+            <span class="tip" id="tip3" role="tooltip"><small>Força e território</small><span>Familiaridade e presença histórica em lácteos e queijos.</span><small class="o">Espaço para Galbani</small><strong>Bloco novo que facilite descoberta e combinação.</strong></span>
+          </button>
+          <button class="pl" type="button" style="left:82%;top:70%" data-side="l" data-v="up" data-a="pop" data-i="4" aria-describedby="tip4">
+            <i aria-hidden="true"></i><b>Polenghi (Savencia)</b>
+            <span class="tip" id="tip4" role="tooltip"><small>Força e território</small><span>Autoridade em queijos e especialidades.</span><small class="o">Espaço para Galbani</small><strong>Democratizar o toque italiano sem reduzir qualidade.</strong></span>
+          </button>
+          <button class="pl pb" type="button" style="left:15%;top:82%" data-side="r" data-v="up" data-a="pop" data-i="5" aria-describedby="tip5">
+            <i aria-hidden="true"></i><b>Regionais e marca própria</b>
+            <span class="tip" id="tip5" role="tooltip"><small>Força e território</small><span>Preço, capilaridade e hábito local.</span><small class="o">Espaço para Galbani</small><strong>Ser a escolha que agrega valor claro à mesa.</strong></span>
+          </button>
       </div>
-      <p class="src" data-a="fade" style="--d:1.4s">Briefing; sites oficiais Tirolez e Vigor; Mercado&amp;Consumo (03/11/2025 e 06/03/2026); AgFeed (04/09/2025). Posições no mapa: leitura qualitativa 75LAB.</p>
+      <ul class="tmap-list" aria-hidden="true"></ul>
+      <div class="foot-row" data-a="fade" style="--d:1.4s">
+        <p class="src">Briefing; sites oficiais Tirolez e Vigor; Mercado&amp;Consumo (03/11/2025 e 06/03/2026); AgFeed (04/09/2025). Posições no mapa: leitura qualitativa 75LAB.</p>
+        <p class="src nb pres"><b>Président</b> é do Grupo Lactalis: o papel de cada marca do grupo se define em arquitetura de portfólio, não em disputa.</p>
+      </div>
     </div>
   </div>
   <div class="notes"><p>Ninguém ocupa a italianidade prática do dia a dia: quem é italiano é especial, quem é cotidiano não é italiano. Atenção: Président é do mesmo grupo.</p></div>

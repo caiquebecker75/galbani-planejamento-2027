@@ -78,6 +78,7 @@ const ICONS = {
   handshake: '<circle cx="9" cy="12" r="5.5"/><circle class="a-bob" cx="15" cy="12" r="5.5"/>',
   compass: '<circle cx="12" cy="12" r="9"/><g class="a-needle"><path d="m12 5.5 2.4 6.5L12 18.5 9.6 12z"/><circle class="f" cx="12" cy="12" r="1.2"/></g>',
   building: '<rect x="3" y="9" width="8" height="12" rx="1"/><rect x="11" y="3" width="10" height="18" rx="1"/><path d="M14 7h1M17.5 7h1M14 11h1M17.5 11h1M14 15h1M17.5 15h1M5.8 13h2.4M5.8 17h2.4"/><circle class="a-ping" cx="16" cy="3" r="1.6"/>',
+  pointer: '<path class="a-bob" d="M6 3.5 18 12l-5.2 1.2 3 6.1-2.4 1.2-3-6.1L6.5 18z"/>',
   coin: '<circle cx="12" cy="12" r="8.5"/><path class="a-bob" d="M14.5 9.2c-.5-.8-1.4-1.2-2.5-1.2-1.5 0-2.5.8-2.5 1.9 0 2.6 5.2 1.4 5.2 4.1 0 1.1-1.1 2-2.7 2-1.2 0-2.2-.5-2.7-1.4M12 6.5V8m0 8v1.5"/>'
 };
 function paintIcons(root = document) {
@@ -338,6 +339,19 @@ const onEnter = {}, onLeave = {};
   onEnter.s18 = () => { clearTimeout(anim); setGap(0); anim = setTimeout(() => { if (cur && cur.id === 's18') setGap(46); }, RM ? 100 : 1500); };
   onLeave.s18 = () => { clearTimeout(anim); };
   if (mobile) setGap(40);
+})();
+
+// 04 · mapa de territórios: legenda no hover, clique fixa (toque e apresentação)
+(function territories() {
+  const m = $('#tmap'); if (!m) return;
+  const pls = $$('.pl', m);
+  const pin = el => pls.forEach(p => p.classList.toggle('on', p === el && !p.classList.contains('on')));
+  pls.forEach(p => p.addEventListener('click', e => { e.stopPropagation(); pin(p); }));
+  m.addEventListener('click', () => pls.forEach(p => p.classList.remove('on')));
+  m.addEventListener('keydown', e => { if (e.key === 'Escape') { pls.forEach(p => p.classList.remove('on')); e.stopPropagation(); } });
+  onLeave.s8 = () => pls.forEach(p => p.classList.remove('on'));
+  // no celular não há hover: as legendas viram lista abaixo do mapa
+  $('#s8 .tmap-list').innerHTML = pls.filter(p => !p.classList.contains('risk')).map(p => `<li><b>${$('b', p).textContent}</b><span>${$('.tip span', p).textContent}</span><strong>${$('.tip strong', p).textContent}</strong></li>`).join('');
 })();
 
 // 28 · teia de benefícios
@@ -686,7 +700,7 @@ document.addEventListener('click', e => {
    (cliques em botões, links, imagens e no bloco 3D seguem normais)
    --------------------------------------------------------------------- */
 if (!mobile) {
-  const EDGE = .1, SKIP = 'a,button,input,label,select,textarea,[data-zoom],.ex,.prod,.occ,.bk-l li,.mast,.menu,.lb,.np';
+  const EDGE = .1, SKIP = 'a,button,input,label,select,textarea,[data-zoom],.ex,.tmap,.prod,.occ,.bk-l li,.mast,.menu,.lb,.np';
   const side = x => x < Math.max(70, innerWidth * EDGE) ? -1 : x > innerWidth - Math.max(70, innerWidth * EDGE) ? 1 : 0;
   document.addEventListener('click', e => {
     if (e.button !== 0 || introOn || lb.classList.contains('open') || menu.classList.contains('open')) return;
