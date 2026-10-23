@@ -18,11 +18,11 @@ Desafio → solução → por que a 75LAB → plano e investimento.
 | 05 · Estratégia | Cinco movimentos, nesta ordem: entrar, agrupar, ativar, provar e aprender. |
 | 06 · A plataforma | **Da geladeira à mesa**, que nasce de um arco no centro da página. |
 | 07 · O bloco | Vista explodida em CSS 3D: marca, ocasião, produto e preço em segundos. |
-| 08 · Ativos por cluster | Custo por posição de produto no catálogo DPA e o ativo certo para cada cluster. |
+| 08 · Ativos por cluster | Cada loja recebe o ativo que consegue manter: três arcos (cobertura, crescimento e âncora) com perfil, ativo do catálogo DPA, capacidade, energia e prazo. Sem preços. |
 | 09 · Plano de Rastreamento 75LAB | One Shot (fotografia da implantação) × On Timing (filme da permanência). |
 | 10 · Por que a 75LAB | Um só parceiro da estratégia à loja: credenciais, cases (inclusive para o Grupo Lactalis) e O Método 75 aplicado a Galbani. |
 | 11 · Cronograma | Doze semanas, do workshop à regra de escala. |
-| 12 · Investimento | R$ 1 milhão em quatro frentes, com a verba fechada em 100%: o que cada frente cobre, o que a 75LAB entrega, condições e os contatos da Vanessa. |
+| 12 · Investimento | Investimento por entregável da 75LAB (estratégia, criação, 3D e engenharia, produção e instalação, ativação, rastreamento e mensuração), por enquanto zerado, mais condições e os contatos da Vanessa. Única tela com preços. |
 
 **Material de apoio** (fora da contagem, abre pelo índice `M`): decupagem do briefing, jornada do shopper, clusters de loja, Codice, indicadores, pré-mortem, workshop de 90 minutos e fontes.
 
@@ -71,10 +71,10 @@ Direção de arte editorial, como uma revista de gastronomia: papel creme `#F5EF
 
 ## Pendências
 
-- **Investimento (tela 12):** os valores são a verba de R$ 1 milhão do briefing, com a divisão corrigida para 30/30/25/15. O fee da 75LAB por entregável ainda não aparece; entra quando houver a tabela, ou sai do workshop. Confirmar o que R$ 1 milhão inclui (ativos, frete, instalação, operação, degustação, tecnologia e mensuração), condições de pagamento e validade.
+- **Investimento (tela 12):** os seis entregáveis estão em R$ 0,00 de propósito. Preencher os valores, as condições de pagamento e a validade antes de enviar. A verba de R$ 1 milhão do briefing não aparece mais no deck.
 - **Cases (tela 10):** confirmar a autorização para mostrar Seara, Unilever, O Boticário e Whirlpool a Galbani. Os cases de Lactalis/Parmalat são do próprio grupo.
 - **Codice:** confirmar o escopo contratado. Temperatura, geolocalização em tempo real, integração de venda e dados pessoais aparecem só como guardrails.
 - **Posicionamento:** *Do seu jeito, à sua mesa* vem do briefing; não foi encontrado em fontes públicas.
-- **Leituras 75LAB:** posições do mapa de concorrência e custo por posição (cálculo sobre o ponto médio das faixas do catálogo, sem frete e sem a geladeira) precisam de validação com Trade e Categoria.
+- **Leituras 75LAB:** posições do mapa de concorrência e a intensidade por cluster precisam de validação com Trade e Categoria.
 - **Cronograma:** só em semanas; datas e responsáveis saem do workshop.
 - **3D e AR:** não há modelo 3D (.glb/.usdz) do bloco, então não há experiência de AR; a vista explodida é uma ilustração em CSS 3D.

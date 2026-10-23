@@ -1358,3 +1358,71 @@ html.m .tmap-body .foot-row{flex-direction:column;gap:10px}
 html.m .tmap-body .pres{text-align:left}
 html.m .tmap .mv{display:none}
 html.m .tmap .pl[data-side="l"]{flex-direction:row-reverse;translate:calc(-100% + 12px) -14px}
+
+/* =========================================================================
+   08 · ATIVOS POR CLUSTER (sem preços)
+   ========================================================================= */
+.clu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;align-items:end}
+.clc{--cc:var(--verde);display:flex;flex-direction:column;gap:14px;padding:0 28px 26px;background:var(--cardbg);border:1px solid var(--cardline);border-radius:220px 220px 4px 4px;border-top:0;position:relative}
+.clc::before{content:"";position:absolute;inset:0;border-radius:inherit;border-top:4px solid var(--cc);pointer-events:none}
+.clc.b{--cc:var(--blu)}
+.clc.a{--cc:var(--rosso)}
+.clc.c{padding-top:64px}
+.clc.b{padding-top:96px}
+.clc.a{padding-top:128px}
+.clc header{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;margin-bottom:4px}
+.clc header .L{font-family:var(--f-serif);font-style:italic;font-size:64px;line-height:.9;color:var(--cc)}
+.clc header b{font-family:var(--f-serif);font-weight:500;font-size:28px;letter-spacing:-.015em}
+.clc header .lv{display:flex;gap:5px;margin-top:4px}
+.clc header .lv i{width:22px;height:4px;border-radius:2px;background:var(--line)}
+.clc header .lv i.on{background:var(--cc)}
+.clc .pf{font-size:15.5px;line-height:1.45;color:var(--mut);text-align:center;min-height:46px}
+.clc .at{display:grid;grid-template-columns:36px minmax(0,1fr);gap:12px;align-items:center;padding-top:14px;border-top:1px solid var(--line)}
+.clc .at .ic{--s:30px;color:var(--cc)}
+.clc .at small{display:block;font-weight:800;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.clc .at b{display:block;font-family:var(--f-serif);font-weight:500;font-size:22px;line-height:1.2}
+.clc .tg{display:flex;flex-wrap:wrap;gap:6px}
+.clc .tg li{font-size:13px;font-weight:700;padding:4px 10px;border:1px solid var(--line);border-radius:99px;color:var(--fg)}
+.clc .us{font-size:15px;line-height:1.45;color:var(--mut)}
+.clc .fn{margin-top:auto;padding-top:12px;border-top:1px solid var(--line);font-family:var(--f-serif);font-style:italic;font-size:19px;line-height:1.3;color:var(--cc)}
+.clu-ax{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:16px;align-items:center;font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.clu-ax i{height:2px;background:linear-gradient(90deg,var(--verde),var(--blu),var(--rosso));position:relative}
+.clu-ax i::after{content:"";position:absolute;right:-1px;top:-4px;border:5px solid transparent;border-left:8px solid var(--rosso);border-right:0}
+#s19 .body{gap:18px}
+#s19 .foot-row .src.nb b{color:var(--fg)}
+
+/* 12 · investimento por entregável */
+#inv .inv .ih,#inv .inv .ir{grid-template-columns:52px minmax(0,1fr) 170px}
+#inv .inv .ih span:last-child{text-align:right}
+#inv .inv .ir{padding:13px 0}
+#inv .inv .ir .n{font-family:var(--f-serif);font-style:italic;font-size:22px;color:var(--rosso)}
+#inv .inv .ir .k small{font-size:14px;line-height:1.4;margin-top:3px}
+#inv .inv .ir .v{text-align:right;font-size:26px}
+#inv .inv .tot .num small{font-style:normal;color:var(--fg);margin-left:0;font-size:.6em}
+
+html.m .clu{grid-template-columns:minmax(0,1fr);gap:18px}
+html.m .clc,html.m .clc.c,html.m .clc.b,html.m .clc.a{padding:56px 20px 22px}
+html.m .clc header .L{font-size:48px}
+html.m .clc .pf{min-height:0}
+html.m .clu-ax{display:none}
+html.m #inv .inv .ir{grid-template-columns:36px minmax(0,1fr) auto}
+html.m #inv .inv .ir .v{font-size:18px}
+/* 08 e 12: caber em qualquer proporção */
+.clc{gap:10px;padding-bottom:22px}
+.clc.c{padding-top:28px}
+.clc.b{padding-top:50px}
+.clc.a{padding-top:72px}
+.clc header .L{font-size:50px}
+.clc header b{font-size:25px}
+.clc .pf{min-height:0;font-size:15px}
+.clc .at{padding-top:12px}
+.clc .us{font-size:14.5px}
+.clc .fn{padding-top:10px;font-size:18px}
+#s19 .body{justify-content:flex-end;gap:14px;padding-top:18px}
+#inv .inv .ir{padding:10px 0}
+#inv .inv .ir .k b{font-size:20px}
+#inv .inv .ir .v{font-size:24px}
+/* 08: arcos da mesma altura; a intensidade fica nos traços */
+.clu{align-items:stretch}
+.clc.c,.clc.b,.clc.a{padding-top:40px}
+html.m .clc.c,html.m .clc.b,html.m .clc.a{padding-top:48px}
