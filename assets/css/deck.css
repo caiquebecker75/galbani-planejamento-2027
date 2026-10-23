@@ -1543,3 +1543,4 @@ html.m #s19 .clc .vit{flex:none;height:220px}
 html.m #s19 .clc,html.m #s19 .clc.c,html.m #s19 .clc.b,html.m #s19 .clc.a{padding:0 0 18px}
 html.m #s19 .clc>:not(.vit){margin-left:20px;margin-right:20px}
 html.m .inv2 .tb,html.m .inv2 .r,html.m .inv2 .col{flex:none;min-height:auto}
+#s19 .clc::before{z-index:3}
