@@ -16,13 +16,13 @@ Desafio → solução → por que a 75LAB → plano e investimento.
 | 03 · Mercado e shopper | A categoria cresce e se consolida, mas o carrinho encolhe: cada item precisa justificar seu lugar. |
 | 04 · Concorrência | Mapa de territórios: o espaço livre é a italianidade prática do dia a dia. |
 | 05 · Estratégia | Cinco movimentos, nesta ordem: entrar, agrupar, ativar, provar e aprender. |
-| 06 · A plataforma | **Da geladeira à mesa**, que nasce de um arco no centro da página. |
-| 07 · O bloco | Vista explodida em CSS 3D: marca, ocasião, produto e preço em segundos. |
-| 08 · Ativos por cluster | Cada loja recebe o ativo que consegue manter: três arcos (cobertura, crescimento e âncora) com perfil, ativo do catálogo DPA, capacidade, energia e prazo. Sem preços. |
+| 06 · A plataforma | **Da geladeira à mesa**, que nasce de um arco: a geladeira Galbani (onde se escolhe) e o prato (onde se serve). |
+| 07 · O bloco | Render do bloco por ocasião na geladeira, com quatro pontos (régua por ocasião, bloco de marca, preço legível e stopper) que acendem junto com a lista. |
+| 08 · Peças por cluster | Cobertura: kit de comunicação e display de porta com ventosa. Crescimento: geladeira 1 porta e displays de chão P e M. Âncora: geladeira 2 portas, ilha refrigerada e ponta de gôndola. Balcão de degustação em todos. Sem preços; todas as peças abrem em galeria. |
 | 09 · Plano de Rastreamento 75LAB | One Shot (fotografia da implantação) × On Timing (filme da permanência). |
 | 10 · Por que a 75LAB | Um só parceiro da estratégia à loja: credenciais, cases (inclusive para o Grupo Lactalis) e O Método 75 aplicado a Galbani. |
 | 11 · Cronograma | Doze semanas, do workshop à regra de escala. |
-| 12 · Investimento | Investimento por entregável da 75LAB (estratégia, criação, 3D e engenharia, produção e instalação, ativação, rastreamento e mensuração), por enquanto zerado, mais condições e os contatos da Vanessa. Única tela com preços. |
+| 12 · Investimento | Serviços 75LAB (seis entregáveis) e as nove peças de PDV, todos em R$ 0,00 por enquanto, total, condições e os contatos da Vanessa. Única tela com preços. |
 
 **Material de apoio** (fora da contagem, abre pelo índice `M`): decupagem do briefing, jornada do shopper, clusters de loja, Codice, indicadores, pré-mortem, workshop de 90 minutos e fontes.
 
@@ -47,6 +47,7 @@ assets/img/brand/       logos Galbani (galbani.com.br) e 75LAB
 assets/img/produtos/    embalagens Galbani (galbani.com.br)
 assets/img/cenas/       receitas Galbani (galbani.com.br) e gôndolas (Unsplash)
 assets/img/cases/       pranchas do portfólio 75LAB (75lab.com.br)
+assets/img/pecas/       renders das peças de PDV propostas pela 75LAB para Galbani
 assets/img/og.jpg       imagem de compartilhamento
 serve.ps1               servidor local (powershell -File serve.ps1 -Port 8791)
 ```
@@ -66,6 +67,7 @@ Direção de arte editorial, como uma revista de gastronomia: papel creme `#F5EF
 
 - Embalagens e receitas: galbani.com.br (uso interno em apresentação ao cliente)
 - Cases: portfólio 75LAB (Lactalis/Parmalat, Seara, Unilever, O Boticário, Whirlpool)
+- Peças de PDV: renders ilustrativos enviados pela 75LAB (bloco por ocasião, kit de comunicação, display de porta, displays de chão P e M, geladeiras 1 e 2 portas, ilha, ponta de gôndola e balcão de degustação)
 - gondola-fria-iogurtes.jpg: Eduardo Soares, unsplash.com/photos/NRP0iTFLzPk (Unsplash License)
 - corredor-refrigerados.jpg: ilja Freiberg, unsplash.com/photos/FWRnXmQQV8U (Unsplash License)
 
@@ -77,4 +79,5 @@ Direção de arte editorial, como uma revista de gastronomia: papel creme `#F5EF
 - **Posicionamento:** *Do seu jeito, à sua mesa* vem do briefing; não foi encontrado em fontes públicas.
 - **Leituras 75LAB:** posições do mapa de concorrência e a intensidade por cluster precisam de validação com Trade e Categoria.
 - **Cronograma:** só em semanas; datas e responsáveis saem do workshop.
-- **3D e AR:** não há modelo 3D (.glb/.usdz) do bloco, então não há experiência de AR; a vista explodida é uma ilustração em CSS 3D.
+- **3D e AR:** não há modelo 3D (.glb/.usdz) das peças, então não há experiência de AR; as peças aparecem como renders.
+- **Peças:** quantidades por cluster e valores de cada peça na tela 12 saem do workshop. Os renders mostram produtos que não estão no portfólio-base (Burrata, Fior di Latte, Mascarpone): confirmar se a Galbani os vende no Brasil antes de enviar.

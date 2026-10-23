@@ -341,6 +341,14 @@ const onEnter = {}, onLeave = {};
   if (mobile) setGap(40);
 })();
 
+// 07 · pontos do bloco: número na imagem e item da lista acendem juntos
+(function blockPins() {
+  const els = $$('#s18 [data-n]'); if (!els.length) return;
+  $$('#s18 .pin').forEach((p, i) => p.style.setProperty('--k', i));
+  const set = n => els.forEach(e => e.classList.toggle('on', e.dataset.n === n));
+  els.forEach(e => { e.addEventListener('mouseenter', () => set(e.dataset.n)); e.addEventListener('mouseleave', () => set(null)); });
+})();
+
 // 04 · mapa de territórios: legenda no hover, clique fixa (toque e apresentação)
 (function territories() {
   const m = $('#tmap'); if (!m) return;
