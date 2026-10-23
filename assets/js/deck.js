@@ -431,6 +431,7 @@ function chrome(s) {
     [...ticks.children].forEach(b => { b.classList.toggle('done', +b.dataset.ch <= c); b.classList.toggle('cur', +b.dataset.ch === c); });
     $('#prevBtn').disabled = i === 0; $('#nextBtn').disabled = i === mainS.length - 1;
   }
+  cornerArrow(s);
   $$('#menu ol button').forEach(b => b.classList.toggle('cur', b.dataset.id === s.id));
   if (np.classList.contains('open')) fillNotes(s);
   try { history.replaceState(null, '', '#' + s.id); } catch (e) {}
@@ -704,28 +705,13 @@ document.addEventListener('click', e => {
 });
 
 /* ---------------------------------------------------------------------
-   Clique nas laterais: esquerda volta, direita avança
-   (cliques em botões, links, imagens e no bloco 3D seguem normais)
+   Seta discreta no canto inferior direito: avança uma tela
    --------------------------------------------------------------------- */
-if (!mobile) {
-  const EDGE = .1, SKIP = 'a,button,input,label,select,textarea,[data-zoom],.ex,.tmap,.prod,.occ,.bk-l li,.mast,.menu,.lb,.np';
-  const side = x => x < Math.max(70, innerWidth * EDGE) ? -1 : x > innerWidth - Math.max(70, innerWidth * EDGE) ? 1 : 0;
-  document.addEventListener('click', e => {
-    if (e.button !== 0 || introOn || lb.classList.contains('open') || menu.classList.contains('open')) return;
-    if (e.target.closest(SKIP) || getSelection().toString()) return;
-    const d = side(e.clientX); if (d) step(d);
-  });
-  const hint = document.createElement('div'); hint.className = 'edge-hint'; hint.setAttribute('aria-hidden', 'true');
-  hint.innerHTML = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 3 5 5-5 5"/></svg>';
-  body.appendChild(hint);
-  addEventListener('pointermove', e => {
-    if (e.pointerType !== 'mouse') return;
-    const d = (!e.target.closest || e.target.closest(SKIP)) ? 0 : side(e.clientX);
-    const list = cur && (cur.classList.contains('apx') ? apxS : mainS), i = list ? list.indexOf(cur) + d : -1;
-    const ok = d && i >= 0 && i < list.length && !introOn;
-    hint.classList.toggle('on', !!ok); hint.classList.toggle('l', d < 0);
-  }, { passive: true });
-  document.addEventListener('mouseleave', () => hint.classList.remove('on'));
+const cnext = $('#cnext');
+cnext.addEventListener('click', () => step(1));
+function cornerArrow(s) {
+  const list = s.classList.contains('apx') ? apxS : mainS;
+  cnext.hidden = list.indexOf(s) === list.length - 1;
 }
 
 addEventListener('resize', fit);

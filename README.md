@@ -28,7 +28,7 @@ Desafio → solução → por que a 75LAB → plano e investimento.
 
 ## Navegação
 
-`→` `↓` `PageDown` `espaço` avançam e `←` `↑` `PageUp` voltam. Clicar na lateral direita (10% da largura) avança e na esquerda volta. Também funcionam roda do mouse, deslizar no tablet, as setas do cabeçalho e os marcos de capítulo na régua de progresso. `Home`/`End`, `M` índice, `N` notas da apresentadora, `F` tela cheia, `Esc` fecha. Deep link: `#inv`, `#lab`, `#s17`. Toda imagem amplia em lightbox (`Esc`, clique fora ou `×` fecham; setas navegam na galeria).
+`→` `↓` `PageDown` `espaço` avançam e `←` `↑` `PageUp` voltam. Uma seta discreta no canto inferior direito avança (some na última tela). Também funcionam roda do mouse, deslizar no tablet, as setas do cabeçalho e os marcos de capítulo na régua de progresso. `Home`/`End`, `M` índice, `N` notas da apresentadora, `F` tela cheia, `Esc` fecha. Deep link: `#inv`, `#lab`, `#s17`. Toda imagem amplia em lightbox (`Esc`, clique fora ou `×` fecham; setas navegam na galeria).
 
 O trailer de abertura roda uma vez por sessão do navegador; qualquer tecla ou clique pula. Até 820 px de largura (e em tablet em retrato) a apresentação vira rolagem vertical. Com `prefers-reduced-motion`, as animações viram transições curtas.
 
