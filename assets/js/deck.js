@@ -345,7 +345,13 @@ const onEnter = {}, onLeave = {};
 (function blockPins() {
   const els = $$('#s18 [data-n]'); if (!els.length) return;
   $$('#s18 .pin').forEach((p, i) => p.style.setProperty('--k', i));
-  const set = n => els.forEach(e => e.classList.toggle('on', e.dataset.n === n));
+  const shot = $('#s18 .shot');
+  const set = n => {
+    els.forEach(e => e.classList.toggle('on', e.dataset.n === n));
+    const pin = n && $(`#s18 .pin[data-n="${n}"]`);
+    if (pin) { shot.style.setProperty('--sx', pin.style.left); shot.style.setProperty('--sy', pin.style.top); }
+    shot.classList.toggle('lit', !!pin);
+  };
   els.forEach(e => { e.addEventListener('mouseenter', () => set(e.dataset.n)); e.addEventListener('mouseleave', () => set(null)); });
 })();
 
