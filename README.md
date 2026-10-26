@@ -67,7 +67,7 @@ Direção de arte editorial, como uma revista de gastronomia: papel creme `#F5EF
 
 - Embalagens e receitas: galbani.com.br (uso interno em apresentação ao cliente)
 - Cases: portfólio 75LAB (Lactalis/Parmalat, Seara, Unilever, O Boticário, Whirlpool)
-- Peças de PDV: renders ilustrativos enviados pela 75LAB (bloco por ocasião, kit de comunicação, display de porta, displays de chão P e M, geladeiras 1 e 2 portas, ilha, ponta de gôndola e balcão de degustação)
+- Peças de PDV: renders ilustrativos enviados pela 75LAB (bloco por ocasião, kit de comunicação, display de porta, displays de chão P e M, geladeiras 1 e 2 portas, ilha, ponta de gôndola e balcão de degustação). O bloco e o kit já trazem o stopper em nuvem; no kit, a testeira sem clipes e o stopper novo foram montados sobre o render original (`-v2`)
 - gondola-fria-iogurtes.jpg: Eduardo Soares, unsplash.com/photos/NRP0iTFLzPk (Unsplash License)
 - corredor-refrigerados.jpg: ilja Freiberg, unsplash.com/photos/FWRnXmQQV8U (Unsplash License)
 
