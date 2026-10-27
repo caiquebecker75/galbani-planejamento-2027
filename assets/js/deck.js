@@ -496,7 +496,7 @@ function show(next, dir) {
   }
   // mesma família: a nova página desliza por cima, como uma folha virada
   const sh = dir > 0 ? '-36px 0 60px -34px' : '36px 0 60px -34px';
-  const a = next.animate([{ transform: `translateX(${dir * 100}%)`, boxShadow: `${sh} rgba(29,26,22,.45)` }, { transform: 'translateX(0)', boxShadow: `${sh} rgba(29,26,22,0)` }], { duration: 950, easing: ez });
+  const a = next.animate([{ transform: `translateX(${dir * 100}%)`, boxShadow: `${sh} rgba(15,31,61,.45)` }, { transform: 'translateX(0)', boxShadow: `${sh} rgba(15,31,61,0)` }], { duration: 950, easing: ez });
   prev.animate([{ transform: 'translateX(0)', filter: 'brightness(1)' }, { transform: `translateX(${-dir * 16}%)`, filter: 'brightness(.93)' }], { duration: 950, easing: ez, fill: 'forwards' });
   after(a, 1200, settle);
 }

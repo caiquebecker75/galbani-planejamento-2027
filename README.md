@@ -52,7 +52,7 @@ assets/img/og.jpg       imagem de compartilhamento
 serve.ps1               servidor local (powershell -File serve.ps1 -Port 8791)
 ```
 
-Direção de arte editorial, como uma revista de gastronomia: papel creme `#F5EFE3`, tinta `#1D1A16`, títulos em Fraunces (serifa, com itálico para a ideia-chave), texto em Manrope e o script Lobster só nos códigos de marca. As cores vêm do selo Galbani: vermelho `#CD1232` como acento, azul `#094DA4` e verde `#009649`, mais um pêssego `#F2B880` para a luz quente da mesa. O arco, forma da janela e do forno, aparece nas fotos e no selo. Cabeçalho fixo com logos, folio e régua de progresso; o índice abre como sumário de revista.
+Direção de arte editorial, como uma revista de gastronomia, ajustada ao KV *Do seu jeito, à sua mesa* (27/10/2026): papel de pergaminho `#F6EEDB`, tinta azul-marinho `#0F1F3D` (texto e páginas escuras), títulos em azul do KV `#11305F` em Fraunces (serifa, com itálico vermelho para a ideia-chave), texto em Manrope e o script Lobster só nos códigos de marca. Vermelho `#CD1232` como acento, azul `#094DA4` e verde `#009649` do selo, pêssego `#F2B880` para a luz quente da mesa. Do KV vêm o toldo listrado (capa e plataforma), a janela em arco com moldura dupla, os ramos de oliveira em traço de gravura (capa e estratégia), a pincelada sob o título da capa e a cena da mesa na janela da capa (`assets/img/cenas/kv-mesa.jpg`, recorte de `kv-galbani.webp`). Cabeçalho fixo com logos, folio e régua de progresso; o índice abre como sumário de revista.
 
 ## Fontes
 
