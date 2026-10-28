@@ -25,7 +25,7 @@ Desafio → solução → por que a 75LAB → plano e investimento.
 | 12 · Plano de Rastreamento 75LAB | One Shot (fotografia da implantação) × On Timing (filme da permanência). |
 | 13 · Por que a 75LAB | Um só parceiro da estratégia à loja: credenciais, cases (inclusive para o Grupo Lactalis) e O Método 75 aplicado a Galbani. |
 | 14 · Cronograma | Doze semanas, do workshop à regra de escala. |
-| 15 · Investimento | Os seis serviços 75LAB em R$ 0,00, total, condições e os contatos da Vanessa. A lista de preços peça a peça saiu em 28/10/2026; os novos valores de peças entram quando chegarem. Única tela com preços. |
+| 15 · Investimento | Três blocos com horas e valor: Estratégia e prontidão (20 h, R$ 11.000), Criação (30 h, R$ 17.000) e 3D e engenharia (70 h, R$ 39.000). Total de 120 horas e R$ 67.000, mais os contatos da Vanessa. Única tela com preços. |
 
 **Material de apoio** (fora da contagem, abre pelo índice `M`): decupagem do briefing, jornada do shopper, clusters de loja, Codice, indicadores, pré-mortem, workshop de 90 minutos e fontes.
 
@@ -76,7 +76,7 @@ Direção de arte editorial, como uma revista de gastronomia, ajustada ao KV *Do
 
 ## Pendências
 
-- **Investimento (tela 15):** os seis serviços estão em R$ 0,00 de propósito. A lista de peças com preço saiu; os novos valores serão enviados pela 75LAB. Preencher também condições de pagamento e validade antes de enviar. A verba de R$ 1 milhão do briefing não aparece no deck.
+- **Investimento (tela 15):** valores enviados pela 75LAB em 28/10/2026, só para estratégia, criação e 3D/engenharia (R$ 67.000, 120 h). Produção, instalação, ativação e rastreamento não aparecem na tela; condições de pagamento e validade também não. A verba de R$ 1 milhão do briefing não aparece no deck.
 - **Cases (tela 13):** confirmar a autorização para mostrar Seara, Unilever, O Boticário e Whirlpool a Galbani. Os cases de Lactalis/Parmalat são do próprio grupo.
 - **Codice:** confirmar o escopo contratado. Temperatura, geolocalização em tempo real, integração de venda e dados pessoais aparecem só como guardrails.
 - **Posicionamento:** *Do seu jeito, à sua mesa* vem do briefing; não foi encontrado em fontes públicas.
