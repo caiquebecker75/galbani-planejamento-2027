@@ -23,7 +23,7 @@ Desafio → solução → por que a 75LAB → plano e investimento.
 | 10 · Plano de Rastreamento 75LAB | One Shot (fotografia da implantação) × On Timing (filme da permanência). |
 | 11 · Por que a 75LAB | Um só parceiro da estratégia à loja: credenciais, cases (inclusive para o Grupo Lactalis) e O Método 75 aplicado a Galbani. |
 | 12 · Cronograma | Doze semanas, do workshop à regra de escala. |
-| 13 · Investimento | Serviços 75LAB (seis entregáveis), as nove peças do kit base e as quinze peças especiais opcionais, todos em R$ 0,00 por enquanto, total, condições e os contatos da Vanessa. Única tela com preços. |
+| 13 · Investimento | Os seis serviços 75LAB em R$ 0,00, total, condições e os contatos da Vanessa. A lista de preços peça a peça saiu em 28/10/2026; os novos valores de peças entram quando chegarem. Única tela com preços. |
 
 **Material de apoio** (fora da contagem, abre pelo índice `M`): decupagem do briefing, jornada do shopper, clusters de loja, Codice, indicadores, pré-mortem, workshop de 90 minutos e fontes.
 
@@ -74,7 +74,7 @@ Direção de arte editorial, como uma revista de gastronomia, ajustada ao KV *Do
 
 ## Pendências
 
-- **Investimento (tela 13):** os seis entregáveis estão em R$ 0,00 de propósito. Preencher os valores, as condições de pagamento e a validade antes de enviar. A verba de R$ 1 milhão do briefing não aparece mais no deck.
+- **Investimento (tela 13):** os seis serviços estão em R$ 0,00 de propósito. A lista de peças com preço saiu; os novos valores serão enviados pela 75LAB. Preencher também condições de pagamento e validade antes de enviar. A verba de R$ 1 milhão do briefing não aparece no deck.
 - **Cases (tela 11):** confirmar a autorização para mostrar Seara, Unilever, O Boticário e Whirlpool a Galbani. Os cases de Lactalis/Parmalat são do próprio grupo.
 - **Codice:** confirmar o escopo contratado. Temperatura, geolocalização em tempo real, integração de venda e dados pessoais aparecem só como guardrails.
 - **Posicionamento:** *Do seu jeito, à sua mesa* vem do briefing; não foi encontrado em fontes públicas.
