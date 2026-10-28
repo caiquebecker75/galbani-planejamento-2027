@@ -1690,3 +1690,71 @@ html.m .inv2 .esp .k b{white-space:normal}
 html.m .inv2 .svc2{display:flex;flex-direction:column}
 html.m .inv2 .svc2 .r .k b{font-size:19px}
 html.m .inv2 .svc2 .r .v{font-size:19px}
+
+/* =========================================================================
+   ESTRATÉGIA 28/10 · mapa com importados e duas telas de estratégia
+   ========================================================================= */
+/* mapa: importado = anel; rótulo à esquerda; legenda */
+.tmap .pl.imp>i{background:transparent;border:3px solid var(--blu)}
+.tmap .pl.gal.imp>i{width:22px;height:22px;margin:1px;border-color:var(--rosso);background:transparent;animation:none}
+.tmap .pl.gal.imp>b{font-size:18px}
+.tmap .pl.ll{flex-direction:row-reverse;translate:calc(-100% + 12px) -14px;text-align:right}
+.tmap .pl>b small{display:block;margin-top:2px;font-family:var(--f-sans);font-style:normal;font-weight:600;font-size:12px;letter-spacing:.02em;color:var(--mut)}
+.tmap .key{position:absolute;right:18px;top:40px;display:flex;gap:16px;font-weight:700;font-size:11px;color:var(--mut);pointer-events:none}
+.tmap .key span{display:flex;align-items:center;gap:6px}
+.tmap .key i{width:11px;height:11px;border-radius:50%;background:var(--blu)}
+.tmap .key i.im{background:transparent;border:2px solid var(--blu)}
+.tmap .key i.g{background:var(--rosso)}
+html.m .tmap .key{top:auto;bottom:8px;right:8px;gap:10px;font-size:9.5px}
+html.m .tmap .pl>b small{display:none}
+
+/* portfólio em dois papéis */
+#est1 .body{gap:16px;padding-top:20px}
+#est1 .pf2{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:28px}
+#est1 .pfc{display:flex;flex-direction:column;gap:14px;min-height:0;padding:20px 24px 18px;border-radius:4px;background:var(--cardbg);border:1px solid var(--cardline)}
+#est1 .pfc.dop{background:var(--navy);border-color:var(--navy);color:#F6EEDB;--mut:rgba(246,238,219,.72);--line:rgba(246,238,219,.2);--acc:var(--peach)}
+#est1 .pfc header{display:grid;gap:4px}
+#est1 .pfc header b{font-family:var(--f-serif);font-weight:500;font-size:22px;line-height:1.2}
+#est1 .pfc .ph{flex:1;min-height:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+#est1 .pfc.dop .ph{grid-template-columns:minmax(0,1fr)}
+#est1 .pfc figure{position:relative;margin:0;min-height:0;border-radius:3px;overflow:hidden;background:#0A5BB5}
+#est1 .pfc figure img{width:100%;height:100%;object-fit:cover}
+#est1 .pfc.dop figure img{object-fit:contain}
+#est1 .pfc figcaption{position:absolute;left:8px;bottom:8px;font-weight:800;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:rgba(15,31,61,.55);padding:3px 7px;border-radius:2px}
+#est1 dl{display:grid;margin:0}
+#est1 dl div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:12px;padding:8px 0;border-top:1px solid var(--line)}
+#est1 dt{font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);padding-top:3px}
+#est1 dd{margin:0;font-size:15px;line-height:1.4}
+#est1 .pf-risk{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+#est1 .pf-risk p{font-family:var(--f-serif);font-size:19px;line-height:1.3;color:var(--hd)}
+#est1 .pf-risk i{margin-right:10px;font-style:normal;font-family:var(--f-sans);font-weight:800;color:var(--rosso)}
+#est1 .pf-risk b{font-weight:500;font-style:italic;color:var(--rosso)}
+
+/* escolhas */
+#est2 .ch3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+#est2 .chc{border-top:2px solid var(--hd);padding-top:16px}
+#est2 .chc header{display:flex;align-items:baseline;gap:12px;margin-bottom:10px}
+#est2 .chc header .n{font-family:var(--f-serif);font-style:italic;font-size:22px;color:var(--rosso)}
+#est2 .chc header b{font-family:var(--f-serif);font-weight:500;font-size:30px;color:var(--hd)}
+#est2 .chc li{padding:15px 0;border-bottom:1px solid var(--line)}
+#est2 .chc li b{display:block;font-weight:800;font-size:16.5px}
+#est2 .chc li p{margin-top:4px;font-size:16px;line-height:1.45;color:var(--mut)}
+#est2 .chc.no{border-top-color:var(--rosso)}
+#est2 .chc.no li b{color:var(--rosso)}
+#est2 .chc.no li b::before{content:"× ";font-weight:800}
+
+html.m #est1 .pf2,html.m #est1 .pf-risk,html.m #est2 .ch3{grid-template-columns:minmax(0,1fr);gap:22px}
+html.m #est1 .pfc .ph{grid-template-columns:1fr 1fr;flex:none}
+html.m #est1 .pfc figure{aspect-ratio:16/9}
+html.m #est1 dl div{grid-template-columns:96px minmax(0,1fr)}
+/* mapa no celular: pontos numerados e rótulos na lista abaixo, para não sobrepor */
+html.m .tmap{counter-reset:pl}
+html.m .tmap .pl:not(.risk){counter-increment:pl}
+html.m .tmap .pl>i{display:grid;place-items:center;font:800 11px/1 var(--f-sans);color:#fff}
+html.m .tmap .pl>i::after{content:counter(pl)}
+html.m .tmap .pl.imp>i{color:var(--blu)}
+html.m .tmap .pl.gal.imp>i{color:var(--rosso)}
+html.m .tmap .pl:not(.gal)>b,html.m .tmap .pl.gal.imp>b{display:none}
+html.m .tmap-list{counter-reset:li}
+html.m .tmap-list li b::before{counter-increment:li;content:counter(li) " · ";color:var(--rosso)}
+html.m .tmap .al.b{bottom:34px}
