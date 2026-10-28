@@ -5,7 +5,7 @@ Apresentação comercial da 75LAB para o trade de **Galbani** em 2027. O objetiv
 - **Apresentação:** https://projetos.75lab.com.br/galbani-planejamento-2027/
 - Apresentadora: Vanessa Morelli, Diretora Comercial 75LAB
 
-## Roteiro: 12 telas
+## Roteiro: 13 telas
 
 Desafio → solução → por que a 75LAB → plano e investimento.
 
@@ -19,10 +19,11 @@ Desafio → solução → por que a 75LAB → plano e investimento.
 | 06 · A plataforma | **Da geladeira à mesa**, que nasce de um arco: a geladeira Galbani (onde se escolhe) e o prato (onde se serve). |
 | 07 · O bloco | Render do bloco por ocasião na geladeira, com quatro pontos (régua por ocasião, bloco de marca, preço legível e stopper) que acendem junto com a lista. |
 | 08 · Peças por cluster | Cobertura: kit de comunicação e display de porta com ventosa. Crescimento: geladeira 1 porta e displays de chão P e M. Âncora: geladeira 2 portas, ilha refrigerada e ponta de gôndola. Balcão de degustação em todos. Sem preços; todas as peças abrem em galeria. |
-| 09 · Plano de Rastreamento 75LAB | One Shot (fotografia da implantação) × On Timing (filme da permanência). |
-| 10 · Por que a 75LAB | Um só parceiro da estratégia à loja: credenciais, cases (inclusive para o Grupo Lactalis) e O Método 75 aplicado a Galbani. |
-| 11 · Cronograma | Doze semanas, do workshop à regra de escala. |
-| 12 · Investimento | Serviços 75LAB (seis entregáveis) e as nove peças de PDV, todos em R$ 0,00 por enquanto, total, condições e os contatos da Vanessa. Única tela com preços. |
+| 09 · Mais peças | Quinze peças especiais além do kit base, em quatro famílias: na prateleira (régua com losango 3D, régua queijo derretido, divisória de acrílico, régua de puxar), para parar o olhar (stopper iluminado, stopper holográfico, wobbler lenticular, disco de receitas), na geladeira (geladeira trattoria, moldura de porta, móbile e testeira) e no corredor (portal, pórtico, adesivo de piso 3D, display nas massas). Cada peça indica o cluster em que faz mais sentido; todas abrem em galeria. |
+| 10 · Plano de Rastreamento 75LAB | One Shot (fotografia da implantação) × On Timing (filme da permanência). |
+| 11 · Por que a 75LAB | Um só parceiro da estratégia à loja: credenciais, cases (inclusive para o Grupo Lactalis) e O Método 75 aplicado a Galbani. |
+| 12 · Cronograma | Doze semanas, do workshop à regra de escala. |
+| 13 · Investimento | Serviços 75LAB (seis entregáveis), as nove peças do kit base e as quinze peças especiais opcionais, todos em R$ 0,00 por enquanto, total, condições e os contatos da Vanessa. Única tela com preços. |
 
 **Material de apoio** (fora da contagem, abre pelo índice `M`): decupagem do briefing, jornada do shopper, clusters de loja, Codice, indicadores, pré-mortem, workshop de 90 minutos e fontes.
 
@@ -67,17 +68,17 @@ Direção de arte editorial, como uma revista de gastronomia, ajustada ao KV *Do
 
 - Embalagens e receitas: galbani.com.br (uso interno em apresentação ao cliente)
 - Cases: portfólio 75LAB (Lactalis/Parmalat, Seara, Unilever, O Boticário, Whirlpool)
-- Peças de PDV: renders ilustrativos enviados pela 75LAB (bloco por ocasião, kit de comunicação, display de porta, displays de chão P e M, geladeiras 1 e 2 portas, ilha, ponta de gôndola e balcão de degustação). O bloco e o kit já trazem o stopper em nuvem; no kit, a testeira sem clipes e o stopper novo foram montados sobre o render original (`-v2`)
+- Peças de PDV: renders ilustrativos enviados pela 75LAB (bloco por ocasião, kit de comunicação, display de porta, displays de chão P e M, geladeiras 1 e 2 portas, ilha, ponta de gôndola e balcão de degustação) e as quinze peças especiais da tela 09. O bloco e o kit já trazem o stopper em nuvem; no kit, a testeira sem clipes e o stopper novo foram montados sobre o render original (`-v2`)
 - gondola-fria-iogurtes.jpg: Eduardo Soares, unsplash.com/photos/NRP0iTFLzPk (Unsplash License)
 - corredor-refrigerados.jpg: ilja Freiberg, unsplash.com/photos/FWRnXmQQV8U (Unsplash License)
 
 ## Pendências
 
-- **Investimento (tela 12):** os seis entregáveis estão em R$ 0,00 de propósito. Preencher os valores, as condições de pagamento e a validade antes de enviar. A verba de R$ 1 milhão do briefing não aparece mais no deck.
-- **Cases (tela 10):** confirmar a autorização para mostrar Seara, Unilever, O Boticário e Whirlpool a Galbani. Os cases de Lactalis/Parmalat são do próprio grupo.
+- **Investimento (tela 13):** os seis entregáveis estão em R$ 0,00 de propósito. Preencher os valores, as condições de pagamento e a validade antes de enviar. A verba de R$ 1 milhão do briefing não aparece mais no deck.
+- **Cases (tela 11):** confirmar a autorização para mostrar Seara, Unilever, O Boticário e Whirlpool a Galbani. Os cases de Lactalis/Parmalat são do próprio grupo.
 - **Codice:** confirmar o escopo contratado. Temperatura, geolocalização em tempo real, integração de venda e dados pessoais aparecem só como guardrails.
 - **Posicionamento:** *Do seu jeito, à sua mesa* vem do briefing; não foi encontrado em fontes públicas.
 - **Leituras 75LAB:** posições do mapa de concorrência e a intensidade por cluster precisam de validação com Trade e Categoria.
 - **Cronograma:** só em semanas; datas e responsáveis saem do workshop.
 - **3D e AR:** não há modelo 3D (.glb/.usdz) das peças, então não há experiência de AR; as peças aparecem como renders.
-- **Peças:** quantidades por cluster e valores de cada peça na tela 12 saem do workshop. Os renders mostram produtos que não estão no portfólio-base (Burrata, Fior di Latte, Mascarpone): confirmar se a Galbani os vende no Brasil antes de enviar.
+- **Peças:** quantidades por cluster e valores de cada peça na tela 12 saem do workshop. Os renders mostram produtos que não estão no portfólio-base (Burrata, Fior di Latte, Mascarpone): confirmar se a Galbani os vende no Brasil antes de enviar. As peças especiais também mostram Parmigiano Reggiano e Mozzarella de Búfala; o display nas massas só funciona com item fora do frio (parmesão ralado, se for o caso); o stopper iluminado pede energia.

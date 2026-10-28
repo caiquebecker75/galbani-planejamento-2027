@@ -1643,3 +1643,38 @@ html.m .awning{top:60px;height:32px;background-size:51px 32px}
 html.m #s0 .olive{display:none}
 html.m #s15 .olive{display:none}
 html.m #s0 .swash{margin-top:14px;height:14px}
+
+/* =========================================================================
+   MAIS PEÇAS DE MPDV 28/10 · tela 09 e coluna de peças especiais
+   ========================================================================= */
+#mpdv .body{gap:14px;padding-top:18px}
+#mpdv .mfam{flex:1;min-height:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:34px}
+#mpdv .mf{display:flex;flex-direction:column;min-height:0;border-top:2px solid var(--hd)}
+#mpdv .mf header{display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 10px;align-items:baseline;padding:12px 0 14px}
+#mpdv .mf header .n{font-family:var(--f-serif);font-style:italic;font-size:17px;color:var(--rosso)}
+#mpdv .mf header b{font-family:var(--f-serif);font-weight:500;font-size:23px;line-height:1.1;color:var(--hd)}
+#mpdv .mf header small{grid-column:1 / -1;font-size:13.5px;line-height:1.4;color:var(--mut)}
+#mpdv .mg{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:minmax(0,1fr) minmax(0,1fr);gap:14px 12px}
+#mpdv .mc{display:flex;flex-direction:column;gap:7px;min-height:0;margin:0}
+#mpdv .mc.w{grid-column:1 / -1}
+#mpdv .mc .zoom{flex:1;min-height:0;border-radius:4px;background:#EFE8DA;box-shadow:0 14px 28px -22px rgba(15,31,61,.55)}
+#mpdv .mc .zoom img{object-position:var(--op,50% 50%)}
+#mpdv .mc p{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:8px;min-height:34px;font-size:13.5px;line-height:1.25}
+#mpdv .mc p b{font-weight:700;color:var(--fg)}
+#mpdv .mc p span{padding-top:2px;font-weight:800;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--rosso)}
+#mpdv .mp-foot{margin-top:2px}
+
+#inv .inv2{grid-template-columns:minmax(0,1fr) minmax(0,1.04fr) minmax(0,.92fr);gap:36px}
+.inv2 .esp .r{grid-template-columns:minmax(0,1fr) auto;gap:10px}
+.inv2 .esp .k{display:flex;align-items:baseline;gap:8px;min-width:0}
+.inv2 .esp .k b{font-size:15.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.inv2 .esp .k small{font-size:11.5px;white-space:nowrap}
+.inv2 .esp .v{font-size:16px}
+
+html.m #mpdv .mfam{grid-template-columns:minmax(0,1fr);gap:26px}
+html.m #mpdv .mg{grid-template-rows:none}
+html.m #mpdv .mc .zoom{flex:none;aspect-ratio:4/3}
+html.m #mpdv .mc p{font-size:13px;min-height:0}
+html.m .inv2 .esp .k{flex-wrap:wrap;gap:0 8px}
+html.m #inv .inv2{grid-template-columns:minmax(0,1fr);gap:26px}
+html.m .inv2 .esp .k b{white-space:normal}
